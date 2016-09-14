@@ -29,4 +29,82 @@
       </div>
     </div>
   </div>
+
+
+
+
+  <div class="intro-logo">
+        <canvas width="1920" height="984"></canvas>
+        <script>
+            document.addEventListener('touchmove', function (e) {
+                e.preventDefault()
+            })
+            var c = document.getElementsByTagName('canvas')[0],
+                x = c.getContext('2d'),
+                pr = window.devicePixelRatio || 1,
+                w = window.innerWidth,
+                h = window.innerHeight,
+                f = 90,
+                q,
+                m = Math,
+                r = 0,
+                u = m.PI*2,
+                v = m.cos,
+                z = m.random
+            c.width = w*pr
+            c.height = h*pr
+            x.scale(pr, pr)
+            x.globalAlpha = 0.6
+            function i(){
+                x.clearRect(0,0,w,h)
+                q=[{x:0,y:h*.7+f},{x:0,y:h*.7-f}]
+                while(q[1].x<w+f) d(q[0], q[1])
+            }
+            function d(i,j){   
+                x.beginPath()
+                x.moveTo(i.x, i.y)
+                x.lineTo(j.x, j.y)
+                var k = j.x + (z()*2-0.25)*f,
+                    n = y(j.y)
+                x.lineTo(k, n)
+                x.closePath()
+                r-=u/-50
+                x.fillStyle = '#'+(v(r)*127+128<<16 | v(r+u/3)*127+128<<8 | v(r+u/3*2)*127+128).toString(16)
+                x.fill()
+                q[0] = q[1]
+                q[1] = {x:k,y:n}
+            }
+            function y(p){
+                var t = p + (z()*2-1.1)*f
+                return (t>h||t<0) ? y(p) : t
+            }
+            document.onclick = i
+            document.ontouchstart = i
+            i()
+        </script>
+
+          <div class="homelogo"> <img src="<%- config.root%>css/images/homelogo.jpg">
+
+          <div id="wrapper">
+            <h1>Evan You</h1>
+            <h2>Design, Code &amp; Things in Between&nbsp;</h2>
+            <p><a href="http://blog.evanyou.me" target="_blank">Blog</a></p>
+            <p><a href="https://twitter.com/youyuxi" target="_blank">Twitter</a></p>
+            <p><a href="https://github.com/yyx990803" target="_blank">Github</a></p>
+            <p><a href="https://plus.google.com/u/1/112810528656728788190" target="_blank">G+</a></p>
+            <p><a href="http://weibo.com/arttechdesign" target="_blank">微博</a></p>
+        </div>
+         </div>
+        </div>
+
+
+
+        <div class="intro-navigate">
+          <p class="navigater-list"><a herf="/index.html" target="_blank">首 页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            收 藏&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            设 置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            关 于</p>
+        </div>
+        <div align="center"><hr width="80%" color="#DADADA" size="1" style="margin:0px;"></div>
+
 </header>
