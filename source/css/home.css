@@ -106,9 +106,24 @@ html{
     width: 40%;
 	filter:alpha(opacity=90);  -moz-opacity:0.9;  -khtml-opacity: 0.9;  opacity: 0.9;
 }
-.thumbnail:hover{
+.thumb{
+	display: block;
+    height: auto;
+    max-width: 100%;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.428571429;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+	border: 1px solid #fff;
+}
+.thumb:hover{
 	opacity: 0.8;
 	box-shadow: 5px 15px 30px rgba(0,0,0,.3);
+	border: 1px solid #ddd;
 }
 .image{
 	height: 200px; 
