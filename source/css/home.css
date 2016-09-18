@@ -59,8 +59,11 @@ html{
 	font-size: 1.2em;
 }
 .navigater-list>a {
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 20px;
+}
+.navigater-list>a:hover {
+	border-bottom: 5px solid #df303e;
+	text-decoration: none;
 }
 .home-bg{
 	width: 100%;
