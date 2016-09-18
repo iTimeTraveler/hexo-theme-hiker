@@ -58,7 +58,10 @@ html{
 	font-weight: 100;
 	font-size: 1.2em;
 }
-
+.navigater-list>a {
+	padding-left: 20px;
+	padding-right: 20px;
+}
 .home-bg{
 	width: 100%;
 	height: 100%;
@@ -71,7 +74,6 @@ html{
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-
 }
 
 .blur{	
@@ -94,6 +96,14 @@ html{
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	filter:alpha(opacity=90);  -moz-opacity:0.9;  -khtml-opacity: 0.9;  opacity: 0.9;
+}
+.homelogoback {
+	background: #fff;
+	padding: 20px 20px 20px 20px;
+	margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 	filter:alpha(opacity=90);  -moz-opacity:0.9;  -khtml-opacity: 0.9;  opacity: 0.9;
 }
 .thumbnail:hover{

@@ -1,0 +1,26 @@
+<header id="header">
+
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                    <a class="brand" href="#"><img width="100%" alt="Hike News" src="<%= config.root %>css/images/logo.jpg"></a>
+                  
+                  <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                      <% for (var i in theme.menu){ %>
+                        <li> <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a> </li>
+                      <% } %>
+                  </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>

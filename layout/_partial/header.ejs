@@ -1,34 +1,36 @@
 <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
-      </h1>
-      <% if (theme.subtitle){ %>
-        <h2 id="subtitle-wrap">
-          <a href="<%- url_for() %>" id="subtitle"><%= theme.subtitle %></a>
-        </h2>
-      <% } %>
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        <% for (var i in theme.menu){ %>
-          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+  <!-- 
+    <div id="banner"></div>
+    <div id="header-outer" class="outer">
+      <div id="header-title" class="inner">
+        <h1 id="logo-wrap">
+          <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
+        </h1>
+        <% if (theme.subtitle){ %>
+          <h2 id="subtitle-wrap">
+            <a href="<%- url_for() %>" id="subtitle"><%= theme.subtitle %></a>
+          </h2>
         <% } %>
-      </nav>
-      <nav id="sub-nav">
-        <% if (theme.rss){ %>
-          <a id="nav-rss-link" class="nav-icon" href="<%- theme.rss %>" title="<%= __('rss_feed') %>"></a>
-        <% } %>
-        <a id="nav-search-btn" class="nav-icon" title="<%= __('search') %>"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <%- search_form({button: '&#xF002;'}) %>
+      </div>
+      <div id="header-inner" class="inner">
+        <nav id="main-nav">
+          <a id="main-nav-toggle" class="nav-icon"></a>
+          <% for (var i in theme.menu){ %>
+            <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+          <% } %>
+        </nav>
+        <nav id="sub-nav">
+          <% if (theme.rss){ %>
+            <a id="nav-rss-link" class="nav-icon" href="<%- theme.rss %>" title="<%= __('rss_feed') %>"></a>
+          <% } %>
+          <a id="nav-search-btn" class="nav-icon" title="<%= __('search') %>"></a>
+        </nav>
+        <div id="search-form-wrap">
+          <%- search_form({button: '&#xF002;'}) %>
+        </div>
       </div>
     </div>
-  </div>
+  -->
 
 
 
@@ -81,29 +83,36 @@
             document.onclick = i
             document.ontouchstart = i
             i()
+            window.onresize = function () {
+              location.reload(false)
+            }
         </script>
 
-          <div class="homelogo"> <img src="<%- config.root%>css/images/homelogo.jpg">
+          <div class="homelogo"> 
 
-          <div id="wrapper">
-            <h1>Evan You</h1>
-            <h2>Design, Code &amp; Things in Between&nbsp;</h2>
-            <p><a href="http://blog.evanyou.me" target="_blank">Blog</a></p>
-            <p><a href="https://twitter.com/youyuxi" target="_blank">Twitter</a></p>
-            <p><a href="https://github.com/yyx990803" target="_blank">Github</a></p>
-            <p><a href="https://plus.google.com/u/1/112810528656728788190" target="_blank">G+</a></p>
-            <p><a href="http://weibo.com/arttechdesign" target="_blank">微博</a></p>
-        </div>
+          <% if (theme.home_logo){ %>
+            <img src="<%- theme.home_logo %>">
+          <% } else {%>
+            <div class="homelogoback">
+              <h1><a style="color: #333;" href="<%- url_for() %>" id="logo"><%= config.title %></a></h1>
+              <h2><%= config.description%></h2>
+              <h2><%= config.author %></h2>
+              <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
+            </div>
+          <% } %>
+          
          </div>
         </div>
 
 
 
         <div class="intro-navigate">
-          <p class="navigater-list"><a herf="/index.html" target="_blank">首 页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            收 藏&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            设 置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            关 于</p>
+          <p class="navigater-list">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            <% for (var i in theme.menu){ %>
+              <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+            <% } %>
+          </p>
         </div>
         <div align="center"><hr width="80%" color="#DADADA" size="1" style="margin:0px;"></div>
 

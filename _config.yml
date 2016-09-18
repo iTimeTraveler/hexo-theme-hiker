@@ -6,6 +6,9 @@ menu:
   About: /about
 rss: /atom.xml
 
+#homepage
+home_logo: 
+
 # Content
 excerpt_link: Read More
 fancybox: true
@@ -19,9 +22,7 @@ widgets:
 - archive
 - recent_posts
 
-# duoshuo
-duoshuo_name: iTimeTraveler
-
+duoshuo: iTimeTraveler
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:

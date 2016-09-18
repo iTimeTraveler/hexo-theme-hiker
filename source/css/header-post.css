@@ -1,0 +1,85 @@
+body{
+	background: #fff;
+}
+header{
+	margin-bottom: 0px;
+}
+.navbar-inner {
+	min-height: 90px;
+	background: #fff;
+	border-color: #e0e0e0;
+}
+.brand {
+	float: left;
+	display: block;
+	position: absolute;
+	z-index: 1500;
+	font-size: 20px;
+	font-weight: 200;
+	color: #555;
+}
+.nav {
+	position: relative;
+	left: 0;
+	display: block;
+	float: right;
+	margin: 20px 0 0 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, "微软雅黑", sans-serif;
+	font-size: 18px;
+	color: #555;
+	text-transform: uppercase;
+	letter-spacing: .1px;
+}
+.navbar-toggle {
+	margin-top: 28px;
+	margin-bottom: 28px;
+	margin-right: 0px;
+	background-color: transparent;
+	border: 1px solid transparent;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+	border-bottom: 5px solid #df303e;
+}
+	@media (max-width: 768px) {
+    .container{
+    	padding-top: 0px;
+  	}
+  	.navbar .container {
+		text-align: center;
+		width: auto;
+	}
+	.brand{
+		display: inline;
+		margin-left: -40px;
+	}
+  	.navbar-collapse {
+		background: #333;
+		color: #fff;
+		width: 100%;
+		top: 90px;
+		left: 20px;
+		right: 0;
+		margin: 0 0 0 -20px;
+		padding: 0;
+		float: none;
+		position: absolute;
+		text-align: center;
+		font-weight: normal;
+	}
+	.nav {
+		float: none;
+		margin: 80px 0 40px 0;
+		padding: 0 20%;
+	}
+	.container > .navbar-collapse {
+		margin-right: 0px;
+		margin-left: -20px;
+	}
+	.navbar-default .navbar-nav > li > a {
+		color: #fff;
+	}
+	.navbar-default .navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
+		border-bottom: 0px;
+		background-color: #df303e;
+	}
+ }
