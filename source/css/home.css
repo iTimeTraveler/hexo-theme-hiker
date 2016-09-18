@@ -39,7 +39,7 @@ html{
 	width: 100%;
 	height: auto;
 	position: absolute;
-	bottom: 25px;
+	bottom: 40px;
 	text-align: center;
 }
 .navigater-list{
@@ -92,7 +92,6 @@ html{
 	filter:alpha(opacity=90);  -moz-opacity:0.9;  -khtml-opacity: 0.9;  opacity: 0.9;
 }
 .homelogoback {
-	background: #fff;
 	padding: 20px;
 	margin-left: auto;
     margin-right: auto;
@@ -142,6 +141,42 @@ html{
 	font-size: 14px;
 	font-family: "微软雅黑";
 }
+
+
+h1 {
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 12px 0;
+    left: 4px;
+}
+h3 {
+    color: #555;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: .12em;
+    margin-bottom: 30px;
+    left: 3px;
+}
+canvas {
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+a:hover {
+    color: #f33;
+    text-decoration: none;
+}
+
 
 @media (max-width: 680px) {
 	.homelogo>img {

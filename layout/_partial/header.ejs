@@ -36,7 +36,7 @@
 
 
   <div id="intrologo" class="intro-logo">
-        <canvas width="auto" height="auto"></canvas>
+        <canvas width="100%" height="100%"></canvas>
         <script>
             var c = document.getElementsByTagName('canvas')[0],
                 x = c.getContext('2d'),
@@ -92,7 +92,7 @@
             <img src="<%- theme.home_logo %>">
           <% } else {%>
             <div class="homelogoback">
-              <h1><a style="color: #333;" href="<%- url_for() %>" id="logo"><%= config.title %></a></h1>
+              <h1><a style="color: #333;letter-spacing: 9px;" href="<%- url_for() %>" id="logo"><%= config.title %></a></h1>
               <h3><%= config.description%></h3>
               <h3><%= config.author %></h3>
               <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
