@@ -81,10 +81,12 @@ html{
 }
 
 .homelogo{
-	width: 100%;
 	height: auto;
 	position: absolute;
-	top: 40%;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -160px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -95,7 +97,6 @@ html{
 	padding: 20px;
 	margin-left: auto;
     margin-right: auto;
-    width: 50%;
 	filter:alpha(opacity=90);  -moz-opacity:0.9;  -khtml-opacity: 0.9;  opacity: 0.9;
 }
 .thumb{
@@ -135,11 +136,6 @@ html{
 	color: #BBB;
 	padding: 30px 0 15px;
 	line-height: 22px;
-}
-.footer_a {
-	color: #999;
-	font-size: 14px;
-	font-family: "微软雅黑";
 }
 
 
@@ -189,15 +185,5 @@ a:hover {
 	.pagination-lg > li > a, .pagination-lg > li > span {
 		padding: 10px 12px;
 		font-size: 16px;
-	}
-
-	.homelogoback{
-		width: 100%;
-	}
-}
-
-@media (min-width: 1200px) {
-	.homelogoback{
-		width: 30%;
 	}
 }
