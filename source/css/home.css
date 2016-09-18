@@ -39,7 +39,7 @@ html{
 	width: 100%;
 	height: auto;
 	position: absolute;
-	bottom: 40px;
+	bottom: 5px;
 	text-align: center;
 }
 .navigater-list{
@@ -50,6 +50,7 @@ html{
 }
 .navigater-list>a {
 	padding: 20px;
+	line-height: 60px;
 }
 .navigater-list>a:hover {
 	border-bottom: 5px solid #df303e;
@@ -81,12 +82,13 @@ html{
 }
 
 .homelogo{
+	min-width: 400px;
 	height: auto;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	margin-top: -100px;
-	margin-left: -160px;
+	margin-left: -200px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -143,7 +145,6 @@ h1 {
     font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 700;
     font-size: 30px;
-    text-transform: uppercase;
     margin: 12px 0;
     left: 4px;
 }
