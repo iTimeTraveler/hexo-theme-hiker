@@ -36,11 +36,8 @@
 
 
   <div id="intrologo" class="intro-logo">
-        <canvas width="1920" height="984"></canvas>
+        <canvas width="auto" height="auto"></canvas>
         <script>
-            document.addEventListener('touchmove', function (e) {
-                e.preventDefault()
-            })
             var c = document.getElementsByTagName('canvas')[0],
                 x = c.getContext('2d'),
                 pr = window.devicePixelRatio || 1,

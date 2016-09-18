@@ -11,16 +11,6 @@ html{
 	height:100%;
 }
 
-@media (max-width: 680px) {
-	.homelogo>img {
-		width: 100%;
-	}
-	.pagination-lg > li > a, .pagination-lg > li > span {
-		padding: 10px 12px;
-		font-size: 16px;
-	}
-}
-
 .section-intro {
 	display: table;
 	width: 100%;
@@ -103,10 +93,10 @@ html{
 }
 .homelogoback {
 	background: #fff;
-	padding: 20px 20px 20px 20px;
+	padding: 20px;
 	margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 50%;
 	filter:alpha(opacity=90);  -moz-opacity:0.9;  -khtml-opacity: 0.9;  opacity: 0.9;
 }
 .thumb{
@@ -151,4 +141,24 @@ html{
 	color: #999;
 	font-size: 14px;
 	font-family: "微软雅黑";
+}
+
+@media (max-width: 680px) {
+	.homelogo>img {
+		width: 100%;
+	}
+	.pagination-lg > li > a, .pagination-lg > li > span {
+		padding: 10px 12px;
+		font-size: 16px;
+	}
+
+	.homelogoback{
+		width: 100%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.homelogoback{
+		width: 30%;
+	}
 }
