@@ -4,16 +4,18 @@
 .article-inner
   @extend $block
   overflow: hidden
+  border: 0px solid color-border
 
 .article-meta
   clearfix()
+  text-align: center
 
 .article-date
   @extend $block-caption
-  float: left
+  text-align: center
 
 .article-category
-  float: left
+  text-align: center
   line-height: 1em
   color: #ccc
   text-shadow: 0 1px #fff
@@ -30,7 +32,6 @@
 
 .article-title
   text-decoration: none
-  font-size: 2em
   font-weight: bold
   color: color-default
   line-height: line-height-title
@@ -126,15 +127,13 @@
   line-height: 1em
   padding: 6px 15px
   border-radius: 15px
-  background: color-background
-  color: color-grey
-  text-shadow: 0 1px #fff
+  background: color-link
+  color: #fff
   text-decoration: none
   &:hover
-    background: color-link
-    color: #fff
+    background: color-background
+    color: #f00
     text-decoration: none
-    text-shadow: 0 1px darken(color-link, 20%)
 
 .article-footer
   clearfix()
