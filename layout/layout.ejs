@@ -7,11 +7,13 @@
       <% } else {%>
         <%- partial('_partial/header-post', null, {cache: !config.relative_link}) %>
       <% } %>
-      
+            
       <div class="outer">
-        <section id="main"><%- body %></section>
         <% if (theme.sidebar && theme.sidebar !== 'bottom' && is_archive()){ %>
+          <section id="main"><%- body %></section>
           <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+        <% } else {%>
+          <section id="main" style="float:none;"><%- body %></section>
         <% } %>
       </div>
       <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
