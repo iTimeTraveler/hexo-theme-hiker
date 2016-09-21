@@ -11,6 +11,11 @@ html{
 	height:100%;
 }
 
+#header {
+	height: 100%;
+    overflow: hidden;
+}
+
 .section-intro {
 	display: table;
 	width: 100%;
@@ -34,13 +39,21 @@ html{
     -khtml-user-select: none;
     user-select: none;
     text-align: center;
+    overflow: hidden;
 }
 .intro-navigate{
 	width: 100%;
-	height: auto;
+	min-height: 80px;
 	position: absolute;
-	bottom: 5px;
+	bottom: 0px;
+	padding-top: 10px;
+    padding-bottom: 10px;
 	text-align: center;
+	background: rgba(255,255,255,.9);
+}
+.intro-navigate>p{
+	text-align: center;
+	margin: 0px;
 }
 .navigater-list{
 	font-family: "Microsoft YaHei","微软雅黑",Arial,simsun,"宋体";
@@ -49,7 +62,7 @@ html{
 	font-size: 1.2em;
 }
 .navigater-list>a {
-	padding: 20px;
+	padding: 25px 20px 25px 20px;
 	line-height: 60px;
 }
 .navigater-list>a:hover {
@@ -82,7 +95,6 @@ html{
 }
 
 .homelogo{
-	min-width: 400px;
 	height: auto;
 	position: absolute;
 	top: 50%;
@@ -96,11 +108,18 @@ html{
 	filter:alpha(opacity=90);  -moz-opacity:0.9;  -khtml-opacity: 0.9;  opacity: 0.9;
 }
 .homelogoback {
+	overflow: hidden;
 	padding: 20px;
 	margin-left: auto;
     margin-right: auto;
 	filter:alpha(opacity=90);  -moz-opacity:0.9;  -khtml-opacity: 0.9;  opacity: 0.9;
 }
+.homelogoback>h1>a {
+	color: #000;
+	letter-spacing: 9px;
+	text-transform: uppercase;
+}
+    
 .thumb{
 	display: block;
     height: auto;
@@ -193,8 +212,35 @@ footer>.container>.row>p>a:hover  {
 		padding: 10px 12px;
 		font-size: 16px;
 	}
+	.intro-navigate{
+		padding-top: 20px;
+    	padding-bottom: 20px;
+	}
 	.navigater-list>a {
 		padding: 5px;
 		line-height: 40px;
+	}
+	.homelogoback>h1>a {
+		font-size: 20px;
+		font-weight: bold;
+		letter-spacing: 5px;
+	}
+	.homelogo{
+		margin-left: -170px;
+	}
+
+}
+
+@media (max-width: 400px) {
+	.homelogoback>h1>a {
+		font-size: 20px;
+		font-weight: bold;
+		letter-spacing: 4px;
+	}
+	.homelogoback>h3 {
+		font-size: 13px;
+	}
+	.homelogo{
+		margin-left: -145px;
 	}
 }

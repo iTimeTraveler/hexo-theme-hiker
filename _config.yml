@@ -8,7 +8,8 @@ menu:
 rss: /atom.xml
 
 #homepage
-home_logo: 
+home_logo_image: 
+home_background_image: 
 
 # Content
 excerpt_link: Read More
