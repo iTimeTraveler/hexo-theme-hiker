@@ -13,36 +13,36 @@
 .archives
   column-gap: 10px
   @media mq-tablet
-    column-count: 2
+    column-count: 1
   @media mq-normal
-    column-count: 3
+    column-count: 1
 
 .archive-article
   avoid-column-break()
 
 .archive-article-inner
-  @extend $block
-  padding: 10px
-  margin-bottom: 15px
+  padding: 0px
+  margin-bottom: 0px
 
 .archive-article-title
   text-decoration: none
-  font-weight: bold
   color: color-default
   transition: color 0.2s
   line-height: line-height
   &:hover
-    color: color-link
+    color: color-link-hover
 
 .archive-article-footer
   margin-top: 1em
 
 .archive-article-date
-  color: color-grey
+  min-width: 50px
+  float: left
+  color: #7f8c8d
   text-decoration: none
-  font-size: 0.85em
-  line-height: 1em
-  margin-bottom: 0.5em
+  font-size: 1.3em
+  line-height: 1.6em
+  margin-right: 30px
   display: block
 
 #page-nav
@@ -53,7 +53,6 @@
   border-radius: 3px
   text-align: center
   color: color-grey
-  font-size: 1.3em;
   a, span
     padding: 10px 20px
     line-height: 1

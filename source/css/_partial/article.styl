@@ -37,7 +37,7 @@
   line-height: line-height-title
   transition: color 0.2s
   a&:hover
-    color: color-link
+    color: color-link-hover
     text-decoration: none;
 
 .article-entry
@@ -80,10 +80,13 @@
     border-bottom: 1px solid color-border
     padding: 10px 0
   blockquote
-    font-family: font-serif
+    font-family: font-normal
     font-size: 1.4em
-    margin: line-height 20px
-    text-align: center
+    margin: line-height 0px
+    border-left: 5px solid color-theme-red
+    background: #f9f9f9
+    p
+      font-size: font-size
     footer
       font-size: font-size
       margin: line-height 0
@@ -128,7 +131,7 @@
   line-height: 1em
   padding: 6px 15px
   border-radius: 15px
-  background: color-link
+  background: color-link-bg
   color: #fff
   text-decoration: none
   &:hover

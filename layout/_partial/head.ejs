@@ -26,12 +26,14 @@
     <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
   <% if (theme.favicon){ %>
-    <link rel="icon" href="<%- theme.favicon %>">
+    <link rel="icon" href="<%= config.root %><%- theme.favicon %>">
   <% } %>
   <% if (config.highlight.enable){ %>
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <% } %>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://www.apple.com/wss/fonts?family=PingHei&amp;weights=200,400&amp;v=1">
   <%- css('css/style') %>
 
   <!-- Bootstrap core CSS -->
@@ -41,6 +43,12 @@
     <link rel="stylesheet" href="<%- config.root %>css/home.css" > 
   <% } else {%>
     <link rel="stylesheet" href="<%- config.root %>css/header-post.css" > 
+    <%- css('css/dialog.css') %>
+    <%- js('js/dialog.js') %>
+  <% } %>
+
+  <% if (is_archive()){ %>
+    <link rel="stylesheet" href="<%- config.root %>css/archive.css" > 
   <% } %>
   
 </head>

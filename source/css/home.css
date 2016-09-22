@@ -95,6 +95,7 @@ html{
 }
 
 .homelogo{
+	max-width: 400px;
 	height: auto;
 	position: absolute;
 	top: 50%;
@@ -124,7 +125,7 @@ html{
 	display: block;
     height: auto;
     max-width: 100%;
-    padding: 4px;
+    padding: 10px;
     margin-bottom: 20px;
     line-height: 1.428571429;
     background-color: #ffffff;
@@ -136,8 +137,8 @@ html{
 }
 .thumb:hover{
 	opacity: 0.8;
-	box-shadow: 5px 15px 30px rgba(0,0,0,.3);
-	border: 1px solid #ddd;
+	box-shadow: 5px 15px 30px #e7e7eb;
+	border: 1px solid #e7e7eb;
 }
 .image{
 	height: 200px; 
@@ -160,7 +161,7 @@ html{
 }
 
 h1 {
-    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    font-family: "Microsoft YaHei", Helvetica, Tahoma, "Hiragino Sans GB", 华文细黑, Hei, 宋体;
     font-weight: 700;
     font-size: 30px;
     margin: 12px 0;
@@ -225,6 +226,9 @@ footer>.container>.row>p>a:hover  {
 		font-weight: bold;
 		letter-spacing: 5px;
 	}
+	.homelogoback>h3 {
+		font-size: 13px;
+	}
 	.homelogo{
 		margin-left: -170px;
 	}
@@ -237,10 +241,9 @@ footer>.container>.row>p>a:hover  {
 		font-weight: bold;
 		letter-spacing: 4px;
 	}
-	.homelogoback>h3 {
-		font-size: 13px;
-	}
 	.homelogo{
-		margin-left: -145px;
+		width: 100%;
+		left: 0px;
+		margin-left: 0px;
 	}
 }

@@ -59,7 +59,8 @@
         x.scale(pr, pr)
         x.globalAlpha = 0.6
         window.onresize = function () {
-          location.reload(false)
+          c.width = w*pr
+          c.height = h*pr
         }
         <% if (!theme.home_background_image){ %>
           function i(){
@@ -86,6 +87,9 @@
               return (t>h||t<0) ? y(p) : t
           }
           i()
+          window.onresize = function () {
+            location.reload(false)
+          }
           document.getElementById("intrologo").addEventListener("click", function (e) {
               i()
           })
@@ -93,7 +97,7 @@
     </script>
     
 
-    <% if (theme.home_logo_image){ %>
+    <% if (theme.home_background_image){ %>
       <div class="homelogo" style="background: rgba(255,255,255,.8);"> 
     <% } else {%>
       <div class="homelogo"> 
@@ -124,4 +128,4 @@
 
 </header>
 
-<div align="center"><hr width="80%" style="margin:0; height:1px;border:none;border-top:1px solid #ddd;" /></div>
+<div align="center"><hr width="100%" style="margin:0; height:1px;border:none;border-top:1px solid #ddd;" /></div>
