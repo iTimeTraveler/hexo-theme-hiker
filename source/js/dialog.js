@@ -1,34 +1,89 @@
-
 var night_model=false;		//夜间阅读模式
+var content_fontsize_big=false;		//夜间阅读模式
+
+var header_bg_d = '#fff',
+	header_border_d = '#e0e0e0',
+	footer_bg_d = '#f0f0f0',
+	body_bg_d = '#fff',
+	article_title_d = '#333333',
+	article_p_d = '#555555';
+
+var header_bg_n = '#161718',
+	header_border_n = '#1f2021',
+	footer_bg_n = header_bg_n,
+	body_bg_n = '#1d1e1f',
+	article_title_n = '#9da5ae',
+	article_p_n = '#83868a';
+
+var header = document.getElementById('allheader');
+var footer = document.getElementById('footer');
+var wrap = document.getElementById('wrap');
+var articleInner = document.getElementById('articleInner');
+var h1title = document.getElementsByTagName('h1');
+var h2title = document.getElementsByTagName('h2');
+var h3title = document.getElementsByTagName('h3');
+var x = document.getElementsByTagName('p');
+
+
 function setBackground(){
-	var header = document.getElementById('allheader');
+	
+	var i = 0;
+
+	night_model = !night_model;
 	if(night_model == false){
-		night_model=true;
-    	header.style.background = '#161718';
-    	header.style.borderColor = '#1f2021';
-    	document.getElementById('body').style.background = '#1d1e1f';
-		document.getElementById('h2').style.color='#9da5ae';
-		var x = document.getElementsByTagName('p');
-		for (var i=0;i<x.length;i++){ 
-		  	x[i].style.color='#83868a';
+    	header.style.background = header_bg_d;
+    	footer.style.background = footer_bg_d;
+    	header.style.borderColor = header_border_d;
+    	wrap.style.background = body_bg_d;
+    	articleInner.setAttribute('class','article-inner');
+		
+
+		for (i=0;i<h1title.length;i++){ 
+		  	h1title[i].style.color = article_title_d;
+		}
+		for (i=0;i<h2title.length;i++){ 
+		  	h2title[i].style.color = article_title_d;
+		}
+		for (i=0;i<h3title.length;i++){ 
+		  	h3title[i].style.color = article_title_d;
+		}
+		for (i=0;i<x.length;i++){ 
+		  	x[i].style.color = article_p_d;
 		}
 	}else{
-		night_model=false;
-    	header.style.background = '#fff';
-    	header.style.borderColor = '#e0e0e0';
-    	document.getElementById('body').style.background = '#fafafa';
-		document.getElementById('h2').style.color='#000';
-		var x = document.getElementsByTagName('p');
-		for (var i=0;i<x.length;i++){ 
-		  	x[i].style.color='#000';
+    	header.style.background = header_bg_n;
+    	footer.style.background = footer_bg_n;
+    	header.style.borderColor = header_border_n;
+    	wrap.style.background = body_bg_n;
+    	articleInner.setAttribute('class','article-inner-night');
+		
+
+		for (i=0;i<h1title.length;i++){ 
+		  	h1title[i].style.color = article_title_n;
+		}
+		for (i=0;i<h2title.length;i++){ 
+		  	h2title[i].style.color = article_title_n;
+		}
+		for (i=0;i<h3title.length;i++){ 
+		  	h3title[i].style.color = article_title_n;
+		}
+		for (i=0;i<x.length;i++){ 
+		  	x[i].style.color = article_p_n;
 		}
 	}
 	
 }
 
 function setFontSize() {		//正文字号大小
-	var x = document.getElementsByTagName('p');
-	for (var i=0;i<x.length;i++){ 
-	  	x[i].style.fontSize='20px';
+
+	content_fontsize_big = !content_fontsize_big;
+	if(content_fontsize_big == true){
+		for (var i=0;i<x.length;i++){ 
+		  	x[i].style.fontSize='1.2em';
+		}
+	} else {
+		for (var i=0;i<x.length;i++){ 
+		  	x[i].style.fontSize='1em';
+		}
 	}
 }

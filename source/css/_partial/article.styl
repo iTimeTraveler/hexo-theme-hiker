@@ -23,7 +23,6 @@
   text-align: center
   line-height: 1em
   color: #ccc
-  text-shadow: 0 1px #fff
   margin-left: 8px
   &:before
     content: "\2022"
@@ -34,6 +33,12 @@
 
 .article-header
   padding: article-padding article-padding 0
+  text-align: center
+  margin-bottom: 3em
+
+.article-header
+  h1
+    font-weight: bold
 
 .article-title
   text-decoration: none
@@ -86,7 +91,7 @@
     padding: 10px 0
   blockquote
     font-family: font-normal
-    font-size: 1.4em
+    font-size: 1.1em
     margin: line-height 0px
     border-left: 5px solid color-theme-red
     background: #f9f9f9
@@ -195,7 +200,6 @@
 
 .article-nav-link-wrap
   text-decoration: none
-  text-shadow: 0 1px #fff
   color: color-grey
   box-sizing: border-box
   margin-top: block-margin
@@ -269,7 +273,6 @@ $article-share-link
   float: left
   position: relative
   color: #999
-  text-shadow: 0 1px #fff
   &:before
     font-size: 20px
     font-family: font-icon
@@ -284,7 +287,6 @@ $article-share-link
     content: "\f099"
   &:hover
     background: color-twitter
-    text-shadow: 0 1px darken(color-twitter, 20%)
 
 .article-share-facebook
   @extend $article-share-link
@@ -292,7 +294,6 @@ $article-share-link
     content: "\f09a"
   &:hover
     background: color-facebook
-    text-shadow: 0 1px darken(color-facebook, 20%)
 
 .article-share-pinterest
   @extend $article-share-link
@@ -300,7 +301,6 @@ $article-share-link
     content: "\f0d2"
   &:hover
     background: color-pinterest
-    text-shadow: 0 1px darken(color-pinterest, 20%)
 
 .article-share-google
   @extend $article-share-link
@@ -308,7 +308,6 @@ $article-share-link
     content: "\f0d5"
   &:hover
     background: color-google
-    text-shadow: 0 1px darken(color-google, 20%)
 
 .article-gallery
   background: #000
@@ -337,7 +336,6 @@ $article-gallery-ctrl
   height: 100%
   width: 60px
   color: #fff
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
   opacity: 0.3
   transition: opacity 0.2s
   cursor: pointer

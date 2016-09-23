@@ -1,4 +1,9 @@
-# Header
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+
+
+# Header Menu
 menu:
   Home: /
   Archives: /archives
@@ -7,13 +12,20 @@ menu:
   About: /about
 rss: /atom.xml
 
-#homepage
+
+# Put your favicon.ico into `hexo-site/source/` directory.
+favicon: css/images/favicon.png
+
+
+#homepage-custom
 home_logo_image: 
 home_background_image: 
+
 
 # Content
 excerpt_link: Read More
 fancybox: true
+
 
 # Sidebar
 sidebar: right
@@ -24,7 +36,17 @@ widgets:
 - archive
 - recent_posts
 
+
+# Duoshuo ShortName
 duoshuo: iTimeTraveler
+
+
+# Code Highlight theme
+# Available value:
+#    normal | night | night eighties | night blue | night bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: normal
+
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
@@ -32,14 +54,15 @@ index_widgets:
 # - tagcloud
 # - archive
 
+
 # widget behavior
 archive_type: 'monthly'
 show_count: true
 
+
 # Miscellaneous
 google_analytics:
 gauges_analytics:
-favicon: css/images/favicon.png
 twitter:
 google_plus:
 fb_admins:

@@ -488,7 +488,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -557,17 +557,17 @@ h6 .small {
 
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 28px;
 }
 
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 h4,
@@ -752,7 +752,6 @@ samp {
 code {
   padding: 2px 4px;
   font-size: 90%;
-  color: #c7254e;
   white-space: nowrap;
   background-color: #f9f2f4;
   border-radius: 4px;
@@ -762,7 +761,7 @@ pre {
   display: block;
   padding: 9.5px;
   margin: 0 0 10px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
   word-break: break-all;

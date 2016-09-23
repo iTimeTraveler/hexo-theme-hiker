@@ -1,26 +1,117 @@
+$highlight_theme = hexo-config("highlight_theme")
+
+$highlight-background   = #f7f7f7
+$highlight-current-line = #efefef
+$highlight-selection    = #d6d6d6
+$highlight-foreground   = #4d4d4c
+$highlight-comment      = #8e908c
+$highlight-red          = #c82829
+$highlight-orange       = #fb6d19
+$highlight-yellow       = #eab700
+$highlight-green        = #718c00
+$highlight-aqua         = #3e999f
+$highlight-blue         = #4271ae
+$highlight-purple       = #8959a8
+
+if $highlight_theme == "normal"
+  $highlight-background   = #f7f7f7
+  $highlight-current-line = #efefef
+  $highlight-selection    = #d6d6d6
+  $highlight-foreground   = #4d4d4c
+  $highlight-comment      = #8e908c
+  $highlight-red          = #c82829
+  $highlight-orange       = #fb6d19
+  $highlight-yellow       = #eab700
+  $highlight-green        = #718c00
+  $highlight-aqua         = #3e999f
+  $highlight-blue         = #4271ae
+  $highlight-purple       = #8959a8
+
+if $highlight_theme == "night"
+  $highlight-background   = #1d1f21
+  $highlight-current-line = #282a2e
+  $highlight-selection    = #373b41
+  $highlight-foreground   = #c5c8c6
+  $highlight-comment      = #969896
+  $highlight-red          = #cc6666
+  $highlight-orange       = #de935f
+  $highlight-yellow       = #f0c674
+  $highlight-green        = #b5bd68
+  $highlight-aqua         = #8abeb7
+  $highlight-blue         = #81a2be
+  $highlight-purple       = #b294bb
+
+if $highlight_theme == "night eighties"
+  $highlight-background   = #2d2d2d
+  $highlight-current-line = #393939
+  $highlight-selection    = #515151
+  $highlight-foreground   = #cccccc
+  $highlight-comment      = #999999
+  $highlight-red          = #f2777a
+  $highlight-orange       = #f99157
+  $highlight-yellow       = #ffcc66
+  $highlight-green        = #99cc99
+  $highlight-aqua         = #66cccc
+  $highlight-blue         = #6699cc
+  $highlight-purple       = #cc99cc
+
+if $highlight_theme == "night blue"
+  $highlight-background   = #002451
+  $highlight-current-line = #00346e
+  $highlight-selection    = #003f8e
+  $highlight-foreground   = #ffffff
+  $highlight-comment      = #7285b7
+  $highlight-red          = #ff9da4
+  $highlight-orange       = #ffc58f
+  $highlight-yellow       = #ffeead
+  $highlight-green        = #d1f1a9
+  $highlight-aqua         = #99ffff
+  $highlight-blue         = #bbdaff
+  $highlight-purple       = #ebbbff
+
+if $highlight_theme == "night bright"
+  $highlight-background   = #000000
+  $highlight-current-line = #2a2a2a
+  $highlight-selection    = #424242
+  $highlight-foreground   = #eaeaea
+  $highlight-comment      = #969896
+  $highlight-red          = #d54e53
+  $highlight-orange       = #e78c45
+  $highlight-yellow       = #e7c547
+  $highlight-green        = #b9ca4a
+  $highlight-aqua         = #70c0b1
+  $highlight-blue         = #7aa6da
+  $highlight-purple       = #c397d8
+
+
+
+
+//======================================== Original =======================================//
+
 // https://github.com/chriskempson/tomorrow-theme
-highlight-background = #2d2d2d
-highlight-current-line = #393939
-highlight-selection = #515151
-highlight-foreground = #cccccc
-highlight-comment = #999999
-highlight-red = #f2777a
-highlight-orange = #f99157
-highlight-yellow = #ffcc66
-highlight-green = #99cc99
-highlight-aqua = #66cccc
-highlight-blue = #6699cc
-highlight-purple = #cc99cc
+
+// $highlight-background = #2d2d2d
+// $highlight-current-line = #393939
+// $highlight-selection = #515151
+// $highlight-foreground = #cccccc
+// $highlight-comment = #999999
+// $highlight-red = #f2777a
+// $highlight-orange = #f99157
+// $highlight-yellow = #ffcc66
+// $highlight-green = #99cc99
+// $highlight-aqua = #66cccc
+// $highlight-blue = #6699cc
+// $highlight-purple = #cc99cc
 
 $code-block
-  background: highlight-background
+  background: $highlight-background
   margin: 0 article-padding * -1
   padding: 15px article-padding
   border-style: solid
   border-color: color-border
   border-width: 1px 0
   overflow: auto
-  color: highlight-foreground
+  color: $highlight-foreground
   line-height: font-size * line-height
 
 $line-numbers
@@ -31,8 +122,7 @@ $line-numbers
   pre, code
     font-family: font-mono
   code
-    background: color-background
-    text-shadow: 0 1px #fff
+    background: rgba(68, 181, 73, 0.2);
     padding: 0 0.3em
   pre
     @extend $code-block
@@ -55,7 +145,7 @@ $line-numbers
     figcaption
       clearfix()
       font-size: 0.85em
-      color: highlight-comment
+      color: $highlight-comment
       line-height: 1em
       margin-bottom: 1em
       a
@@ -67,13 +157,13 @@ $line-numbers
     .line
       height: font-size * line-height
     .line.marked
-      background: highlight-selection
+      background: $highlight-selection
   .gist
     margin: 0 article-padding * -1
     border-style: solid
     border-color: color-border
     border-width: 1px 0
-    background: highlight-background
+    background: $highlight-background
     padding: 15px article-padding 15px 0
     .gist-file
       border: none
@@ -94,8 +184,8 @@ $line-numbers
         padding: 0
         border: none
       .gist-meta
-        background: highlight-background
-        color: highlight-comment
+        background: $highlight-background
+        color: $highlight-comment
         font: 0.85em font-sans
         text-shadow: 0 0
         padding: 0
@@ -110,7 +200,7 @@ $line-numbers
 pre
   .comment
   .title
-    color: highlight-comment
+    color: $highlight-comment
   .variable
   .attribute
   .tag
@@ -123,27 +213,27 @@ pre
   .css .id
   .css .class
   .css .pseudo
-    color: highlight-red
+    color: $highlight-red
   .number
   .preprocessor
   .built_in
   .literal
   .params
   .constant
-    color: highlight-orange
+    color: $highlight-orange
   .class
   .ruby .class .title
   .css .rules .attribute
-    color: highlight-green
+    color: $highlight-green
   .string
   .value
   .inheritance
   .header
   .ruby .symbol
   .xml .cdata
-    color: highlight-green
+    color: $highlight-green
   .css .hexcolor
-    color: highlight-aqua
+    color: $highlight-aqua
   .function
   .python .decorator
   .python .title
@@ -152,7 +242,7 @@ pre
   .perl .sub
   .javascript .title
   .coffeescript .title
-    color: highlight-blue
+    color: $highlight-blue
   .keyword
   .javascript .function
-    color: highlight-purple
+    color: $highlight-purple

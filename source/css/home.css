@@ -127,16 +127,15 @@ html{
     padding: 10px;
     margin-bottom: 20px;
     line-height: 1.428571429;
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #fff;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-	border: 1px solid #fff;
 }
 .thumb:hover{
 	opacity: 0.8;
 	box-shadow: 5px 15px 30px #e7e7eb;
+	border-radius: 4px;
 	border: 1px solid #e7e7eb;
 }
 .image{
@@ -160,14 +159,14 @@ html{
 }
 
 h1 {
-    font-family: "Microsoft YaHei", Helvetica, Tahoma, "Hiragino Sans GB", 华文细黑, Hei, 宋体;
+    font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
     font-weight: 700;
     font-size: 30px;
     margin: 12px 0;
     left: 4px;
 }
 h3 {
-	font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
+	font-family: 'Roboto Slab', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
     color: #555;
     font-weight: normal;
     font-size: 16px;
@@ -176,7 +175,7 @@ h3 {
     left: 3px;
 }
 #beautifont{
-	font-family: 'Roboto', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
+	font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 	font-weight: bold;
 }
 canvas {
