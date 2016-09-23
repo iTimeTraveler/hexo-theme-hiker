@@ -56,12 +56,14 @@
             z = m.random
         c.width = w*pr
         c.height = h*pr
+        c.style.width = w*pr + 'px'
         c.style.height = h*pr + 'px'
         x.scale(pr, pr)
         x.globalAlpha = 0.6
         window.onresize = function () {
           c.width = w*pr
           c.height = h*pr
+          c.style.width = w*pr + 'px'
           c.style.height = h*pr + 'px'
         }
         <% if (!theme.home_background_image){ %>
@@ -90,7 +92,7 @@
           }
           i()
           window.onresize = function () {
-            location.reload(false)
+            i()
           }
           document.getElementById("intrologo").addEventListener("click", function (e) {
               i()

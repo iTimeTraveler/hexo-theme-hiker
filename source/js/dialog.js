@@ -7,6 +7,8 @@ var header_bg_d = '#fff',
 	body_bg_d = '#fff',
 	article_title_d = '#333333',
 	article_p_d = '#555555';
+	code_bg_d = '#f7f7f7';
+	code_border_d = '#e7e7eb';
 
 var header_bg_n = '#161718',
 	header_border_n = '#1f2021',
@@ -14,6 +16,8 @@ var header_bg_n = '#161718',
 	body_bg_n = '#1d1e1f',
 	article_title_n = '#9da5ae',
 	article_p_n = '#83868a';
+	code_bg_n = '#2d2f31';
+	code_border_n = '#333333';
 
 var header = document.getElementById('allheader');
 var footer = document.getElementById('footer');
@@ -22,11 +26,12 @@ var articleInner = document.getElementById('articleInner');
 var h1title = document.getElementsByTagName('h1');
 var h2title = document.getElementsByTagName('h2');
 var h3title = document.getElementsByTagName('h3');
+var figure = document.getElementsByTagName('figure');
+var pre = document.getElementsByTagName('pre');
 var x = document.getElementsByTagName('p');
 
 
 function setBackground(){
-	
 	var i = 0;
 
 	night_model = !night_model;
@@ -36,7 +41,6 @@ function setBackground(){
     	header.style.borderColor = header_border_d;
     	wrap.style.background = body_bg_d;
     	articleInner.setAttribute('class','article-inner');
-		
 
 		for (i=0;i<h1title.length;i++){ 
 		  	h1title[i].style.color = article_title_d;
@@ -47,6 +51,14 @@ function setBackground(){
 		for (i=0;i<h3title.length;i++){ 
 		  	h3title[i].style.color = article_title_d;
 		}
+		for (i=0;i<figure.length;i++){ 
+		  	figure[i].style.background = code_bg_d;
+		  	figure[i].style.borderColor = code_border_d;
+		}
+		for (i=0;i<pre.length;i++){ 
+		  	pre[i].style.background = code_bg_d;
+		  	pre[i].style.color = '#525252';
+		}
 		for (i=0;i<x.length;i++){ 
 		  	x[i].style.color = article_p_d;
 		}
@@ -56,7 +68,6 @@ function setBackground(){
     	header.style.borderColor = header_border_n;
     	wrap.style.background = body_bg_n;
     	articleInner.setAttribute('class','article-inner-night');
-		
 
 		for (i=0;i<h1title.length;i++){ 
 		  	h1title[i].style.color = article_title_n;
@@ -66,6 +77,14 @@ function setBackground(){
 		}
 		for (i=0;i<h3title.length;i++){ 
 		  	h3title[i].style.color = article_title_n;
+		}
+		for (i=0;i<figure.length;i++){ 
+		  	figure[i].style.background = code_bg_n;
+		  	figure[i].style.borderColor = code_border_n;
+		}
+		for (i=0;i<pre.length;i++){ 
+		  	pre[i].style.background = code_bg_n;
+		  	pre[i].style.color = article_p_n;
 		}
 		for (i=0;i<x.length;i++){ 
 		  	x[i].style.color = article_p_n;

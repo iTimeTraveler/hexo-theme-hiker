@@ -106,10 +106,6 @@ samp {
   font-size: 1em;
 }
 
-pre {
-  white-space: pre-wrap;
-}
-
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -763,7 +759,7 @@ pre {
   margin: 0 0 10px;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #333333;
+  color: #525252;
   word-break: break-all;
   word-wrap: break-word;
   background-color: #f5f5f5;
@@ -1626,7 +1622,6 @@ pre code {
 }
 
 table {
-  max-width: 100%;
   background-color: transparent;
 }
 
@@ -1635,7 +1630,6 @@ th {
 }
 
 .table {
-  width: 100%;
   margin-bottom: 20px;
 }
 

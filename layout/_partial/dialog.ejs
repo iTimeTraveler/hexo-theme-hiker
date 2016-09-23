@@ -16,7 +16,7 @@
           </div>
           <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
           <div class="panel-body">
-            您已调节页面字体大小
+            您已调整页面字体大小
           </div>
         </div>
       
@@ -38,10 +38,10 @@
         </div>
          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="panel-body">
-            HikeNews
+            <%= config.title %>
           </div>
           <div class="panel-body">
-            Copyright © 2014 - 2015 CUC.edu.cn All Rights Reserved.
+            Copyright © <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %> All Rights Reserved.
           </div>
         </div>
       </div>
