@@ -6,8 +6,6 @@ header{
 }
 .navbar-inner {
 	min-height: 90px;
-	background: #fff;
-	border-color: #e0e0e0;
 }
 .brand {
 	float: left;

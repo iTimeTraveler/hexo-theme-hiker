@@ -56,11 +56,13 @@
             z = m.random
         c.width = w*pr
         c.height = h*pr
+        c.style.height = h*pr + 'px'
         x.scale(pr, pr)
         x.globalAlpha = 0.6
         window.onresize = function () {
           c.width = w*pr
           c.height = h*pr
+          c.style.height = h*pr + 'px'
         }
         <% if (!theme.home_background_image){ %>
           function i(){
