@@ -5,7 +5,7 @@
       <% if (is_home()){ %>
         <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
       <% } else {%>
-        <%- partial('_partial/header-post', null, {cache: !config.relative_link}) %>
+        <%- partial('_partial/header-post') %>
       <% } %>
             
       <div id="content" class="outer">

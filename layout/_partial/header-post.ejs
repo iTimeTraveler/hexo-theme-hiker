@@ -13,17 +13,16 @@
 
             <% if (is_post()){ %>
               <a class="brand" href="#" data-toggle="modal" data-target="#myModal"><img width="100%" alt="Hike News" src="<%= config.root %>css/images/logo.jpg"></a>
-            <% } else {%>
-              <a class="brand" href="#" d><img width="100%" alt="Hike News" src="<%= config.root %>css/images/logo.jpg"></a>
+            <% } else { %>
+              <a class="brand" href="#"><img width="100%" alt="Hike News" src="<%= config.root %>css/images/logo.jpg"></a>
             <% } %>
-                    
-                  
-                  <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                      <% for (var i in theme.menu){ %>
-                        <li> <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a> </li>
-                      <% } %>
-                  </div>
+            
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <% for (var i in theme.menu){ %>
+                  <li> <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a> </li>
+                <% } %>
+            </div>
           </div>
                 
       </div>
@@ -31,12 +30,12 @@
 
 </header>
 
-<% if (is_current("about", false)){ %>
+<% if (is_current("about", false) && theme.about_big_image){ %>
   <div style="background:#fff;width: 100%;padding-top:50px;">
     <div class="container marketing">
 
       <div class="row featurette">
-        <img width="100%" alt="Hike News" src="<%- config.root %>css/images/pose.jpg">
+        <img width="100%" alt="Hike News" src="<%- config.root %><%- theme.about_big_image %>">
       </div>
 
     </div>

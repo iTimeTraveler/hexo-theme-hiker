@@ -56,15 +56,15 @@
             z = m.random
         c.width = w*pr
         c.height = h*pr
-        c.style.width = w*pr + 'px'
-        c.style.height = h*pr + 'px'
+        c.style.width = w + 'px'
+        c.style.height = h + 'px'
         x.scale(pr, pr)
         x.globalAlpha = 0.6
         window.onresize = function () {
           c.width = w*pr
           c.height = h*pr
-          c.style.width = w*pr + 'px'
-          c.style.height = h*pr + 'px'
+          c.style.width = w + 'px'
+          c.style.height = h + 'px'
         }
         <% if (!theme.home_background_image){ %>
           function i(){
@@ -92,9 +92,9 @@
           }
           i()
           window.onresize = function () {
-            i()
+            window.location.reload()
           }
-          document.getElementById("intrologo").addEventListener("click", function (e) {
+          document.getElementById("intrologo").addEventListener("touchmove", function (e) {
               i()
           })
         <% } %>
@@ -102,9 +102,9 @@
     
 
     <% if (theme.home_background_image){ %>
-      <div class="homelogo" style="background: rgba(255,255,255,.8);"> 
+      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,.8);"> 
     <% } else {%>
-      <div class="homelogo"> 
+      <div id="homelogo" class="homelogo"> 
     <% } %>
 
         <% if (theme.home_logo_image){ %>
