@@ -12,6 +12,7 @@ html{
 }
 
 #header {
+	height: 100%;
     overflow: hidden;
 }
 
@@ -31,6 +32,7 @@ html{
 
 .intro-logo{
 	width: 100%;
+	height: 100%;
 	margin-bottom: -5px;
 	-moz-user-select: none;
     -webkit-user-select: none;
@@ -100,7 +102,6 @@ html{
 	top: 50%;
 	left: 50%;
 	margin-top: -100px;
-	margin-left: -200px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -204,9 +205,6 @@ footer>.container>.row>p>a:hover  {
 }
 
 @media (max-width: 680px) {
-	.homelogo>img {
-		width: 100%;
-	}
 	.pagination-lg > li > a, .pagination-lg > li > span {
 		padding: 10px 12px;
 		font-size: 16px;
@@ -227,9 +225,6 @@ footer>.container>.row>p>a:hover  {
 	.homelogoback>h3 {
 		font-size: 13px;
 	}
-	.homelogo{
-		margin-left: -170px;
-	}
 
 }
 
@@ -238,10 +233,5 @@ footer>.container>.row>p>a:hover  {
 		font-size: 20px;
 		font-weight: bold;
 		letter-spacing: 4px;
-	}
-	.homelogo{
-		width: 100%;
-		left: 0px;
-		margin-left: 0px;
 	}
 }

@@ -1,10 +1,11 @@
 <%- partial('_partial/head') %>
 <body>
+  <% if (is_home()){ %>
+    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+  <% } %>
   <div id="container">
     <div id="wrap">
-      <% if (is_home()){ %>
-        <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <% } else {%>
+      <% if (!is_home()){ %>
         <%- partial('_partial/header-post') %>
       <% } %>
             

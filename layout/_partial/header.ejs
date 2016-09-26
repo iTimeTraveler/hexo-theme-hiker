@@ -42,73 +42,66 @@
 
     <canvas width="100%" height="100%"></canvas>
     <script>
-        var c = document.getElementsByTagName('canvas')[0],
-            x = c.getContext('2d'),
-            pr = window.devicePixelRatio || 1,
-            w = window.innerWidth,
-            h = window.innerHeight,
-            f = 90,
-            q,
-            m = Math,
-            r = 0,
-            u = m.PI*2,
-            v = m.cos,
-            z = m.random
-        c.width = w*pr
-        c.height = h*pr
-        c.style.width = w + 'px'
-        c.style.height = h + 'px'
-        x.scale(pr, pr)
-        x.globalAlpha = 0.6
-        window.onresize = function () {
-          c.width = w*pr
-          c.height = h*pr
-          c.style.width = w + 'px'
-          c.style.height = h + 'px'
+      document.addEventListener('touchmove', function (e) {
+          e.preventDefault()
+      })
+      var c = document.getElementsByTagName('canvas')[0],
+          x = c.getContext('2d'),
+          pr = window.devicePixelRatio || 1,
+          f = 90,
+          q,
+          m = Math,
+          r = 0,
+          u = m.PI*2,
+          v = m.cos,
+          z = m.random
+      x.scale(pr, pr)
+      x.globalAlpha = 0.6
+
+      <% if (!theme.home_background_image){ %>
+        function i(){
+            w = window.innerWidth
+            h = window.innerHeight
+            c.width = w*pr
+            c.height = h*pr
+            x.clearRect(0,0,w,h)
+            x.globalAlpha = 0.6
+            q=[{x:0,y:h*.7+f},{x:0,y:h*.7-f}]
+            while(q[1].x<w+f) d(q[0], q[1])
         }
-        <% if (!theme.home_background_image){ %>
-          function i(){
-              x.clearRect(0,0,w,h)
-              q=[{x:0,y:h*.7+f},{x:0,y:h*.7-f}]
-              while(q[1].x<w+f) d(q[0], q[1])
-          }
-          function d(i,j){   
-              x.beginPath()
-              x.moveTo(i.x, i.y)
-              x.lineTo(j.x, j.y)
-              var k = j.x + (z()*2-0.25)*f,
-                  n = y(j.y)
-              x.lineTo(k, n)
-              x.closePath()
-              r-=u/-50
-              x.fillStyle = '#'+(v(r)*127+128<<16 | v(r+u/3)*127+128<<8 | v(r+u/3*2)*127+128).toString(16)
-              x.fill()
-              q[0] = q[1]
-              q[1] = {x:k,y:n}
-          }
-          function y(p){
-              var t = p + (z()*2-1.1)*f
-              return (t>h||t<0) ? y(p) : t
-          }
-          i()
-          window.onresize = function () {
-            window.location.reload()
-          }
-          document.getElementById("intrologo").addEventListener("touchmove", function (e) {
-              i()
-          })
-        <% } %>
+        function d(i,j){   
+            x.beginPath()
+            x.moveTo(i.x, i.y)
+            x.lineTo(j.x, j.y)
+            var k = j.x + (z()*2-0.25)*f,
+                n = y(j.y)
+            x.lineTo(k, n)
+            x.closePath()
+            r-=u/-50
+            x.fillStyle = '#'+(v(r)*127+128<<16 | v(r+u/3)*127+128<<8 | v(r+u/3*2)*127+128).toString(16)
+            x.fill()
+            q[0] = q[1]
+            q[1] = {x:k,y:n}
+        }
+        function y(p){
+            var t = p + (z()*2-1.1)*f
+            return (t>h||t<0) ? y(p) : t
+        }
+        document.getElementById("intrologo").onclick = i
+        document.getElementById("intrologo").ontouchstart = i
+        i()
+      <% } %>
     </script>
     
 
-    <% if (theme.home_background_image){ %>
+    <% if (theme.home_background_image && !theme.home_logo_image){ %>
       <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,.8);"> 
     <% } else {%>
       <div id="homelogo" class="homelogo"> 
     <% } %>
 
         <% if (theme.home_logo_image){ %>
-          <img src="<%- theme.home_logo_image %>">
+          <img id="homelogoimg" src="<%- theme.home_logo_image %>">
         <% } else {%>
           <div class="homelogoback">
             <h1><a href="#content" id="logo"><%= config.title %></a></h1>
@@ -121,6 +114,31 @@
     </div>
   </div>
 
+  <% if (theme.home_logo_image){ %>
+    <script>
+        var img = new Image();
+        var homelogodiv = document.getElementById("homelogo");
+        img.src = document.getElementById("homelogoimg").src;
+        img.onload=function(){
+          if (img.width > document.body.clientWidth) {
+            document.getElementById("homelogoimg").style.width = document.body.clientWidth + "px";
+            homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
+          } else {
+            homelogodiv.style.marginLeft = img.width * -0.5 + "px";
+          }
+        };
+    </script>
+  <% } else {%>
+    <script>
+        var homelogodiv = document.getElementById("homelogo");
+        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
+          homelogodiv.style.width = document.body.clientWidth + "px";
+          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
+        } else {
+          homelogodiv.style.marginLeft = (document.all.homelogo.offsetWidth + 40)  * -0.5 + "px";
+        }
+    </script>
+  <% } %>
 
   <div class="intro-navigate">
       <p class="navigater-list">
