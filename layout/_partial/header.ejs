@@ -35,16 +35,13 @@
 
 
   <% if (theme.home_background_image){ %>
-    <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(<%- theme.home_background_image %>);">
+    <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(<%- theme.home_background_image %>); background-size: auto 100%;">
   <% } else {%>
     <div id="intrologo" class="intro-logo">
   <% } %>
 
     <canvas width="100%" height="100%"></canvas>
     <script>
-      document.addEventListener('touchmove', function (e) {
-          e.preventDefault()
-      })
       var c = document.getElementsByTagName('canvas')[0],
           x = c.getContext('2d'),
           pr = window.devicePixelRatio || 1,

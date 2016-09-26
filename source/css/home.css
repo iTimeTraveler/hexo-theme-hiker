@@ -50,7 +50,7 @@ html{
 	padding-top: 10px;
     padding-bottom: 10px;
 	text-align: center;
-	background: rgba(255,255,255,.9);
+	background: rgba(255,255,255,.85);
 }
 .intro-navigate>p{
 	text-align: center;
@@ -177,7 +177,6 @@ h3 {
 }
 #beautifont{
 	font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
-	font-weight: bold;
 }
 canvas {
     top: 0;

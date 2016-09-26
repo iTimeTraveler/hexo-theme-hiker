@@ -19,7 +19,7 @@ favicon: css/images/favicon.png
 
 # Homepage
 # eg. home_logo_image: css/images/homelogo.jpg
-home_logo_image: css/images/homelogo.jpg
+home_logo_image: 
 home_background_image: css/images/home-bg.jpg
 
 
