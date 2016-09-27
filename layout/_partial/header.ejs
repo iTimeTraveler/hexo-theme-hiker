@@ -44,6 +44,8 @@
     <script>
       var c = document.getElementsByTagName('canvas')[0],
           x = c.getContext('2d'),
+          w = window.innerWidth,
+          h = window.innerHeight,
           pr = window.devicePixelRatio || 1,
           f = 90,
           q,
@@ -52,17 +54,14 @@
           u = m.PI*2,
           v = m.cos,
           z = m.random
+      c.width = w*pr
+      c.height = h*pr
       x.scale(pr, pr)
       x.globalAlpha = 0.6
 
       <% if (!theme.home_background_image){ %>
         function i(){
-            w = window.innerWidth
-            h = window.innerHeight
-            c.width = w*pr
-            c.height = h*pr
             x.clearRect(0,0,w,h)
-            x.globalAlpha = 0.6
             q=[{x:0,y:h*.7+f},{x:0,y:h*.7-f}]
             while(q[1].x<w+f) d(q[0], q[1])
         }
