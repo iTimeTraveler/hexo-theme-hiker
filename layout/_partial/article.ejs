@@ -23,7 +23,7 @@
       <% } %>
     </div>
     <footer class="article-footer">
-      <% if (post.comments && (theme.duoshuo_shortname || theme.disqus_shortname)){ %>
+      <% if (!index && post.comments && (theme.duoshuo_shortname || theme.disqus_shortname)){ %>
         <%- partial('comment') %>
       <% } %>
       <%- partial('post/tag') %>
