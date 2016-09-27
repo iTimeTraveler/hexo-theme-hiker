@@ -28,7 +28,7 @@ var h2title = document.getElementsByTagName('h2');
 var h3title = document.getElementsByTagName('h3');
 var figure = document.getElementsByTagName('figure');
 var pre = document.getElementsByTagName('pre');
-var x = document.getElementsByTagName('p');
+var all_p = document.getElementsByTagName('p');
 
 
 function setBackground(){
@@ -59,8 +59,8 @@ function setBackground(){
 		  	pre[i].style.background = code_bg_d;
 		  	pre[i].style.color = '#525252';
 		}
-		for (i=0;i<x.length;i++){ 
-		  	x[i].style.color = article_p_d;
+		for (i=0;i<all_p.length;i++){ 
+		  	all_p[i].style.color = article_p_d;
 		}
 	}else{
     	header.style.background = header_bg_n;
@@ -86,8 +86,8 @@ function setBackground(){
 		  	pre[i].style.background = code_bg_n;
 		  	pre[i].style.color = article_p_n;
 		}
-		for (i=0;i<x.length;i++){ 
-		  	x[i].style.color = article_p_n;
+		for (i=0;i<all_p.length;i++){ 
+		  	all_p[i].style.color = article_p_n;
 		}
 	}
 	
@@ -97,12 +97,12 @@ function setFontSize() {		//正文字号大小
 
 	content_fontsize_big = !content_fontsize_big;
 	if(content_fontsize_big == true){
-		for (var i=0;i<x.length;i++){ 
-		  	x[i].style.fontSize='1.2em';
+		for (var i=0;i<all_p.length;i++){ 
+		  	all_p[i].style.fontSize='1.2em';
 		}
 	} else {
-		for (var i=0;i<x.length;i++){ 
-		  	x[i].style.fontSize='1em';
+		for (var i=0;i<all_p.length;i++){ 
+		  	all_p[i].style.fontSize='1em';
 		}
 	}
 }
