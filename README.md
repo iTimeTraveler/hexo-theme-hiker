@@ -1,18 +1,18 @@
-# Landscape
+# Hiker
 
-A brand new default theme for [Hexo].
+An attractive theme for [Hexo]. I call it "Hiker", short for "HikerNews".
 
-- [Preview](http://hexo.io/hexo-theme-landscape/)
+- [Preview](https://itimetraveler.github.io/)
 
 ## Installation
 
 ### Install
 
 ``` bash
-$ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
+$ git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker
 ```
 
-**Landscape requires Hexo 2.4 and above.**
+**Hiker requires Hexo 2.4 and above.**
 
 ### Enable
 
