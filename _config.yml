@@ -12,6 +12,7 @@ menu:
   About: /about
 rss: /atom.xml
 
+since: 2013
 
 # Put your favicon.ico into `hexo-site/source/` directory.
 favicon: css/images/favicon.png

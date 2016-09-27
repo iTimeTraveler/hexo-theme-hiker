@@ -9,8 +9,8 @@
   <div class="container">
       <div class="row">
 	      <p> <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-	      <p id="copyRightEn">Copyright &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %> All Rights Reserved.</p>
-	      <p id="copyRightCn"><a href="" target="_blank"><%= config.author || config.title %> 保留所有权利</a>  </p>
+	      <p id="copyRightEn">Copyright &copy; <%= theme.since ||  (date(new Date(), 'YYYY')-1)%> - <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %> All Rights Reserved.</p>
+	      <p id="copyRightCn"><%= config.author || config.title %> 保留所有权利</p>
 	</div>
   </div>
 </footer>

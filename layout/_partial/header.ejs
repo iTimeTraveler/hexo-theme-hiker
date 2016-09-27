@@ -35,7 +35,7 @@
 
 
   <% if (theme.home_background_image){ %>
-    <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(<%- theme.home_background_image %>); background-size: auto 100%;">
+    <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(<%- config.root%><%- theme.home_background_image %>); background-size: auto 100%;">
   <% } else {%>
     <div id="intrologo" class="intro-logo">
   <% } %>

@@ -8,8 +8,6 @@
 .modal-body {
 	text-align: center;
 	position: relative;
-	padding-top: 15%;
-	padding-bottom: 15%;
 	margin: 0;
 }
 .modal-title {
@@ -31,7 +29,7 @@
 	color:#fff;
 }
 	.modal-header {
-		padding: 30px;
+		padding: 20px;
 		border-bottom: 0px;
 }
 .modal-footer {
