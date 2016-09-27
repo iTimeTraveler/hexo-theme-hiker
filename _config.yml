@@ -44,7 +44,10 @@ widgets:
 
 
 # Duoshuo ShortName
-duoshuo: iTimeTraveler
+duoshuo_shortname: iTimeTraveler
+
+# or Disqus ShortName
+disqus_shortname: iTimeTraveler
 
 
 # Code Highlight theme
