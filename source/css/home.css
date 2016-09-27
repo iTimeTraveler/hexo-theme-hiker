@@ -125,7 +125,7 @@ html{
 	display: block;
     height: auto;
     max-width: 100%;
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 20px;
     line-height: 1.428571429;
     background-color: #fff;
@@ -223,6 +223,18 @@ footer>.container>.row>p>a:hover  {
 	}
 	.homelogoback>h3 {
 		font-size: 13px;
+	}
+	h1{
+		font-size: 1.5em;
+	}
+	h2{
+		font-size: 1.3em;
+	}
+	h3{
+		font-size: 1.2em;
+	}
+	h4{
+		font-size: 1.1em;
 	}
 
 }
