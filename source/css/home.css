@@ -189,7 +189,7 @@ canvas {
 a {
     color: #555;
     text-decoration: none;
-    transition: color .2s ease;
+    transition: color,background-color .2s ease;
 }
 a:hover {
     color: #ff5537;

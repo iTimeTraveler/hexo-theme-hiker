@@ -3,7 +3,9 @@
     <%- partial('article', {post: post, index: true}) %>
   <% }) %>
 <% } else { %>
-  <div class="archives-wrap"><blockquote><h1>my hero have writen <%= site.posts.length %> posts in total till now.</h1></blockquote>
+  <% if (is_archive()){ %>
+    <div class="archives-wrap"><blockquote><h1>my hero have writen <%= site.posts.length %> posts in total till now.</h1></blockquote>
+  <% } %>
   <% var last; %>
   <% page.posts.each(function(post, i){ %>
     <% var year = post.date.year(); %>
