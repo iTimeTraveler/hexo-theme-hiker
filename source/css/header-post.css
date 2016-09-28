@@ -35,7 +35,8 @@ header{
 	border: 1px solid transparent;
 }
 .nav>li>a:hover, .nav>li>a:focus {
-	border-bottom: 5px solid #df303e;
+	color: #ff6347;
+	border-bottom: 5px solid #ff5537;
 }
 	@media (max-width: 768px) {
     .container{
@@ -77,6 +78,6 @@ header{
 	}
 	.navbar-default .navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
 		border-bottom: 0px;
-		background-color: #df303e;
+		background-color: #ff5537;
 	}
  }

@@ -67,7 +67,7 @@ html{
 	line-height: 60px;
 }
 .navigater-list>a:hover {
-	border-bottom: 5px solid #df303e;
+	border-bottom: 5px solid #ff5537;
 	text-decoration: none;
 }
 .home-bg{
@@ -192,7 +192,7 @@ a {
     transition: color .2s ease;
 }
 a:hover {
-    color: #f33;
+    color: #ff5537;
     text-decoration: none;
 }
 

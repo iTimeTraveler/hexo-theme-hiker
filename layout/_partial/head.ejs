@@ -45,7 +45,7 @@
     <%- css('css/dialog.css') %>
   <% } %>
 
-  <% if (is_archive()){ %>
+  <% if (is_archive() || is_category() || is_tag()){ %>
     <link rel="stylesheet" href="<%- config.root %>css/archive.css" > 
   <% } %>
   

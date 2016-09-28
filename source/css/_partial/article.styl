@@ -66,7 +66,8 @@
     color: color-link
     text-decoration: none
     &:hover
-      text-decoration: underline
+      color: color-theme-red
+      text-decoration: none
   ul, ol, dl
     margin-top: line-height
     margin-bottom: line-height
@@ -143,6 +144,8 @@
   background: color-link-bg
   color: #fff
   text-decoration: none
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   &:hover
     background: color-theme-red
     color: #fff
