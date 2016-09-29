@@ -12,9 +12,9 @@
             </button>
 
             <% if (is_post()){ %>
-              <a class="brand" href="#" data-toggle="modal" data-target="#myModal"><img width="124px" height="124px" alt="Hike News" src="<%= config.root %>css/images/logo.jpg"></a>
+              <a class="brand" href="#" data-toggle="modal" data-target="#myModal"><img width="124px" height="124px" alt="Hike News" src="<%= config.root %><% if (theme.avatar){ %><%- theme.avatar %><% } else {%>css/images/avatar.jpg<% } %>"></a>
             <% } else { %>
-              <a class="brand" href="#"><img width="124px" height="124px" alt="Hike News" src="<%= config.root %>css/images/logo.jpg"></a>
+              <a class="brand" href="#"><img width="124px" height="124px" alt="Hike News" src="<%= config.root %><% if (theme.avatar){ %><%- theme.avatar %><% } else {%>css/images/avatar.jpg<% } %>"></a>
             <% } %>
             
             <div class="navbar-collapse collapse">

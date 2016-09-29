@@ -14,13 +14,16 @@ rss: /atom.xml
 since: 2013
 
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: css/images/favicon.png
+avatar: css/images/mylogo.jpg
 
 
 # Homepage
-# eg. home_logo_image: css/images/homelogo.jpg
+# eg. home_background_image: css/images/home-bg.jpg
+home_background_image: 
 home_logo_image: 
-home_background_image: css/images/home-bg.jpg
+  enable: false
+  border: false
+  url: css/images/homelogo.jpg
 
 
 # AboutPage

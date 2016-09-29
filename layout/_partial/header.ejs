@@ -90,14 +90,18 @@
     </script>
     
 
-    <% if (theme.home_background_image && !theme.home_logo_image){ %>
+    <% if (theme.home_background_image && !theme.home_logo_image.enable){ %>
       <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,.8);"> 
     <% } else {%>
       <div id="homelogo" class="homelogo"> 
     <% } %>
 
-        <% if (theme.home_logo_image){ %>
-          <img id="homelogoimg" src="<%- theme.home_logo_image %>">
+        <% if (theme.home_logo_image.enable){ %>
+          <% if (theme.home_logo_image.border){ %>
+            <img id="homelogoimg" src="<%- theme.home_logo_image.url %>" style="border-style: solid; border-color: rgba(24,24,21,0.1); border-width: 8px;">
+          <% } else {%>
+            <img id="homelogoimg" src="<%- theme.home_logo_image.url %>" >
+          <% } %>
         <% } else {%>
           <div class="homelogoback">
             <h1><a href="#content" id="logo"><%= config.title %></a></h1>
@@ -126,7 +130,7 @@
     </script>
  <% } %>
 
-  <% if (theme.home_logo_image){ %>
+  <% if (theme.home_logo_image.enable){ %>
     <script>
         var img = new Image();
         var homelogodiv = document.getElementById("homelogo");

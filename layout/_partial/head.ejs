@@ -25,9 +25,7 @@
   <% if (theme.rss){ %>
     <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
-  <% if (theme.favicon){ %>
-    <link rel="icon" href="<%= config.root %><%- theme.favicon %>">
-  <% } %>
+  <link rel="icon" href="<%= config.root %><% if (theme.avatar){ %><%- theme.avatar %><% } else {%>css/images/avatar.jpg<% } %>">
   <% if (config.highlight.enable){ %>
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <% } %>
