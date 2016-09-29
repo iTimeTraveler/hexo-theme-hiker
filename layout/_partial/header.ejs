@@ -110,6 +110,22 @@
     </div>
   </div>
 
+  <!-- 自适应主页背景大图 -->
+  <% if (theme.home_background_image){ %>
+    <script>
+        var img = new Image();
+        var intrologodiv = document.getElementById("intrologo");
+        img.src = intrologodiv.style.backgroundImage.replace('url(','').replace(')','').replace(/\"/gi, "");
+        img.onload=function(){
+          if (img.width / img.height <= document.body.clientWidth / document.body.clientHeight) {
+            intrologodiv.style.backgroundSize = "100% auto";
+          } else {
+            intrologodiv.style.backgroundSize = "auto 100%";
+          }
+        };
+    </script>
+ <% } %>
+
   <% if (theme.home_logo_image){ %>
     <script>
         var img = new Image();
