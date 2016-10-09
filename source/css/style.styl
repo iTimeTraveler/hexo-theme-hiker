@@ -35,6 +35,13 @@ body
   color: #fff
 }
 
+.article-entry h2:before, .article-entry h3:before, .article-entry h4:before, .article-entry h5:before, .article-entry h6:before
+  content: "# "
+  color: color-theme-red
+  left: -1.7em
+  font-size: 1.2em
+  font-weight: bold
+
 .outer
   clearfix()
   max-width: (column-width + gutter-width) * columns + gutter-width

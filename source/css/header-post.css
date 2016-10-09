@@ -54,10 +54,10 @@ header{
 		margin-left: -40px;
 	}
   	.navbar-collapse {
-		background: #333;
+		background: rgba(48,51,58,0.98);
 		color: #fff;
 		width: 100%;
-		top: 90px;
+		top: 91px;
 		left: 20px;
 		right: 0;
 		margin: 0 0 0 -20px;
@@ -65,7 +65,7 @@ header{
 		float: none;
 		position: absolute;
 		text-align: center;
-		font-weight: normal;
+		font-weight: lighter;
 	}
 	.nav {
 		float: none;
@@ -75,6 +75,7 @@ header{
 	.container > .navbar-collapse {
 		margin-right: 0px;
 		margin-left: -20px;
+		border: 0px;
 	}
 	.navbar-default .navbar-nav > li > a {
 		color: #fff;
