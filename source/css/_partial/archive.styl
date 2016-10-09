@@ -3,12 +3,17 @@
 
 .archives
   clearfix()
+  margin-left: 4em
 
 .archive-year-wrap
   margin-bottom: 1em
 
 .archive-year
   @extend $block-caption
+  color: color-theme
+
+.archive-year:hover
+  color: color-theme
 
 .archives
   column-gap: 10px
@@ -43,6 +48,9 @@
   line-height: 1.6em
   margin-right: 30px
   display: block
+
+.archive-article-date:hover
+  color: color-theme
 
 #page-nav
   clearfix()

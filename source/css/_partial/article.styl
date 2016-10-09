@@ -14,10 +14,15 @@
 .article-meta
   clearfix()
   text-align: center
+  margin-bottom: 1em;
 
 .article-date
   @extend $block-caption
   text-align: center
+  font-weight: normal
+
+.article-date:hover
+  color: color-theme
 
 .article-category
   text-align: center
@@ -30,7 +35,11 @@
 .article-category-link
   @extend $block-caption
   margin: 0 12px 1em
+  font-weight: normal
 
+.article-category-link:hover
+  color: color-theme
+  
 .article-header
   text-align: center
   margin-bottom: 3em
@@ -142,7 +151,7 @@
   padding: 6px 15px
   border-radius: 15px
   background: color-link-bg
-  color: color-default
+  color: color-theme
   text-decoration: none
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
