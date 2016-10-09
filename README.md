@@ -2,41 +2,73 @@
 
 An attractive theme for [Hexo]. I call it "Hiker", short for "HikerNews".
 
-- [Preview](https://itimetraveler.github.io/)
-
-## Installation
-
-### Install
-
-``` bash
-$ git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker
-```
+[**Live Preview**](https://itimetraveler.github.io/) | [Hiker 中文版使用文档](README.cn.md)
 
 **Hiker requires Hexo 2.4 and above.**
 
-### Enable
+## Installation
 
-Modify `theme` setting in `_config.yml` to `landscape`.
+ 1. Get it from GitHub
+
+ ```bash
+	git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker
+ ```
+ 2. Enable
+
+ Modify `theme` setting in `_config.yml` to `hiker`.
+ ```
+ # Extensions
+ ## Plugins: http://hexo.io/plugins/
+ ## Themes: http://hexo.io/themes/
+ theme: hiker
+ ```
 
 ### Update
 
 ``` bash
-cd themes/landscape
+cd themes/Hiker
 git pull
 ```
 
 ## Configuration
 
 ``` yml
-# Header
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+
+
+# Header Menu
 menu:
   Home: /
   Archives: /archives
+  Tags: /tags
+  About: /about
 rss: /atom.xml
+
+since: 2013
+
+# Put your favicon.ico into `hexo-site/source/` directory.
+avatar: css/images/mylogo.jpg
+
+
+# Homepage
+# eg. home_background_image: css/images/home-bg.jpg
+home_background_image: 
+home_logo_image: 
+  enable: false
+  border: false
+  url: css/images/homelogo.jpg
+
+
+# AboutPage
+about_big_image: css/images/pose.jpg
+
 
 # Content
 excerpt_link: Read More
 fancybox: true
+
 
 # Sidebar
 sidebar: right
@@ -44,14 +76,41 @@ widgets:
 - category
 - tag
 - tagcloud
-- archives
+- archive
 - recent_posts
+
+
+# Duoshuo ShortName
+duoshuo_shortname: iTimeTraveler
+
+
+# Code Highlight theme
+# Available value:
+#    normal | night | night eighties | night blue | night bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: 
+
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+
+# widget behavior
+archive_type: 'monthly'
+show_count: true
+
 
 # Miscellaneous
 google_analytics:
-favicon: /favicon.png
+gauges_analytics:
 twitter:
 google_plus:
+fb_admins:
+fb_app_id:
+
 ```
 
 - **menu** - Navigation menu
@@ -69,7 +128,7 @@ google_plus:
 
 ### Fancybox
 
-Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
+Hiker uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
 
 ```
 ![img caption](img url)
@@ -80,8 +139,7 @@ Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax o
 ### Sidebar
 
 You can put your sidebar in left side, right side or bottom of your site by editing `sidebar` setting.
-
-Landscape provides 5 built-in widgets:
+Hiker provides 5 built-in widgets:
 
 - category
 - tag
@@ -91,21 +149,15 @@ Landscape provides 5 built-in widgets:
 
 All of them are enabled by default. You can edit them in `widget` setting.
 
-## Development
+### Comment support.
 
-### Requirements
+Hiker has native support for DuoShuo comment systems. Add the following snippets to hiker `hiker/_config.yml`:
 
-- [Grunt] 0.4+
-- Hexo 2.4+
-
-### Grunt tasks
-
-- **default** - Download [Fancybox] and [Font Awesome].
-- **fontawesome** - Only download [Font Awesome].
-- **fancybox** - Only download [Fancybox].
-- **clean** - Clean temporarily files and downloaded files.
+```yml
+# Duoshuo ShortName
+duoshuo_shortname: iTimeTraveler
+```
 
 [Hexo]: https://hexo.io/
 [Fancybox]: http://fancyapps.com/fancybox/
 [Font Awesome]: http://fontawesome.io/
-[Grunt]: http://gruntjs.com/
