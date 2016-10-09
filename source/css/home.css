@@ -50,11 +50,22 @@ html{
 	padding-top: 10px;
     padding-bottom: 10px;
 	text-align: center;
+	border-bottom: 1px solid #eef1f8;
 	background: rgba(255,255,255,.85);
 }
 .intro-navigate>p{
 	text-align: center;
 	margin: 0px;
+}
+.intro-navigate.fixed {
+    width: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    bottom: inherit;
+    z-index: 99;
+    background: rgba(255,255,255,.95);
+    transition: background 2s;
 }
 .navigater-list{
 	font-family: "Microsoft YaHei","微软雅黑",Arial,simsun,"宋体";
