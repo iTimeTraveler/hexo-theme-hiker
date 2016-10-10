@@ -22,7 +22,7 @@ An attractive theme for [Hexo]. I call it "Hiker", short for "HikerNews".
  ## Themes: http://hexo.io/themes/
  theme: hiker
  ```
- 3.Update
+ 3. Update
 
  ``` bash
  cd themes/Hiker
