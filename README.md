@@ -10,7 +10,7 @@ An attractive theme for [Hexo]. I call it "Hiker", short for "HikerNews".
 
  1. Get it from GitHub
 
- ```bash
+ ``` bash
  git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker
  ```
  2. Enable
