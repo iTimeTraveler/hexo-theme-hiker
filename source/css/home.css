@@ -173,7 +173,7 @@ html{
 h1 {
     font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 27px;
     margin: 12px 0;
     left: 4px;
 }
@@ -197,7 +197,7 @@ canvas {
     pointer-events: none;
 }
 a {
-    color: #555;
+    color: #404040;
     text-decoration: none;
     transition: color,background-color .2s ease;
 }

@@ -1,14 +1,19 @@
 var night_model=false;		//夜间阅读模式
 var content_fontsize_big=false;		//夜间阅读模式
 
+function getStyle(obj, attri) {
+ 	return obj.currentStyle ? obj.currentStyle[attri] : window.getComputedStyle(obj, null)[attri];
+}
+
 var header_bg_d = '#fff',
 	header_border_d = '#e0e0e0',
 	footer_bg_d = '#f0f0f0',
 	body_bg_d = '#fff',
 	article_title_d = '#333333',
 	article_p_d = '#555555';
-	code_bg_d = '#f7f7f7';
-	code_border_d = '#e7e7eb';
+	code_bg_d = '#f8f8f8';
+	code_border_d = '#eef1f8';
+	code_color_d = getStyle(document.getElementsByTagName('code')[0], "color");
 
 var header_bg_n = '#161718',
 	header_border_n = '#1f2021',
@@ -18,6 +23,7 @@ var header_bg_n = '#161718',
 	article_p_n = '#83868a';
 	code_bg_n = '#2d2f31';
 	code_border_n = '#333333';
+	code_color_n = article_p_n;
 
 var header = document.getElementById('allheader');
 var footer = document.getElementById('footer');
@@ -27,6 +33,7 @@ var h1title = document.getElementsByTagName('h1');
 var h2title = document.getElementsByTagName('h2');
 var h3title = document.getElementsByTagName('h3');
 var figure = document.getElementsByTagName('figure');
+var code = document.getElementsByTagName('code');
 var pre = document.getElementsByTagName('pre');
 var all_p = document.getElementsByTagName('p');
 
@@ -55,6 +62,9 @@ function setBackground(){
 		  	figure[i].style.background = code_bg_d;
 		  	figure[i].style.borderColor = code_border_d;
 		}
+		for (i=0;i<code.length;i++){ 
+		  	code[i].style.color = code_color_d;
+		}
 		for (i=0;i<pre.length;i++){ 
 		  	pre[i].style.background = code_bg_d;
 		  	pre[i].style.color = '#525252';
@@ -81,6 +91,9 @@ function setBackground(){
 		for (i=0;i<figure.length;i++){ 
 		  	figure[i].style.background = code_bg_n;
 		  	figure[i].style.borderColor = code_border_n;
+		}
+		for (i=0;i<code.length;i++){ 
+		  	code[i].style.color = code_color_n;
 		}
 		for (i=0;i<pre.length;i++){ 
 		  	pre[i].style.background = code_bg_n;

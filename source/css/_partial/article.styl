@@ -55,7 +55,7 @@
   line-height: line-height-title
   transition: color 0.2s
   a&:hover
-    color: color-link-hover
+    color: color-theme
     text-decoration: none;
 
 .article-entry
@@ -75,7 +75,7 @@
     color: color-link
     text-decoration: none
     &:hover
-      color: color-theme-red
+      color: color-theme
       text-decoration: none
   ul, ol, dl
     margin-top: line-height
@@ -102,8 +102,8 @@
     font-family: font-normal
     font-size: 1.1em
     margin: line-height 0px
-    border-left: 5px solid color-theme-red
-    background: rgba(208,211,218,0.15)
+    border-left: 5px solid color-theme
+    background: rgba(208,211,248,0.15)
     p
       font-size: font-size
     footer
@@ -151,12 +151,13 @@
   padding: 6px 15px
   border-radius: 15px
   background: color-link-bg
+  border: 1px solid #eef1f8;
   color: color-theme
   text-decoration: none
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   &:hover
-    background: color-theme-red
+    background: color-theme
     color: #fff
     text-decoration: none
 
@@ -164,7 +165,7 @@
   clearfix()
   font-size: 0.85em
   line-height: line-height
-  border-top: 1px solid rgba(0,0,0,.1)
+  border-top: 1px solid rgba(208,211,248,0.25)
   padding-top: line-height
   margin: 0 article-padding article-padding
   a

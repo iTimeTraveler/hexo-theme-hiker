@@ -11,7 +11,7 @@ An attractive theme for [Hexo]. I call it "Hiker", short for "HikerNews".
  1. Get it from GitHub
 
  ```bash
-	git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker
+ git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker
  ```
  2. Enable
 
@@ -22,13 +22,12 @@ An attractive theme for [Hexo]. I call it "Hiker", short for "HikerNews".
  ## Themes: http://hexo.io/themes/
  theme: hiker
  ```
+ 3.Update
 
-### Update
-
-``` bash
-cd themes/Hiker
-git pull
-```
+ ``` bash
+ cd themes/Hiker
+ git pull
+ ```
 
 ## Configuration
 
@@ -149,7 +148,7 @@ Hiker provides 5 built-in widgets:
 
 All of them are enabled by default. You can edit them in `widget` setting.
 
-### Comment support.
+### Comment support
 
 Hiker has native support for DuoShuo comment systems. Add the following snippets to hiker `hiker/_config.yml`:
 

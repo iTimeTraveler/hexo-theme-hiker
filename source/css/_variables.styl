@@ -3,45 +3,57 @@ support-for-ie = false
 vendor-prefixes = webkit moz ms official
 
 // Colors
-color-default = #555
+color-default = #404040
 color-grey = #999
-color-border = #e7e7eb
+color-border = #eef1f8
 color-link = #0e83cd
-color-link-bg = #eef1f8
-color-link-hover = color-theme-red
+color-link-bg = #f9fbfd
+color-link-hover = color-theme
 color-background = #fff
-color-code-background = #f0f0f0
+color-code-background = #f8f8f8
 color-sidebar-text = #777
 color-widget-background = #ddd
 color-widget-border = #e7e7eb
 color-footer-background = #f0f0f0
 color-mobile-nav-background = #191919
 color-theme-blue-twitter = #00aced
-color-theme-red = #ff5537
+color-theme-red = #f03838
 color-theme-orange = #fb6d19
 color-theme-green = #64a325
 color-theme-green-light = #42b983
-color-theme-black = #262a30
-color-theme-purple-tsinghua = #5c307d
+color-theme-black = #404040
 
+// Theme
 random(min,max)
   return floor(math(0, 'random')*(max - min + 1) + min)
 
-num = random(0, 7)
-if num == 0
-  color-theme-red = color-theme-blue-twitter
-if num == 2
-  color-theme-red = color-theme-green-light
-if num == 3
-  color-theme-red = color-theme-red
-if num == 4
-  color-theme-red = color-theme-green
-if num == 5
-  color-theme-red = color-theme-orange
-if num == 6
-  color-theme-red = color-theme-purple-tsinghua
+theme_color = hexo-config("theme_color")
 
-color-theme = color-theme-red
+if theme_color and theme_color is 'random'
+  num = random(0, 6)
+  if num == 0
+    color-theme = color-theme-blue-twitter
+  if num == 1
+    color-theme = color-theme-black
+  if num == 2
+    color-theme = color-theme-green-light
+  if num == 3
+    color-theme = color-theme-red
+  if num == 4
+    color-theme = color-theme-green
+  if num == 5
+    color-theme = color-theme-orange
+else if theme_color is 'orange'
+  color-theme = color-theme-orange
+else if theme_color is 'blue'
+  color-theme = color-theme-blue-twitter
+else if theme_color is 'red'
+  color-theme = color-theme-red
+else if theme_color is 'green'
+  color-theme = color-theme-green-light
+else if theme_color is 'black'
+  color-theme = color-theme-black
+
 
 // Fonts
 font-sans = -apple-system, "Arial", BlinkMacSystemFont,

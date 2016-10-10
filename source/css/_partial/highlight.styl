@@ -1,9 +1,9 @@
 $highlight_theme = hexo-config("highlight_theme")
 
-$highlight-background   = #f7f7f7
+$highlight-background   = #f8f8f8
 
 if $highlight_theme == "normal"
-  $highlight-background   = #f7f7f7
+  $highlight-background   = #f8f8f8
   $highlight-current-line = #efefef
   $highlight-selection    = #d6d6d6
   $highlight-foreground   = #4d4d4c
@@ -111,7 +111,8 @@ $line-numbers
   pre, code
     font-family: font-mono
   code
-    background: rgba(200,200,200,0.3);
+    background: rgba(208,211,248,0.2)
+    color: color-theme
     padding: 0 0.3em
   pre
     @extend $code-block
