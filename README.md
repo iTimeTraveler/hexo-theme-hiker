@@ -36,7 +36,6 @@ An attractive theme for [Hexo]. I call it "Hiker", short for "HikerNews".
 # Site Information Settings
 # ---------------------------------------------------------------
 
-
 # Header Menu
 menu:
   Home: /
@@ -47,7 +46,7 @@ rss: /atom.xml
 
 since: 2013
 
-# Put your favicon.ico into `hexo-site/source/` directory.
+# Put your favicon.ico into `hexo-site/themes/hiker/source/` directory.
 avatar: css/images/mylogo.jpg
 
 
@@ -60,7 +59,7 @@ home_logo_image:
   url: css/images/homelogo.jpg
 
 
-# AboutPage
+# AboutPage background
 about_big_image: css/images/pose.jpg
 
 
@@ -88,6 +87,12 @@ duoshuo_shortname: iTimeTraveler
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
 highlight_theme: 
+
+
+# Article theme color
+# Available value:
+#    random | orange | blue | red | green | black
+theme_color: random
 
 
 # display widgets at the bottom of index pages (pagination == 2)

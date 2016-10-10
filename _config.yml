@@ -2,7 +2,6 @@
 # Site Information Settings
 # ---------------------------------------------------------------
 
-
 # Header Menu
 menu:
   Home: /
@@ -59,7 +58,7 @@ highlight_theme:
 # Article theme color
 # Available value:
 #    random | orange | blue | red | green | black
-theme_color: green
+theme_color: random
 
 
 # display widgets at the bottom of index pages (pagination == 2)
