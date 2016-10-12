@@ -44,7 +44,6 @@ html{
 }
 .intro-navigate{
 	width: 100%;
-	min-height: 80px;
 	position: absolute;
 	bottom: 0px;
 	padding-top: 10px;
@@ -219,10 +218,6 @@ footer>.container>.row>p>a:hover  {
 	.pagination-lg > li > a, .pagination-lg > li > span {
 		padding: 10px 12px;
 		font-size: 16px;
-	}
-	.intro-navigate{
-		padding-top: 20px;
-    	padding-bottom: 20px;
 	}
 	.navigater-list>a {
 		padding: 5px;
