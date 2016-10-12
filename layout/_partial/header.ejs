@@ -91,7 +91,7 @@
     
 
     <% if (theme.home_background_image && !theme.home_logo_image.enable){ %>
-      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,.8);"> 
+      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
     <% } else {%>
       <div id="homelogo" class="homelogo"> 
     <% } %>
@@ -130,7 +130,7 @@
     </script>
  <% } %>
 
-  <% if (theme.home_logo_image.enable){ %>
+ <% if (theme.home_logo_image.enable){ %>
     <script>
         var img = new Image();
         var homelogodiv = document.getElementById("homelogo");
@@ -151,7 +151,8 @@
           homelogodiv.style.width = document.body.clientWidth + "px";
           homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
         } else {
-          homelogodiv.style.marginLeft = (document.all.homelogo.offsetWidth + 40)  * -0.5 + "px";
+          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
+          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
         }
     </script>
   <% } %>

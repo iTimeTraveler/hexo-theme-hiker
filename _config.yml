@@ -18,7 +18,7 @@ avatar: css/images/mylogo.jpg
 
 # Homepage
 # eg. home_background_image: css/images/home-bg.jpg
-home_background_image: 
+home_background_image: css/images/home-bg.jpg
 home_logo_image: 
   enable: false
   border: false

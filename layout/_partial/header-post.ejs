@@ -31,13 +31,11 @@
 </header>
 
 <% if (is_current("about", false) && theme.about_big_image){ %>
-  <div style="background:#fff;width: 100%;padding-top:50px;">
-    <div class="container marketing">
+  <div style="background:#fff;width: 100%;">
 
-      <div class="row featurette">
+      <div style="max-height:600px; overflow: hidden;">
         <img width="100%" alt="Hike News" src="<%- config.root %><%- theme.about_big_image %>">
       </div>
 
-    </div>
   </div>
 <% } %>
