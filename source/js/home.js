@@ -1,7 +1,7 @@
 var navbar = document.getElementsByClassName("intro-navigate")[0],
 	h = window.innerHeight;
 
-window.addEventListener("scroll", scrollHandler);
+//window.addEventListener("scroll", scrollHandler);
 
 function getStyle(obj, attri) {
  	return obj.currentStyle ? obj.currentStyle[attri] : window.getComputedStyle(obj, null)[attri];

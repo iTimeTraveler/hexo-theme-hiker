@@ -24,6 +24,8 @@ color-theme-green-light = #42b983
 color-theme-black = #404040
 
 // Theme
+color-theme = color-theme-orange
+
 random(min,max)
   return floor(math(0, 'random')*(max - min + 1) + min)
 
@@ -52,8 +54,6 @@ else if theme_color is 'red'
 else if theme_color is 'green'
   color-theme = color-theme-green-light
 else if theme_color is 'black'
-  color-theme = color-theme-black
-else
   color-theme = color-theme-black
 
 
