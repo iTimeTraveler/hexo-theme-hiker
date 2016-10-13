@@ -178,8 +178,8 @@ html{
 
 h1 {
     font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
-    font-weight: 700;
-    font-size: 27px;
+    font-weight: bold;
+    font-size: 23px;
     margin: 12px 0;
     left: 4px;
 }

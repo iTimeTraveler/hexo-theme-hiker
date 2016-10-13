@@ -11,3 +11,10 @@ $("#rocket").click(function() {
     });
     return false;
 });
+
+$("#homelogo").click(function() {
+    $("html, body").animate({
+        scrollTop: $(window).height()
+    }, 1000, null);
+    return false;
+});
