@@ -1,4 +1,5 @@
 .article
+  color: #555
   margin: block-margin 0
 
 .article-inner
@@ -21,6 +22,10 @@
   text-align: center
   font-weight: normal
 
+.article-date:before
+  font-family: "FontAwesome";
+  content: "\f073";
+
 .article-date:hover
   color: color-theme
 
@@ -37,6 +42,11 @@
   margin: 0 12px 1em
   font-weight: normal
 
+.article-category-link:before
+  font-family: "FontAwesome"
+  content: "\f07c"
+  padding-right: 0.3em
+
 .article-category-link:hover
   color: color-theme
   
@@ -51,7 +61,7 @@
 .article-title
   text-decoration: none
   font-weight: bold
-  color: color-default
+  color: #555
   line-height: line-height-title
   transition: color 0.2s
   a&:hover
@@ -180,7 +190,9 @@
 
 .article-tag-list-link
   &:before
-    content: "#"
+    font-family: "FontAwesome";
+    content: "\f02c"
+    padding-right: 0.3em
 
 .article-comment-link
   float: right
