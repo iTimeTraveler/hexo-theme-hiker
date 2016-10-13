@@ -40,7 +40,7 @@ body
   color: color-theme
   padding-right: 0.2em
 
-#rocket {
+#rocket
     position: fixed;
     right: 50px;
     bottom: 50px;
@@ -52,7 +52,10 @@ body
     opacity: 0;
     -webkit-transition: visibility 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -webkit-transform 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
     -moz-transition: visibility 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -moz-transform 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
-    transition: visibility 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), transform 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335); }
+    transition: visibility 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), transform 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    @media mq-mobile
+      right: 12px;
+      bottom: 20px;
     #rocket i {
       display: block;
       margin-top: 48px;
