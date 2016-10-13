@@ -81,10 +81,6 @@ html{
 	padding: 25px 20px 25px 20px;
 	line-height: 60px;
 }
-.navigater-list>a:hover {
-	border-bottom: 5px solid #ff5537;
-	text-decoration: none;
-}
 .home-bg{
 	width: 100%;
 	height: 100%;
@@ -206,10 +202,6 @@ a {
     color: #404040;
     text-decoration: none;
     transition: color,background-color .2s ease;
-}
-a:hover {
-    color: #ff5537;
-    text-decoration: none;
 }
 
 footer>.container>.row>p>a {
