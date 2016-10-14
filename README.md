@@ -1,5 +1,8 @@
 # Hiker
 
+[![Build Status](https://travis-ci.org/iTimeTraveler/hexo-theme-hiker.svg?branch=master)](https://travis-ci.org/iTimeTraveler/hexo-theme-hiker)		[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/iTimeTraveler/hexo-theme-hiker/LICENSE)
+
+
 An attractive theme for [Hexo]. I call it "Hiker", short for "HikerNews".
 
 [**Live Preview**](https://itimetraveler.github.io/) | [Hiker 中文版使用文档](README.cn.md)
