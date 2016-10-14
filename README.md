@@ -84,8 +84,9 @@ widgets:
 - recent_posts
 
 
-# Duoshuo ShortName
-duoshuo_shortname: iTimeTraveler
+# comment ShortName, you can choose only ONE to display.
+duoshuo_shortname: 
+disqus_shortname: iTimeTraveler
 
 
 # Code Highlight theme
@@ -98,7 +99,7 @@ highlight_theme: default
 # Article theme color
 # Available value:
 #    random | orange | blue | red | green | black
-theme_color: random
+theme_color: green
 
 
 # display widgets at the bottom of index pages (pagination == 2)
