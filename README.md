@@ -155,9 +155,9 @@ highlight_theme: default
 ### Blog Theme Color
 
 Hiker provide five color themes for your blog.
-- red <span style="background-color: #f03838"> x </span>
-- blue <span style="background-color: #00aced"> x </span>
-- green <span style="background-color: #39aa56"> x </span>
+- red <span style="background-color: #f03838;"> x </span>
+- blue <span style="background-color: #00aced;"> x </span>
+- green <span style="background-color: #39aa56;"> x </span>
 
 You can modify `theme_color` in hiker/_config.yml.
 
