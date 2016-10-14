@@ -91,7 +91,7 @@
     
 
     <% if (theme.home_background_image && !theme.home_logo_image.enable){ %>
-      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1); border: 1px solid #404040;"> 
+      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
     <% } else {%>
       <div id="homelogo" class="homelogo"> 
     <% } %>
@@ -103,7 +103,7 @@
             <img id="homelogoimg" src="<%- theme.home_logo_image.url %>" >
           <% } %>
         <% } else {%>
-          <div class="homelogoback">
+          <div class="homelogoback" <% if (theme.home_background_image && !theme.home_logo_image.enable){ %> style="border: 1px solid #404040;" <% } %>>
             <h1><a href="#content" id="logo"><%= config.title %></a></h1>
             <h3><%= config.description%></h3>
             <h3><%= config.author %></h3>

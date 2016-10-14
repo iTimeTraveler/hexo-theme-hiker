@@ -7,14 +7,17 @@ An attractive theme for [Hexo]. I call it "Hiker", short for "HikerNews".
 
 [**Live Preview**](https://itimetraveler.github.io/) | [Hiker 中文版使用文档](README.cn.md)
 
+![Desktop Preview](source/preview/preview-pc.png)
+![Mobile Preview](source/preview/preview-mobile.png)
+
 **Hiker requires Hexo 2.4 and above.**
 
 ## Installation
 
  1. Get it from GitHub
 
- ``` bash
- git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker
+ ```shell
+ $ git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker
  ```
  2. Enable
 
@@ -27,9 +30,9 @@ An attractive theme for [Hexo]. I call it "Hiker", short for "HikerNews".
  ```
  3. Update
 
- ``` bash
- cd themes/Hiker
- git pull
+ ```shell
+ $ cd themes/Hiker
+ $ git pull
  ```
 
 ## Configuration
