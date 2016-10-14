@@ -2,6 +2,9 @@ var night_model=false;		//夜间阅读模式
 var content_fontsize_big=false;		//夜间阅读模式
 
 function getStyle(obj, attri) {
+	if (obj == null) {
+		return ""
+	}
  	return obj.currentStyle ? obj.currentStyle[attri] : window.getComputedStyle(obj, null)[attri];
 }
 

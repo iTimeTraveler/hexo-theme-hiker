@@ -50,7 +50,7 @@ html{
     padding-bottom: 10px;
 	text-align: center;
 	border-bottom: 1px solid #eef1f8;
-	background: rgba(255,255,255,.85);
+	background: rgba(255,255,255,.98);
 	-moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -175,20 +175,20 @@ html{
 h1 {
     font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 25px;
     margin: 12px 0;
     left: 4px;
 }
 h3 {
-	font-family: 'Roboto Slab', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+	font-family: Roboto, Helvetica, Arial, "Microsoft YaHei", sans-serif;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 17px;
     letter-spacing: .12em;
     margin-bottom: 30px;
     left: 3px;
 }
 #beautifont{
-	font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+	font-family: Roboto,Helvetica,Arial,sans-serif;
 }
 canvas {
     top: 0;
@@ -199,7 +199,7 @@ canvas {
     pointer-events: none;
 }
 a {
-    color: #404040;
+    color: #000;
     text-decoration: none;
     transition: color,background-color .2s ease;
 }
@@ -245,7 +245,7 @@ footer>.container>.row>p>a:hover  {
 
 @media (max-width: 400px) {
 	.homelogoback>h1>a {
-		font-size: 20px;
+		font-size: 22px;
 		font-weight: bold;
 		letter-spacing: 4px;
 	}
