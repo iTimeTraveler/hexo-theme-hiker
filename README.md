@@ -1,11 +1,11 @@
 # Hiker
 
-[![Build Status](https://travis-ci.org/iTimeTraveler/hexo-theme-hiker.svg?branch=master)](https://travis-ci.org/iTimeTraveler/hexo-theme-hiker)		[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/iTimeTraveler/hexo-theme-hiker/LICENSE)
+[![Build Status](https://travis-ci.org/iTimeTraveler/hexo-theme-hiker.svg?branch=master)](https://travis-ci.org/iTimeTraveler/hexo-theme-hiker)		[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/LICENSE)
 
 
 An attractive theme for [Hexo]. I call it "Hiker", short for "HikerNews".
 
-[**Live Preview**](https://itimetraveler.github.io/) | [Hiker 中文版使用文档](README.cn.md)
+[**Live Preview**](https://itimetraveler.github.io/) | [**Hiker 中文版使用文档**](README.cn.md)
 
 ![Desktop Preview](source/preview/preview-pc.png)
 ![Mobile Preview](source/preview/preview-mobile.png)
@@ -58,7 +58,7 @@ avatar: css/images/mylogo.jpg
 
 # Homepage
 # eg. home_background_image: css/images/home-bg.jpg
-home_background_image: 
+home_background_image: css/images/home-bg.jpg
 home_logo_image: 
   enable: false
   border: false
@@ -90,9 +90,9 @@ duoshuo_shortname: iTimeTraveler
 
 # Code Highlight theme
 # Available value:
-#    normal | night | night eighties | night blue | night bright
+#    default | normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: 
+highlight_theme: default
 
 
 # Article theme color
@@ -136,6 +136,23 @@ fb_app_id:
 
 ## Features
 
+### Code Highlight Theme
+
+Hiker use [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) for your code block. We have six options in total: `default`, `normal`, `night`, `night blue`, `night bright`, `night eighties`
+
+![code themes](source/preview/code-theme.jpg)
+
+Modify `highlight_theme` in hiker/_config.yml.
+
+```yml
+# Code Highlight theme
+# Available value:
+#    default | normal | night | night eighties | night blue | night bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: default
+```
+
+
 ### Fancybox
 
 Hiker uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
@@ -167,6 +184,12 @@ Hiker has native support for DuoShuo comment systems. Add the following snippets
 # Duoshuo ShortName
 duoshuo_shortname: iTimeTraveler
 ```
+
+### Contributing
+
+All kinds of contributions (enhancements, new features, documentation & code improvements, issues & bugs reporting) are welcome.
+
+Looking forward to your pull request.
 
 [Hexo]: https://hexo.io/
 [Fancybox]: http://fancyapps.com/fancybox/
