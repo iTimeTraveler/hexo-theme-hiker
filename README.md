@@ -10,7 +10,7 @@ An attractive theme for [Hexo]. I call it "Hiker", short for "HikerNews".
 ![Desktop Preview](source/preview/preview-pc.png)
 ![Mobile Preview](source/preview/preview-mobile.png)
 
-**Hiker requires Hexo 2.4 and above.**
+> **Hiker requires Hexo 2.4 and above.**
 
 ## Installation
 
@@ -152,6 +152,21 @@ Modify `highlight_theme` in hiker/_config.yml.
 highlight_theme: default
 ```
 
+### Blog Theme Color
+
+Hiker provide five color themes for your blog.
+- red <span style="background-color: #f03838"> x </span>
+- blue <span style="background-color: #00aced"> x </span>
+- green <span style="background-color: #39aa56"> x </span>
+
+You can modify `theme_color` in hiker/_config.yml.
+
+```yml
+# Article theme color
+# Available value:
+#    random | orange | blue | red | green | black
+theme_color: random
+```
 
 ### Fancybox
 
@@ -185,7 +200,7 @@ Hiker has native support for DuoShuo comment systems. Add the following snippets
 duoshuo_shortname: iTimeTraveler
 ```
 
-### Contributing
+## Contributing
 
 All kinds of contributions (enhancements, new features, documentation & code improvements, issues & bugs reporting) are welcome.
 
