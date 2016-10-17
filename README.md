@@ -7,8 +7,11 @@ An attractive theme for [Hexo]. I call it "Hiker", short for "HikerNews".
 
 [**Live Preview**](https://itimetraveler.github.io/) | [**Hiker 中文版使用文档**](README.cn.md)
 
-![Desktop Preview](source/preview/preview-pc.png)
-![Mobile Preview](source/preview/preview-mobile.png)
+
+![Desktop Preview](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/preview-pc.png?raw=true)
+![Mobile Preview](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/preview-mobile.png?raw=true)
+
+<!--more-->
 
 > **Hiker requires Hexo 2.4 and above.**
 
@@ -141,7 +144,7 @@ fb_app_id:
 
 Hiker use [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) for your code block. We have six options in total: `default`, `normal`, `night`, `night blue`, `night bright`, `night eighties`
 
-![code themes](source/preview/code-theme.jpg)
+![code themes](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/code-theme.jpg?raw=true)
 
 Modify `highlight_theme` in hiker/_config.yml.
 
@@ -157,7 +160,7 @@ highlight_theme: default
 
 Hiker provide five color themes for your blog.
 
-![theme colors](source/preview/theme-color.png)
+![theme colors](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/theme-color.png?raw=true)
 
 - <span style="display: inline-block; width: 18px; height: 18px; margin: 0 4px; background-color: #fb6d19; border-radius: 3px; vertical-align: middle;"></span> orange
 - <span style="display: inline-block; width: 18px; height: 18px; margin: 0 4px; background-color: #00aced; border-radius: 3px; vertical-align: middle;"></span> blue
