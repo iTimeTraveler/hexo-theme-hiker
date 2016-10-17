@@ -18,7 +18,7 @@ avatar: css/images/mylogo.jpg
 
 # Homepage
 # eg. home_background_image: css/images/home-bg.jpg
-home_background_image: css/images/home-bg.jpg
+home_background_image: 
 home_logo_image: 
   enable: false
   border: false
@@ -45,8 +45,8 @@ widgets:
 
 
 # comment ShortName, you can choose only ONE to display.
-duoshuo_shortname: 
-disqus_shortname: iTimeTraveler
+duoshuo_shortname: iTimeTraveler
+disqus_shortname: 
 
 
 # Code Highlight theme
@@ -59,7 +59,7 @@ highlight_theme: default
 # Article theme color
 # Available value:
 #    random | orange | blue | red | green | black
-theme_color: green
+theme_color: random
 
 
 # display widgets at the bottom of index pages (pagination == 2)

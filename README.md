@@ -199,11 +199,12 @@ All of them are enabled by default. You can edit them in `widget` setting.
 
 ### Comment support
 
-Hiker has native support for DuoShuo comment systems. Add the following snippets to hiker `hiker/_config.yml`:
+Hiker has native support for DuoShuo & Disqus comment systems. Modify the following snippets to hiker `hiker/_config.yml`:
 
 ```yml
-# Duoshuo ShortName
+# comment ShortName, you can choose only ONE to display.
 duoshuo_shortname: iTimeTraveler
+disqus_shortname: 
 ```
 
 ## Contributing
