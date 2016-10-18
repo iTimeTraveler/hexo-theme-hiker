@@ -5,7 +5,7 @@
 
 An attractive theme for [Hexo]. I call it "Hiker", short for "HikerNews".
 
-[**Live Preview**](https://itimetraveler.github.io/) | [**Hiker 中文版使用文档**](README.cn.md)
+[**Live Preview**](https://itimetraveler.github.io/) | [**Hiker 中文版使用文档**](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/README.cn.md)
 
 
 ![Desktop Preview](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/preview-pc.png?raw=true)
@@ -210,9 +210,10 @@ duoshuo_shortname: iTimeTraveler
 disqus_shortname: 
 ```
 
-## Browser support
+### Browser support
 
 ![](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/browser-support.png?raw=true)
+
 
 ## Contributing
 
