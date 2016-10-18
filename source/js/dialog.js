@@ -1,3 +1,21 @@
+window.addEventListener("scroll", scrollcatelogHandler);
+
+var toc = document.getElementById('toc'),
+	tocPosition = toc.offsetTop;
+
+function scrollcatelogHandler(e) {
+	 var event = e || window.event,
+	     target = event.target || event.srcElement;
+	 var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+	 if (scrollTop > tocPosition-30) {
+	     toc.classList.add("toc-fixed");
+	 } else {
+	     toc.classList.remove("toc-fixed");
+	 }
+}
+
+
+
 var night_model=false;		//夜间阅读模式
 var content_fontsize_big=false;		//夜间阅读模式
 

@@ -1,6 +1,8 @@
 .article
   color: #555
   margin: block-margin 0
+  @media mq-mobile
+    width: 100% !important
 
 .article-inner
   @extend $block
@@ -391,3 +393,46 @@ $article-gallery-ctrl
   &:before
     content: "\f054"
     right: 15px*/
+
+
+/*toc*/
+.toc-article
+  position: absolute
+  border-left: rgba(88,88,88,0.1) 3px solid
+  margin: 50px 0
+  padding 1em
+
+.toc-title
+  font-size 120%
+
+#toc
+  line-height 1em
+  font-size 0.9em
+  float left
+  overflow: auto
+  @media mq-mobile
+    display: none
+
+.toc-fixed
+  position: fixed;
+  top: 30px;
+  margin-top: 0;
+  max-height: 81%;
+  overflow: auto;
+  z-index: 1;
+
+.toc
+  padding 0
+  margin 1em
+  line-height 1.8em
+  li
+  list-style-type none
+
+.toc-link
+  font-family: "futura-pt", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", Microsoft JhengHei, WenQuanYi Micro Hei, "Microsoft YaHei", sans-serif;
+  color: color-link
+  &:hover
+    color: color-theme
+
+.toc-child 
+  margin-left 1.0em
