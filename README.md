@@ -210,6 +210,10 @@ duoshuo_shortname: iTimeTraveler
 disqus_shortname: 
 ```
 
+## Browser support
+
+![](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/browser-support.png?raw=true)
+
 ## Contributing
 
 All kinds of contributions (enhancements, new features, documentation & code improvements, issues & bugs reporting) are welcome.
