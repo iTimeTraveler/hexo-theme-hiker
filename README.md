@@ -210,7 +210,7 @@ duoshuo_shortname: iTimeTraveler
 disqus_shortname: 
 ```
 
-### Browser support
+## Browser support
 
 ![](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/browser-support.png?raw=true)
 
