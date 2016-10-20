@@ -3,6 +3,8 @@
   margin: block-margin 0
   @media mq-mobile
     width: 100% !important
+  @media mq-tablet
+    width: 100% !important
 
 .article-inner
   @extend $block
@@ -400,17 +402,20 @@ $article-gallery-ctrl
   position: absolute
   border-left: rgba(88,88,88,0.1) 3px solid
   margin: 50px 0
-  padding 1em
+  padding 1em 1em 0 1em
 
 .toc-title
   font-size 120%
 
 #toc
+  width: inherit
   line-height 1em
   font-size 0.9em
   float left
   overflow: auto
   @media mq-mobile
+    display: none
+  @media mq-tablet
     display: none
 
 .toc-fixed
