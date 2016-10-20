@@ -1,7 +1,15 @@
 {
-  "name": "hexo-theme-landscape",
-  "version": "0.0.2",
+  "name": "hexo-theme-hiker",
+  "version": "1.0.0",
+  "description": "An attractive theme for Hexo.",
+  "author": "iTimeTraveler",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iTimeTraveler/hexo-theme-hiker"
+  },
+  "license": "MIT",
   "private": true,
+  "homepage": "https://github.com/iTimeTraveler/hexo-theme-hiker#readme",
   "devDependencies": {
     "grunt": "~0.4.2",
     "load-grunt-tasks": "~0.2.0",
