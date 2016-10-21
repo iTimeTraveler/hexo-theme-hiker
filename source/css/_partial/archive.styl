@@ -1,5 +1,19 @@
 .archives-wrap
   margin: block-margin 0
+  blockquote
+    padding: 1em
+    margin: 4em 0 0 0
+    font-size: 1.2em
+    font-weight: bold
+    color: color-theme
+    text-align: center;
+    border-left: 0px solid color-theme
+    background: rgba(208,211,248,0.15)
+    a
+      color: color-default
+      margin: .2em
+      &:hover
+        color: color-theme
 
 .archives
   clearfix()
@@ -7,6 +21,8 @@
 
 .archive-year-wrap
   margin-bottom: 1em
+  h1
+    font-size: 1.3em
 
 .archive-year
   @extend $block-caption
@@ -14,6 +30,24 @@
 
 .archive-year:hover
   color: color-theme
+
+.archive-year:before
+  font-family: "FontAwesome"
+  content: "\f273"
+  margin-right: .2em
+
+.archive-tag
+  @extend $block-caption
+  text-transform: none;
+  color: color-theme
+
+.archive-tag:hover
+  color: color-theme
+
+.archive-tag:before
+  font-family: "FontAwesome"
+  content: "\f02b"
+  margin-right: .2em
 
 .archives
   column-gap: 10px
@@ -34,6 +68,8 @@
   color: color-default
   transition: color 0.2s
   line-height: line-height
+  border-left: 1px solid color-theme;
+  padding-left: 15px;
   &:hover
     color: color-link-hover
 
@@ -43,11 +79,13 @@
 .archive-article-date
   min-width: 50px
   float: left
-  color: #7f8c8d
+  color: #c7c7c7
   text-decoration: none
   line-height: 1.6em
   margin-right: 15px
   display: block
+  font-size: 1.1em
+  font-family: font-futura-pt
 
 .archive-article-date:hover
   color: color-theme

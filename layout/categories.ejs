@@ -1,0 +1,10 @@
+<div class="archives-wrap">
+  <div class="layout-title">
+    <span><%= page.title %></span>
+  </div>
+  <div class="layout-wrap-inner">
+    <% if(site.categories.length) { %>
+      <%- list_categories(site.categories) %>
+    <% } %>
+  </div>
+</div>

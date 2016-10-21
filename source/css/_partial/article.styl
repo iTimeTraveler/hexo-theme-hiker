@@ -23,7 +23,8 @@
 .article-meta
   clearfix()
   text-align: center
-  margin-bottom: 1em;
+  font-size: .9em
+  margin: 1.5em 0 0 0
 
 .article-date
   @extend $block-caption
@@ -60,12 +61,15 @@
   
 .article-header
   text-align: center
-  margin-bottom: 3em
 
 .article-header
   h1
     font-weight: bold
     font-family: "futura-pt",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3",Microsoft JhengHei,WenQuanYi Micro Hei,"Microsoft YaHei",sans-serif
+
+.article-header .thumb
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 .article-title
   text-decoration: none
@@ -121,7 +125,7 @@
     padding: 0.1px 20px;
     font-family: font-normal
     font-size: 1.1em
-    margin: line-height 0px
+    margin: 1.4em 0px
     border-left: 5px solid color-theme
     background: rgba(208,211,248,0.15)
     p
@@ -412,7 +416,7 @@ $article-gallery-ctrl
   line-height 1em
   font-size 0.9em
   float left
-  overflow: auto
+  overflow: hidden
   @media mq-mobile
     display: none
   @media mq-tablet
@@ -423,7 +427,7 @@ $article-gallery-ctrl
   top: 30px;
   margin-top: 0;
   max-height: 81%;
-  overflow: auto;
+  overflow: hidden;
   z-index: 1;
 
 .toc

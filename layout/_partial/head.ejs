@@ -49,7 +49,7 @@
     <%- css('css/dialog.css') %>
   <% } %>
 
-  <% if (is_archive() || is_category() || is_tag()){ %>
+  <% if (!is_post() && !is_home()){ %>
     <link rel="stylesheet" href="<%- config.root %>css/archive.css" > 
   <% } %>
 

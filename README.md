@@ -3,17 +3,13 @@
 [![Build Status](https://travis-ci.org/iTimeTraveler/hexo-theme-hiker.svg?branch=master)](https://travis-ci.org/iTimeTraveler/hexo-theme-hiker)		[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/LICENSE)
 
 
-An attractive theme for [Hexo]. I call it "Hiker", short for "HikerNews".
-
-[**Live Preview**](https://itimetraveler.github.io/) | [**Hiker 中文版使用文档**](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/README.cn.md)
+An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews". [**Live Preview**](https://itimetraveler.github.io/) | [**Hiker 中文版使用文档**](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/README.cn.md)
 
 
 ![Desktop Preview](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/preview-pc.png?raw=true)
 ![Mobile Preview](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/preview-mobile.png?raw=true)
 
 <!--more-->
-
-> **Hiker requires Hexo 2.4 and above.**
 
 ## Installation
 
@@ -39,6 +35,8 @@ An attractive theme for [Hexo]. I call it "Hiker", short for "HikerNews".
  ```
 
 ## Configuration
+
+### Theme configuration example
 
 ``` yml
 # ---------------------------------------------------------------
