@@ -1,19 +1,5 @@
 .archives-wrap
   margin: block-margin 0
-  blockquote
-    padding: 1em
-    margin: 4em 0 0 0
-    font-size: 1.2em
-    font-weight: bold
-    color: color-theme
-    text-align: center;
-    border-left: 0px solid color-theme
-    background: rgba(208,211,248,0.15)
-    a
-      color: color-default
-      margin: .2em
-      &:hover
-        color: color-theme
 
 .archives
   clearfix()
@@ -35,6 +21,23 @@
   font-family: "FontAwesome"
   content: "\f273"
   margin-right: .2em
+
+.archives-tags-wrap
+  margin: block-margin 0
+  blockquote
+    padding: 1em
+    margin: 4em 0 0 0
+    font-size: 1.2em
+    font-weight: bold
+    color: color-theme
+    text-align: center;
+    border-left: 0px solid color-theme
+    background: rgba(208,211,248,0.15)
+    a
+      color: color-default
+      margin: .2em
+      &:hover
+        color: color-theme
 
 .archive-tag
   @extend $block-caption
@@ -65,6 +68,10 @@
       margin: .2em
       &:hover
         color: color-theme
+      &:before
+        font-family: "FontAwesome"
+        content: "\f0da"
+        margin-right: .5em
 
 .archive-category
   @extend $block-caption
