@@ -1,10 +1,31 @@
-<div class="archives-wrap">
-  <div class="layout-title">
-    <span><%= page.title %></span>
-  </div>
-  <div class="layout-wrap-inner">
-    <% if(site.categories.length) { %>
-      <%- list_categories(site.categories) %>
-    <% } %>
-  </div>
+<div class="archives">
+	<div class="col-lg-8 col-lg-offset-2 col-md-10">
+		<div class="archives-category-wrap">
+			<blockquote>
+			<% if(site.categories.length) { %>
+			  <%- list_categories(site.categories) %>
+			<% } %>
+			</blockquote>
+		</div>
+		
+		<!-- 分类列表 -->
+
+        <% site.categories.map(function(category){  %>
+        <div class="archives-wrap">
+            <div class="archive-year-wrap" id="<%= category.name %>">
+                <h1 class="archive-category"><%= category.name %></h1>
+            </div>
+            <div class="archives">
+                <% category.posts.map(function(post, i){  %>
+                    <%- partial('_partial/archive-post', {post: post, index: true}) %>
+                    <% if (post.subtitle && post.subtitle.length) { %>
+                        <h3 class="post-subtitle">
+                            <%- post.subtitle %>
+                        </h3>
+                    <% } %>
+                <% }) %>
+            </div>
+        </div>
+        <% }) %>
+	</div>
 </div>

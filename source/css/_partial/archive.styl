@@ -49,6 +49,33 @@
   content: "\f02b"
   margin-right: .2em
 
+.archives-category-wrap
+  margin: block-margin 0
+  blockquote
+    padding: 1em
+    font-size: 1.1em
+    font-weight: bold
+    line-height: 1.7em;
+    color: color-theme
+    text-align: left;
+    border-left: 0px solid color-theme
+    background: rgba(208,211,248,0.15)
+    a
+      color: color-default
+      margin: .2em
+      &:hover
+        color: color-theme
+
+.archive-category
+  @extend $block-caption
+  text-transform: none;
+  color: color-theme
+
+.archive-category:before
+  font-family: "FontAwesome"
+  content: "\f02e"
+  margin-right: .3em
+
 .archives
   column-gap: 10px
   @media mq-tablet
