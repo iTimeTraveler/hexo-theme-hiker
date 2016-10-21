@@ -48,7 +48,11 @@
   <aside id="sidebar">
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <%- toc(post.content) %>
+    <% if (toc(post.content) != ""){ %>
+      <%- toc(post.content) %>
+    <% } else { %>
+    <ol class="toc">无</ol>
+    <% } %>
     </div>
   </aside>
 <% } %>
