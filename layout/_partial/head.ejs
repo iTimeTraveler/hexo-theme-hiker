@@ -40,17 +40,17 @@
   <%- css('css/style') %>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="<%- config.root %>css/bootstrap.css" > 
+  <link rel="stylesheet" href="<%- config.root %>css/bootstrap.css" >
 
   <% if (is_home()){ %>
-    <link rel="stylesheet" href="<%- config.root %>css/home.css" > 
+    <link rel="stylesheet" href="<%- config.root %>css/home.css" >
   <% } else {%>
-    <link rel="stylesheet" href="<%- config.root %>css/header-post.css" > 
+    <link rel="stylesheet" href="<%- config.root %>css/header-post.css" >
     <%- css('css/dialog.css') %>
   <% } %>
 
   <% if (!is_post() && !is_home()){ %>
-    <link rel="stylesheet" href="<%- config.root %>css/archive.css" > 
+    <link rel="stylesheet" href="<%- config.root %>css/archive.css" >
   <% } %>
 
 </head>
