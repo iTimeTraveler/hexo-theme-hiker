@@ -13,6 +13,8 @@ rss: /atom.xml
 
 since: 2013
 
+# Set default keywords (Use a comma to separate)
+keywords: ""
 
 # Put your favicon.ico into `hexo-site/themes/hiker/source/` directory.
 avatar: css/images/mylogo.jpg
