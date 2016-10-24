@@ -205,6 +205,13 @@ You can modify `theme_color` in hiker/_config.yml.
 theme_color: random
 ```
 
+### Night mode
+
+Just for article reading. In article page, you can click the **logo image of header** to switch to Night mode.
+
+![](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/night-mode.gif)
+
+
 ### Fancybox
 
 Hiker uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
