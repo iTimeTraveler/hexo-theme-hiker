@@ -13,6 +13,9 @@ rss: /atom.xml
 
 since: 2013
 
+# Set default keywords (Use a comma to separate)
+keywords: ""
+
 # Put your favicon.ico into `hexo-site/themes/hiker/source/` directory.
 avatar: css/images/mylogo.jpg
 
@@ -20,7 +23,7 @@ avatar: css/images/mylogo.jpg
 # Homepage
 # eg. home_background_image: css/images/home-bg.jpg
 home_background_image: css/images/home-bg.jpg
-home_logo_image: 
+home_logo_image:
   enable: false
   border: false
   url: css/images/homelogo.jpg
@@ -47,7 +50,7 @@ widgets:
 
 # comment ShortName, you can choose only ONE to display.
 duoshuo_shortname: iTimeTraveler
-disqus_shortname: 
+disqus_shortname:
 
 
 # Code Highlight theme
@@ -74,6 +77,11 @@ index_widgets:
 archive_type: 'monthly'
 show_count: true
 
+# Google Webmaster tools verification setting
+# See: https://www.google.com/webmasters/
+google_site_verification:
+baidu_site_verification:
+qihu_site_verification:
 
 # Miscellaneous
 google_analytics:
