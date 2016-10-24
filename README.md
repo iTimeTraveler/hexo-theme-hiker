@@ -3,10 +3,13 @@
 [![Build Status](https://travis-ci.org/iTimeTraveler/hexo-theme-hiker.svg?branch=master)](https://travis-ci.org/iTimeTraveler/hexo-theme-hiker)		[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/LICENSE)
 
 
-An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews".  [**☞ Live Preview**](https://itimetraveler.github.io/hexo-theme-hiker/) | [**Hiker 中文版使用文档**](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/README.cn.md)
+An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews".  
+
+[**☞ Live Preview**](https://itimetraveler.github.io/hexo-theme-hiker/)  |  [**Hiker 中文版使用文档**](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/README.cn.md)
 
 
-![Desktop Preview](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/preview-pc.png?raw=true)
+![Desktop Preview](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/01.png)
+![Post Preview](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/03.png)
 ![Mobile Preview](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/preview-mobile.png?raw=true)
 
 <!--more-->
@@ -139,6 +142,8 @@ fb_app_id:
 ## Features
 
 ### Code Highlight Theme
+
+![code `default` theme Preview](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/09.png)
 
 Hiker use [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) for your code block. We have six options in total: `default`, `normal`, `night`, `night blue`, `night bright`, `night eighties`
 
