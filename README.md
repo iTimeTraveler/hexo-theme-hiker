@@ -49,12 +49,16 @@ An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews".
 # Header Menu
 menu:
   Home: /
-  Archives: /archives
-  Tags: /tags
-  About: /about
+  Archives: archives
+  Categories: categories
+  Tags: tags
+  About: about
 rss: /atom.xml
 
 since: 2013
+
+# Set default keywords (Use a comma to separate)
+keywords: ""
 
 # Put your favicon.ico into `hexo-site/themes/hiker/source/` directory.
 avatar: css/images/mylogo.jpg
@@ -63,7 +67,7 @@ avatar: css/images/mylogo.jpg
 # Homepage
 # eg. home_background_image: css/images/home-bg.jpg
 home_background_image: css/images/home-bg.jpg
-home_logo_image: 
+home_logo_image:
   enable: false
   border: false
   url: css/images/homelogo.jpg
@@ -89,8 +93,8 @@ widgets:
 
 
 # comment ShortName, you can choose only ONE to display.
-duoshuo_shortname: 
-disqus_shortname: iTimeTraveler
+duoshuo_shortname: iTimeTraveler
+disqus_shortname:
 
 
 # Code Highlight theme
@@ -103,7 +107,7 @@ highlight_theme: default
 # Article theme color
 # Available value:
 #    random | orange | blue | red | green | black
-theme_color: green
+theme_color: random
 
 
 # display widgets at the bottom of index pages (pagination == 2)
@@ -117,6 +121,11 @@ index_widgets:
 archive_type: 'monthly'
 show_count: true
 
+# Google Webmaster tools verification setting
+# See: https://www.google.com/webmasters/
+google_site_verification:
+baidu_site_verification:
+qihu_site_verification:
 
 # Miscellaneous
 google_analytics:
@@ -125,7 +134,6 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:
-
 ```
 
 - **menu** - Navigation menu
