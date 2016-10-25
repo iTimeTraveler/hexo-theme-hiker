@@ -1,3 +1,6 @@
+home: Home
+archives: Archives
+about: About
 categories: Categories
 search: Search
 tags: Tags
@@ -17,3 +20,5 @@ powered_by: Powered by
 rss_feed: RSS Feed
 category: Category
 tag: Tag
+post_total_count: There are %d posts in total till now.
+right_reserved: "%s hold copyright"

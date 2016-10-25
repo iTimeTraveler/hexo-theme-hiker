@@ -1,3 +1,6 @@
+home: 首页
+archives: 归档
+about: 关于
 categories: 分类
 search: 搜索
 tags: 标签
@@ -10,10 +13,12 @@ archive_a: 归档
 archive_b: 归档：%s
 page: 第 %d 页
 recent_posts: 最新文章
-newer: Newer
-older: Older
-share: Share
+newer: 上一篇
+older: 下一篇
+share: 分享
 powered_by: Powered by
 rss_feed: RSS Feed
 category: Category
 tag: Tag
+post_total_count: 嗯，目前共计%d篇文章
+right_reserved: "%s 保留所有权利"

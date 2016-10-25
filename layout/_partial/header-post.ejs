@@ -20,7 +20,7 @@
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <% for (var i in theme.menu){ %>
-                  <li> <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a> </li>
+                  <li> <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= __(i.toLowerCase()) %></a> </li>
                 <% } %>
             </div>
           </div>
