@@ -27,9 +27,21 @@ function getStyle(obj, attri) {
  	return obj.currentStyle ? obj.currentStyle[attri] : window.getComputedStyle(obj, null)[attri];
 }
 
-var header_bg_d = '#fff',
-	header_border_d = '#e0e0e0',
-	footer_bg_d = '#f0f0f0',
+var header = document.getElementById('allheader');
+var footer = document.getElementById('footer');
+var wrap = document.getElementById('wrap');
+var articleInner = document.getElementById('articleInner');
+var h1title = document.getElementsByTagName('h1');
+var h2title = document.getElementsByTagName('h2');
+var h3title = document.getElementsByTagName('h3');
+var figure = document.getElementsByTagName('figure');
+var code = document.getElementsByTagName('code');
+var pre = document.getElementsByTagName('pre');
+var all_p = document.getElementsByTagName('p');
+
+var header_bg_d = getStyle(header, "background"),
+	header_border_d = getStyle(header, "border-color"),
+	footer_bg_d = getStyle(footer, "background"),
 	body_bg_d = '#fff',
 	article_title_d = '#555555',
 	article_p_d = '#444444';
@@ -47,17 +59,7 @@ var header_bg_n = '#161718',
 	code_border_n = '#333333';
 	code_color_n = article_p_n;
 
-var header = document.getElementById('allheader');
-var footer = document.getElementById('footer');
-var wrap = document.getElementById('wrap');
-var articleInner = document.getElementById('articleInner');
-var h1title = document.getElementsByTagName('h1');
-var h2title = document.getElementsByTagName('h2');
-var h3title = document.getElementsByTagName('h3');
-var figure = document.getElementsByTagName('figure');
-var code = document.getElementsByTagName('code');
-var pre = document.getElementsByTagName('pre');
-var all_p = document.getElementsByTagName('p');
+
 
 
 function setBackground(){
