@@ -24,15 +24,18 @@
       <% } %>
     </div>
     <footer class="article-footer">
+      <%- partial('post/tag') %>
+      <% if (!index){ %>
+        <% if (page.layout != 'about' && page.title != 'About'){ %>
+          <%- partial('post/coright') %>
+        <% } %>
+        <%- partial('post/nav') %>
+      <% } %>
       <% if (!index && post.comments && (theme.duoshuo_shortname || theme.disqus_shortname)){ %>
         <%- partial('comment') %>
       <% } %>
-      <%- partial('post/tag') %>
     </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
 </article>
 
 <% if (!index && post.comments && theme.disqus_shortname){ %>
