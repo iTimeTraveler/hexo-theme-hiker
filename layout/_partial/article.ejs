@@ -14,28 +14,23 @@
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
         <!-- <%- truncate(strip_html(post.content), {length: 200, omission: '...'}) %>...  -->
-        <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
-            <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
+        <p class="article-more-link">
+          <a href="<%- url_for(post.path) %>#more"><%= __('read_more') %></a>
+        </p>
       <% } else { %>
         <%- post.content %>
       <% } %>
     </div>
     <footer class="article-footer">
-      <%- partial('post/tag') %>
-      <% if (!index){ %>
-        <% if (page.layout != 'about' && page.title != 'About'){ %>
-          <%- partial('post/coright') %>
-        <% } %>
-        <%- partial('post/nav') %>
-      <% } %>
       <% if (!index && post.comments && (theme.duoshuo_shortname || theme.disqus_shortname)){ %>
         <%- partial('comment') %>
       <% } %>
+      <%- partial('post/tag') %>
     </footer>
   </div>
+  <% if (!index){ %>
+    <%- partial('post/nav') %>
+  <% } %>
 </article>
 
 <% if (!index && post.comments && theme.disqus_shortname){ %>

@@ -19,7 +19,7 @@
     title = __('tag') + ': ' + page.tag;
   }
   %>
-  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <title><% if (title){ %><%= __(title.toLowerCase()) %> | <% } %><%= config.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <% if (page.keywords){ %>
     <meta name="keywords" content="<%- page.keywords %>" />
@@ -54,6 +54,8 @@
     @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
     @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
   <%- css('css/style') %>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="<%- config.root %>css/bootstrap.css" >

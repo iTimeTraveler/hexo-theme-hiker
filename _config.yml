@@ -34,7 +34,6 @@ about_big_image: css/images/pose.jpg
 
 
 # Content
-excerpt_link: Read More
 fancybox: true
 
 
@@ -46,6 +45,13 @@ widgets:
 - tagcloud
 - archive
 - recent_posts
+
+
+# Search
+search:
+    insight: true # you need to install `hexo-generator-json-content` before using Insight Search
+    swiftype: # enter swiftype install key here
+    baidu: false # you need to disable other search engines to use Baidu search, options: true, false
 
 
 # comment ShortName, you can choose only ONE to display.

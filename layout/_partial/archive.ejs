@@ -4,7 +4,7 @@
   <% }) %>
 <% } else { %>
   <% if (is_archive()){ %>
-    <div class="archives-tags-wrap"><blockquote><span>There are <%= site.posts.length %> posts in total till now.</span></blockquote>
+    <div class="archives-tags-wrap"><blockquote><span><%= __('post_total_count', site.posts.length) %></span></blockquote>
   <% } %>
   <% var last; %>
   <% page.posts.each(function(post, i){ %>

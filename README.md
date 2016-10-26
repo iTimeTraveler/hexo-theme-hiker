@@ -3,10 +3,13 @@
 [![Build Status](https://travis-ci.org/iTimeTraveler/hexo-theme-hiker.svg?branch=master)](https://travis-ci.org/iTimeTraveler/hexo-theme-hiker)		[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/LICENSE)
 
 
-An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews".  [**☞ Live Preview**](https://itimetraveler.github.io/hexo-theme-hiker/) | [**Hiker 中文版使用文档**](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/README.cn.md)
+An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews".  
+
+[**☞ Live Preview**](https://itimetraveler.github.io/hexo-theme-hiker/)  |  [**✎ Hiker 中文版使用文档**](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/README.cn.md)
 
 
-![Desktop Preview](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/preview-pc.png?raw=true)
+![Desktop Preview](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png)
+![Post Preview](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/article-chrome.png)
 ![Mobile Preview](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/preview-mobile.png?raw=true)
 
 <!--more-->
@@ -46,12 +49,16 @@ An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews".
 # Header Menu
 menu:
   Home: /
-  Archives: /archives
-  Tags: /tags
-  About: /about
+  Archives: archives
+  Categories: categories
+  Tags: tags
+  About: about
 rss: /atom.xml
 
 since: 2013
+
+# Set default keywords (Use a comma to separate)
+keywords: ""
 
 # Put your favicon.ico into `hexo-site/themes/hiker/source/` directory.
 avatar: css/images/mylogo.jpg
@@ -60,7 +67,7 @@ avatar: css/images/mylogo.jpg
 # Homepage
 # eg. home_background_image: css/images/home-bg.jpg
 home_background_image: css/images/home-bg.jpg
-home_logo_image: 
+home_logo_image:
   enable: false
   border: false
   url: css/images/homelogo.jpg
@@ -86,8 +93,8 @@ widgets:
 
 
 # comment ShortName, you can choose only ONE to display.
-duoshuo_shortname: 
-disqus_shortname: iTimeTraveler
+duoshuo_shortname: iTimeTraveler
+disqus_shortname:
 
 
 # Code Highlight theme
@@ -100,7 +107,7 @@ highlight_theme: default
 # Article theme color
 # Available value:
 #    random | orange | blue | red | green | black
-theme_color: green
+theme_color: random
 
 
 # display widgets at the bottom of index pages (pagination == 2)
@@ -114,6 +121,11 @@ index_widgets:
 archive_type: 'monthly'
 show_count: true
 
+# Google Webmaster tools verification setting
+# See: https://www.google.com/webmasters/
+google_site_verification:
+baidu_site_verification:
+qihu_site_verification:
 
 # Miscellaneous
 google_analytics:
@@ -122,7 +134,6 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:
-
 ```
 
 - **menu** - Navigation menu
@@ -138,9 +149,28 @@ fb_app_id:
 
 ## Features
 
+### Homepage background
+
+You could place the image file in `YOUR_HEXO_SITE\themes\hiker\source\css\images` directory. and modify `home_background_image` in hiker/_config.yml. 
+
+```yml
+# Homepage
+# eg. home_background_image: css/images/home-bg.jpg
+home_background_image: css/images/home-bg.jpg
+```
+
+If you DON'T want any image as your homepage background, just set `home_background_image` empty in hiker/_config.yml, then you have an default homepage with **random decorative pattern**.
+
+![](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/home-no-background1.png)
+
+
 ### Code Highlight Theme
 
 Hiker use [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) for your code block. We have six options in total: `default`, `normal`, `night`, `night blue`, `night bright`, `night eighties`
+
+![code `default` theme Preview](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/code-theme-default.png)
+
+Above preview picture is default theme. the image below show other five Highlight themes.
 
 ![code themes](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/code-theme.jpg?raw=true)
 
@@ -173,6 +203,31 @@ You can modify `theme_color` in hiker/_config.yml.
 # Available value:
 #    random | orange | blue | red | green | black
 theme_color: random
+```
+
+### Night mode
+
+Just for article reading. In article page, you can click the **logo image of header** to switch to Night mode.
+
+![](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/night-mode.gif)
+
+
+### Search
+
+Hiker use `Insight Search` to help you search anything inside your site without any third-party plugin.
+
+```yml
+# Search
+search:
+    insight: true # you need to install `hexo-generator-json-content` before using Insight Search
+    swiftype: # enter swiftype install key here
+    baidu: false # you need to disable other search engines to use Baidu search, options: true, false
+```
+
+> Attention: You need to install `hexo-generator-json-content` before using Insight Search.
+
+```bash
+$ npm install -S hexo-generator-json-content
 ```
 
 ### Fancybox

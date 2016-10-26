@@ -1,14 +1,13 @@
-.navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
+.navbar-nav>li>a:hover, .navbar-nav>li>a:focus
 	border-bottom: 5px solid color-theme
 	color: color-theme !important
-}
 
-.navbar-inner {
+.navbar-inner
 	min-height: 90px;
 	box-shadow: 0 0 5px rgba(0,0,0,.1);
 	border-top: 2px solid color-theme;
-}
-.brand {
+
+.brand
 	float: left;
 	display: block;
 	position: absolute;
@@ -19,4 +18,58 @@
 	border-style: solid; 
 	border-color: rgba(24,24,21,0.07);
 	border-width: 0 8px 8px 8px;
-}
+
+
+
+
+
+
+#search-form-wrap
+	height: 50px
+	.search-form
+		position: relative
+		height: 100%
+		.search-form-input
+			padding: 0 30px 0 15px
+			height: 100% !important
+			&::-webkit-search-results-decoration
+			&::-webkit-search-cancel-button
+				-webkit-appearance: none
+		.search-form-submit
+			top: 50%
+			right: 10px
+			border: none
+			background: none
+			cursor: pointer
+			margin-top: -12px
+			position: absolute
+			font-family: 'FontAwesome'
+			&:before
+				color: #fff
+				content: '\f002'
+			&:hover, &:focus
+				color: color-theme
+
+.search-form-input,
+.search-form-input.ins-search-input,
+.search-form-input.st-ui-search-input,
+.search-form-input.st-default-search-input
+	-webkit-appearance: textarea
+	appearance: textarea
+	padding: 0
+	width: 45px
+	box-shadow: none
+	color: color-default
+	transition: 0.2s ease
+	box-sizing: border-box
+	height: auto !important
+	line-height: line-height
+	outline: none !important
+	background: none !important
+	font: font-size font-sans
+	border: 0px
+	&:focus
+		border-color: color-link !important
+	&::-webkit-search-results-decoration
+	&::-webkit-search-cancel-button
+		-webkit-appearance: none

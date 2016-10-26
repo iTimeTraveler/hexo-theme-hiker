@@ -16,7 +16,7 @@
         <nav id="main-nav">
           <a id="main-nav-toggle" class="nav-icon"></a>
           <% for (var i in theme.menu){ %>
-            <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+            <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= __(i.toLowerCase()) %></a>
           <% } %>
         </nav>
         <nav id="sub-nav">
@@ -35,7 +35,7 @@
 
 
   <% if (theme.home_background_image){ %>
-    <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(<%- config.root%><%- theme.home_background_image %>); background-size: auto 100%;">
+    <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(<%- config.root %><%- theme.home_background_image %>); background-size: auto 100%;">
   <% } else {%>
     <div id="intrologo" class="intro-logo">
   <% } %>
@@ -160,7 +160,7 @@
   <div class="intro-navigate">
       <p class="navigater-list">
         <% for (var i in theme.menu){ %>
-          <a id="beautifont" class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+          <a id="beautifont" class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= __(i.toLowerCase()) %></a>
         <% } %>
       </p>
   </div>
