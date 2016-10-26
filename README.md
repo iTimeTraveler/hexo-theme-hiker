@@ -212,6 +212,24 @@ Just for article reading. In article page, you can click the **logo image of hea
 ![](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/night-mode.gif)
 
 
+### Search
+
+Hiker use `Insight Search` to help you search anything inside your site without any third-party plugin.
+
+```yml
+# Search
+search:
+    insight: true # you need to install `hexo-generator-json-content` before using Insight Search
+    swiftype: # enter swiftype install key here
+    baidu: false # you need to disable other search engines to use Baidu search, options: true, false
+```
+
+> Attention: You need to install `hexo-generator-json-content` before using Insight Search.
+
+```bash
+$ npm install -S hexo-generator-json-content
+```
+
 ### Fancybox
 
 Hiker uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
