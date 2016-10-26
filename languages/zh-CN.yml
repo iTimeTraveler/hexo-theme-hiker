@@ -23,3 +23,10 @@ tag: Tag
 post_total_count: 嗯，目前共计%d篇文章
 right_reserved: '%s 保留所有权利'
 read_more: '查看更多'
+insight:
+    hint: '请输入关键词...'
+    posts: '文章'
+    pages: '页面'
+    categories: '分类'
+    tags: '标签'
+    untitled: '(无标题)'

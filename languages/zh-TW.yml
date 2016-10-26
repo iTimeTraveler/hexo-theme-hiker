@@ -22,3 +22,10 @@ category: Category
 tag: Tag
 post_total_count: 嗯，目前共計%d篇文章
 right_reserved: "%s 保留所有權利"
+insight:
+    hint: '請輸入關鍵詞...'
+    posts: '文章'
+    pages: '頁面'
+    categories: '分類'
+    tags: '標籤'
+    untitled: '(無標題)'

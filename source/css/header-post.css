@@ -12,6 +12,7 @@
 
 #allheader {
 	background: linear-gradient(120deg, #155799, #159957);
+	z-index: 2;
 }
 .navbar-default .navbar-nav > li > a {
     color: #fff;

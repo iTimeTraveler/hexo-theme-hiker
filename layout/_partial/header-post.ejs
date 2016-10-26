@@ -22,6 +22,7 @@
                 <% for (var i in theme.menu){ %>
                   <li> <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= __(i.toLowerCase()) %></a> </li>
                 <% } %>
+                  <li><%- partial('search/index') %></li>
             </div>
           </div>
                 

@@ -23,3 +23,10 @@ tag: Tag
 post_total_count: There are %d posts in total till now.
 right_reserved: "%s hold copyright"
 read_more: Read More
+insight:
+    hint: 'Type something...'
+    posts: 'Posts'
+    pages: 'Pages'
+    categories: 'Categories'
+    tags: 'Tags'
+    untitled: '(Untitled)'
