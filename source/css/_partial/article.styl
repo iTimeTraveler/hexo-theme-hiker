@@ -139,9 +139,28 @@
           content: "—"
           padding: 0 0.5em
   .pullquote
-    text-align: left
+    background: transparent
+    border-left: 0px
+    padding: 10px 25px
+    margin: 18px 0
+    font-style: italic
+    text-align: left;
     width: 45%
     margin: 0
+    p
+      font-family: Georgia,Microsoft JhengHei,"sans serif"
+      font-size: 19px
+    &:before
+      float: left
+      font-family: "FontAwesome"
+      content: "\f10d"
+      margin-left: -0.5em
+    &:after
+      float: right
+      font-family: "FontAwesome"
+      content: "\f10e"
+      margin-right: -0.5em
+      margin-top: -1em
     &.left
       margin-left: 0.5em
       margin-right: 1em
@@ -171,8 +190,9 @@
 
 .article-more-link a
   display: inline-block
+  font-size: 0.9em
   line-height: 1em
-  padding: 6px 15px
+  padding: 8px 15px
   border-radius: 15px
   background: color-link-bg
   border: 1px solid #eef1f8;
