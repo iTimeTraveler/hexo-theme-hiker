@@ -8,6 +8,17 @@
 	      <p> <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
 	      <p id="copyRightEn">Copyright &copy; <%= theme.since ||  (date(new Date(), 'YYYY')-1)%> - <%= date(new Date(), 'YYYY') %> <%= config.title || config.author %> All Rights Reserved.</p>
 	      <p id="copyRightCn"><%= __('right_reserved', config.author || config.title) %></p>
+
+        <% if (theme.busuanzi_count.enable){ %>
+          <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+          <% if (theme.busuanzi_count.site_uv){ %>
+            <p><%- theme.busuanzi_count.site_uv_header %><span id="busuanzi_value_site_uv" style="margin: 0 5px; font-size: 18px; font-weight: 120%; color: #0e83cd;"></span><%- theme.busuanzi_count.site_uv_footer %></p>
+          <% }%>
+          <% if (theme.busuanzi_count.site_pv){ %>
+            <p><%- theme.busuanzi_count.site_pv_header %><span id="busuanzi_value_site_pv" style="margin: 0 5px; font-weight: 120%; "></span><%- theme.busuanzi_count.site_pv_footer %></p>
+          <% }%>
+        <% }%>
+
 	</div>
   </div>
 </footer>
