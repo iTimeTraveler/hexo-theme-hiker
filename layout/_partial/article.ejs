@@ -9,12 +9,6 @@
     <div class="article-meta">
       <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
       <%- partial('post/category') %>
-      <%- partial('post/busuanzi-counter') %>
-    <!--
-      <% if (page.layout != 'about' && page.title != 'About'){ %>
-          <%- partial('post/comments-counter') %>
-      <% } %>
-    -->
     </div>
     <div class="article-entry" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
