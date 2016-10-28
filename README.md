@@ -78,7 +78,6 @@ about_big_image: css/images/pose.jpg
 
 
 # Content
-excerpt_link: Read More
 fancybox: true
 
 
@@ -90,6 +89,13 @@ widgets:
 - tagcloud
 - archive
 - recent_posts
+
+
+# Search
+search:
+    insight: true # you need to install `hexo-generator-json-content` before using Insight Search
+    swiftype: # enter swiftype install key here
+    baidu: false # you need to disable other search engines to use Baidu search, options: true, false
 
 
 # comment ShortName, you can choose only ONE to display.
@@ -130,15 +136,28 @@ qihu_site_verification:
 # Miscellaneous
 google_analytics:
 gauges_analytics:
+baidu_analytics:
+tencent_analytics:
 twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+
+# Facebook SDK Support.
+# https://github.com/iissnan/hexo-theme-next/pull/410
+facebook_sdk:
+  enable: false
+  app_id:       #<app_id>
+  fb_admin:     #<user_id>
+  like_button:  #true
+  webmaster:    #true
+
+# CNZZ count
+cnzz_siteid:
 ```
 
 - **menu** - Navigation menu
 - **rss** - RSS link
-- **excerpt_link** - "Read More" link at the bottom of excerpted articles. `false` to hide the link.
 - **fancybox** - Enable [Fancybox]
 - **sidebar** - Sidebar style. You can choose `left`, `right`, `bottom` or `false`.
 - **widgets** - Widgets displaying in sidebar
