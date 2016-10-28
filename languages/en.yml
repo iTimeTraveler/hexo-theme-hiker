@@ -1,0 +1,34 @@
+home: Home
+archives: Archives
+about: About
+categories: Categories
+search: Search
+tags: Tags
+tagcloud: Tag Cloud
+tweets: Tweets
+prev: Prev
+next: Next
+comment: Comments
+archive_a: Archives
+archive_b: "Archives: %s"
+page: Page %d
+recent_posts: Recent Posts
+newer: Newer
+older: Older
+share: Share
+powered_by: Powered by
+rss_feed: RSS Feed
+category: Category
+tag: Tag
+post_total_count: There are %d posts in total till now.
+right_reserved: "%s hold copyright"
+read_more: Read More
+contents: Contents
+none: None
+insight:
+    hint: 'Type something...'
+    posts: 'Posts'
+    pages: 'Pages'
+    categories: 'Categories'
+    tags: 'Tags'
+    untitled: '(Untitled)'
