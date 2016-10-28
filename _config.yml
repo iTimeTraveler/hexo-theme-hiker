@@ -92,7 +92,21 @@ qihu_site_verification:
 # Miscellaneous
 google_analytics:
 gauges_analytics:
+baidu_analytics:
+tencent_analytics:
 twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+
+# Facebook SDK Support.
+# https://github.com/iissnan/hexo-theme-next/pull/410
+facebook_sdk:
+  enable: false
+  app_id:       #<app_id>
+  fb_admin:     #<user_id>
+  like_button:  #true
+  webmaster:    #true
+
+# CNZZ count
+cnzz_siteid:

@@ -45,11 +45,11 @@
 <% if (!index && is_post()){ %>
   <aside id="sidebar">
     <div id="toc" class="toc-article">
-    <strong class="toc-title">文章目录</strong>
+    <strong class="toc-title"><%= __('contents') %></strong>
     <% if (toc(post.content) != ""){ %>
       <%- toc(post.content) %>
     <% } else { %>
-    <ol class="toc">无</ol>
+    <ol class="toc"><%= __('none') %></ol>
     <% } %>
     </div>
   </aside>
