@@ -1,3 +1,14 @@
+avatar = hexo-config("avatar")
+
+if avatar
+	_display = inline
+	_margin = -40px
+else
+	_display = block
+	_margin = 0px
+
+
+
 .navbar-nav>li>a:hover, .navbar-nav>li>a:focus
 	border-bottom: 5px solid color-theme
 	color: color-theme !important
@@ -18,6 +29,28 @@
 	border-style: solid; 
 	border-color: rgba(24,24,21,0.07);
 	border-width: 0 8px 8px 8px;
+	@media mq-mobile
+		display: _display
+		margin-left: _margin;
+	p
+		margin: 0;
+		padding: 0 20px 0 20px;
+		color: #1d1d1b;
+		height: 88px;
+		line-height: 86px;
+		text-transform: capitalize;
+		font-family: "华文中宋", serif;
+		font-weight: bold;
+		font-size: 27px;
+		letter-spacing: .2px;
+		&:first-letter 
+			font-size:160%;
+			background: #000;
+			color: #fff;
+			padding: 0 .2em 0 .2em
+			margin: 0 3px 0 0
+			
+
 
 
 

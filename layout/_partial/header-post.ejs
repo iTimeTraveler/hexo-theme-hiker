@@ -11,10 +11,12 @@
               <span class="icon-bar"></span>
             </button>
 
-            <% if (is_post()){ %>
-              <a class="brand" href="#" data-toggle="modal" data-target="#myModal"><img width="124px" height="124px" alt="Hike News" src="<%= config.root %><% if (theme.avatar){ %><%- theme.avatar %><% } else {%>css/images/avatar.jpg<% } %>"></a>
+            <% if (theme.avatar){ %>
+              <a class="brand" <% if (is_post()){ %>href="#" data-toggle="modal" data-target="#myModal"<% } %> ><img width="124px" height="124px" alt="Hike News" src="<%= config.root %><%- theme.avatar %>"></a>
             <% } else { %>
-              <a class="brand"><img width="124px" height="124px" alt="Hike News" src="<%= config.root %><% if (theme.avatar){ %><%- theme.avatar %><% } else {%>css/images/avatar.jpg<% } %>"></a>
+              <a class="brand" style="border-width: 0;">
+                <p><%= config.title || config.author %></p>
+              </a>
             <% } %>
             
             <div class="navbar-collapse collapse">

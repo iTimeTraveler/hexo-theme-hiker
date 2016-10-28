@@ -12,10 +12,11 @@
 
 #allheader {
 	background: linear-gradient(120deg, #155799, #159957);
+	background: transparent;
 	z-index: 2;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #fff;
+    color: #555;
 }
 .navbar-toggle {
 	margin-top: 28px;
@@ -32,10 +33,6 @@
   	.navbar .container {
 		text-align: center;
 		width: auto;
-	}
-	.brand{
-		display: inline;
-		margin-left: -40px;
 	}
   	.navbar-collapse {
 		background: rgba(48,51,58,0.98);
