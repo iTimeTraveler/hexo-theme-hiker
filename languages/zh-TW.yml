@@ -22,6 +22,9 @@ category: Category
 tag: Tag
 post_total_count: 嗯，目前共計%d篇文章
 right_reserved: "%s 保留所有權利"
+read_more: '阅读全文'
+contents: 文章目录
+none: 无
 insight:
     hint: '請輸入關鍵詞...'
     posts: '文章'

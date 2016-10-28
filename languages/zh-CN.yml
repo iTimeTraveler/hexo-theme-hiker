@@ -22,7 +22,9 @@ category: Category
 tag: Tag
 post_total_count: 嗯，目前共计%d篇文章
 right_reserved: '%s 保留所有权利'
-read_more: '查看更多'
+read_more: '阅读全文'
+contents: 文章目录
+none: 无
 insight:
     hint: '请输入关键词...'
     posts: '文章'
