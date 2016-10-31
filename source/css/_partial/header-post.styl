@@ -1,11 +1,20 @@
-avatar = hexo-config("avatar")
+avatarEnable = hexo-config("avatar.enable")
+avatarUrl = hexo-config("avatar.url")
+avatarWidth = hexo-config("avatar.width")
+avatarBorder = hexo-config("avatar.border")
 
-if avatar
+if avatarEnable == true
 	_display = inline
-	_margin = -40px
-else
+	_margin = avatarWidth/-2
+	_left = 50%
+	if avatarBorder
+		_margin -= 8
+else 
 	_display = block
-	_margin = 0px
+	_margin = 0
+	_left = 0%
+
+	
 
 
 
@@ -31,7 +40,8 @@ else
 	border-width: 0 8px 8px 8px;
 	@media mq-mobile
 		display: _display
-		margin-left: _margin;
+		margin-left: 1px * _margin;
+		left: _left;
 	p
 		margin: 0;
 		padding: 0 20px 0 20px;
