@@ -16,8 +16,14 @@ since: 2013
 # Set default keywords (Use a comma to separate)
 keywords: ""
 
-# Put your favicon.ico into `hexo-site/themes/hiker/source/` directory.
+# Put your favicon.ico or avatar.jpg into `hexo-site/themes/hiker/source/` directory.
 avatar: 
+  enable: true
+  border: true
+  width: 124
+  height: 124
+  top: 0
+  url: css/images/mylogo.jpg
 
 
 # Homepage
@@ -25,6 +31,7 @@ avatar:
 home_background_image:
   enable: true
   url: css/images/home-bg.jpg
+
 home_logo_image:
   enable: false
   border: false

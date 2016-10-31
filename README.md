@@ -175,10 +175,12 @@ You could place the image file in `YOUR_HEXO_SITE\themes\hiker\source\css\images
 ```yml
 # Homepage
 # eg. home_background_image: css/images/home-bg.jpg
-home_background_image: css/images/home-bg.jpg
+home_background_image:
+  enable: true
+  url: css/images/home-bg.jpg
 ```
 
-If you DON'T want any image as your homepage background, just set `home_background_image` empty in hiker/_config.yml, then you have an default homepage with **random decorative pattern**.
+If you DON'T want any image as your homepage background, keep `enable` true, then set `url` of `home_background_image` empty in hiker/_config.yml, you will have an default homepage with **random decorative pattern**.
 
 ![](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/home-no-background1.png)
 

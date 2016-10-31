@@ -11,8 +11,12 @@
               <span class="icon-bar"></span>
             </button>
 
-            <% if (theme.avatar){ %>
-              <a class="brand" <% if (is_post()){ %>href="#" data-toggle="modal" data-target="#myModal"<% } %> ><img width="124px" height="124px" alt="Hike News" src="<%= config.root %><%- theme.avatar %>"></a>
+            <% if (theme.avatar.enable){ %>
+              <a class="brand" style="
+                <% if (!theme.avatar.border){ %> border-width: 0px; <% } %> margin-top: <%= theme.avatar.top %>px;"  
+                <% if (is_post()){ %>href="#" data-toggle="modal" data-target="#myModal"<% } %> >
+                  <img width="<%= theme.avatar.width %>px" height="<%= theme.avatar.height %>px" alt="Hike News" src="<%= config.root %><%- theme.avatar.url %>">
+              </a>
             <% } else { %>
               <a class="brand" style="border-width: 0;">
                 <p><%= config.title || config.author %></p>
