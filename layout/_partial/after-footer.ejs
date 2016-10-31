@@ -24,9 +24,11 @@
 <%- js('js/script') %>
 <%- js('js/bootstrap') %>
 
-<% if (is_home()){ %>
+<% if (is_home() || !theme.home_background_image.enable){ %>
   <%- js('js/home') %>
-<% } else {%>
+<% } %>
+
+<% if (is_post()){ %>
   <%- js('js/dialog') %>
 <% } %>
 

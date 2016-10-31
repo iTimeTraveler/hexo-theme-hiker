@@ -63,8 +63,11 @@
   <% if (is_home()){ %>
     <link rel="stylesheet" href="<%- config.root %>css/home.css" >
   <% } else {%>
-    <link rel="stylesheet" href="<%- config.root %>css/header-post.css" >
     <%- css('css/dialog.css') %>
+  <% } %>
+
+  <% if (!is_home() || !theme.home_background_image.enable){ %>
+    <link rel="stylesheet" href="<%- config.root %>css/header-post.css" >
   <% } %>
 
   <% if (!is_post() && !is_home()){ %>

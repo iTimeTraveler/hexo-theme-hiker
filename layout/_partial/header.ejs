@@ -34,8 +34,8 @@
 
 
 
-  <% if (theme.home_background_image){ %>
-    <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(<%- config.root %><%- theme.home_background_image %>); background-size: auto 100%;">
+  <% if (theme.home_background_image.url){ %>
+    <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(<%- config.root %><%- theme.home_background_image.url %>); background-size: auto 100%;">
   <% } else {%>
     <div id="intrologo" class="intro-logo">
   <% } %>
@@ -59,7 +59,7 @@
       x.scale(pr, pr)
       x.globalAlpha = 0.6
 
-      <% if (!theme.home_background_image){ %>
+      <% if (!theme.home_background_image.url){ %>
         function i(){
             x.clearRect(0,0,w,h)
             q=[{x:0,y:h*.7+f},{x:0,y:h*.7-f}]
@@ -90,7 +90,7 @@
     </script>
     
 
-    <% if (theme.home_background_image && !theme.home_logo_image.enable){ %>
+    <% if (theme.home_background_image.url && !theme.home_logo_image.enable){ %>
       <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
     <% } else {%>
       <div id="homelogo" class="homelogo"> 
@@ -103,7 +103,7 @@
             <img id="homelogoimg" src="<%- theme.home_logo_image.url %>" >
           <% } %>
         <% } else {%>
-          <div class="homelogoback" <% if (theme.home_background_image && !theme.home_logo_image.enable){ %> style="border: 1px solid #404040;" <% } %>>
+          <div class="homelogoback" <% if (theme.home_background_image.url && !theme.home_logo_image.enable){ %> style="border: 1px solid #404040;" <% } %>>
             <h1><a href="#content" id="logo"><%= config.title %></a></h1>
             <h3><%= config.description%></h3>
             <h5><%= config.author %></h5>
@@ -115,7 +115,7 @@
   </div>
 
   <!-- 自适应主页背景大图 -->
-  <% if (theme.home_background_image){ %>
+  <% if (theme.home_background_image.url && theme.home_background_image.url){ %>
     <script>
         var img = new Image();
         var intrologodiv = document.getElementById("intrologo");
@@ -130,6 +130,7 @@
     </script>
  <% } %>
 
+ <!-- home_logo_image居中 -->
  <% if (theme.home_logo_image.enable){ %>
     <script>
         var img = new Image();
