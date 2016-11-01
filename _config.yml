@@ -42,6 +42,10 @@ home_logo_image:
 about_big_image: css/images/pose.jpg
 
 
+# Archive pagination
+archive_pagination: true
+
+
 # Content
 fancybox: true
 

@@ -10,13 +10,13 @@
 		
 		<!-- 分类列表 -->
 
-        <% site.categories.map(function(category){  %>
+        <% site.categories.sort('name').map(function(category){  %>
         <div class="archives-wrap">
             <div class="archive-year-wrap" id="<%= category.name %>">
                 <h1 class="archive-category"><%= category.name %></h1>
             </div>
             <div class="archives">
-                <% category.posts.map(function(post, i){  %>
+                <% category.posts.sort('-date').map(function(post, i){  %>
                     <%- partial('_partial/archive-post', {post: post, index: true}) %>
                     <% if (post.subtitle && post.subtitle.length) { %>
                         <h3 class="post-subtitle">
