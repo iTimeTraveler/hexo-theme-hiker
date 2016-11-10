@@ -60,13 +60,22 @@ since: 2013
 # Set default keywords (Use a comma to separate)
 keywords: ""
 
-# Put your favicon.ico into `hexo-site/themes/hiker/source/` directory.
-avatar: css/images/mylogo.jpg
+# Put your favicon.ico or avatar.jpg into `hexo-site/themes/hiker/source/` directory.
+avatar: 
+  enable: true
+  border: true
+  width: 124
+  height: 124
+  top: 0
+  url: css/images/mylogo.jpg
 
 
 # Homepage
 # eg. home_background_image: css/images/home-bg.jpg
-home_background_image: css/images/home-bg.jpg
+home_background_image:
+  enable: true
+  url: css/images/home-bg.jpg
+
 home_logo_image:
   enable: false
   border: false
@@ -75,6 +84,10 @@ home_logo_image:
 
 # AboutPage background
 about_big_image: css/images/pose.jpg
+
+
+# Archive pagination
+archive_pagination: true
 
 
 # Content
@@ -153,7 +166,7 @@ facebook_sdk:
   webmaster:    #true
 
 # CNZZ count
-cnzz_siteid:
+cnzz_siteid: 
 ```
 
 - **menu** - Navigation menu
