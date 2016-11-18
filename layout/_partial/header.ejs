@@ -33,9 +33,11 @@
   -->
 
 
-
-  <% if (theme.home_background_image.url){ %>
-    <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(<%- config.root %><%- theme.home_background_image.url %>); background-size: auto 100%;">
+  <% if (theme.home_background_image.url){ 
+    numImages = theme.home_background_image.url.length; 
+    random = Math.floor((Math.random() * numImages ));
+  %>
+    <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(<%- config.root %><%- theme.home_background_image.url[random] %>); background-size: auto 100%;">
   <% } else {%>
     <div id="intrologo" class="intro-logo">
   <% } %>
