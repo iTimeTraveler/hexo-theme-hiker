@@ -27,10 +27,10 @@ avatar:
 
 
 # Homepage
-# eg. home_background_image: css/images/home-bg.jpg
+# eg. home_background_image: [css/images/home-bg.jpg, css/images/sample.jpg]
 home_background_image:
   enable: true
-  url: [css/images/home-bg.jpg]
+  url: [css/images/home-bg.jpg, css/images/sample.jpg, css/images/pose.jpg]
 
 home_logo_image:
   enable: false
