@@ -193,7 +193,7 @@ home_background_image:
   url: css/images/home-bg.jpg
 ```
 
-If you DON'T want any image as your homepage background, keep `enable` true, then set `url` of `home_background_image` empty in hiker/_config.yml, you will have an default homepage with **random decorative pattern**.
+如果`url`为空（`enable`仍然保持true）, 主题会自动使用下面这种`漂亮的随机线条`填充：
 
 ![](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/home-no-background1.png)
 
