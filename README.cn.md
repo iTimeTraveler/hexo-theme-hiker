@@ -193,7 +193,7 @@ home_background_image:
   url: css/images/home-bg.jpg
 ```
 
-如果`url`为空（`enable`仍然保持true）, 主题会自动使用下面这种`漂亮的随机线条`填充：
+如果`url`为空（`enable`仍然保持true）, 主题会自动使用下面这种**`漂亮的随机线条` **填充：
 
 ![](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/home-no-background1.png)
 
@@ -220,7 +220,7 @@ highlight_theme: default
 
 ### 博客主题色
 
-Hiker provide five color themes for your blog.
+Hiker 为你的博客提供了五种可选的主题色，可以配置成`random`, 每次生成博客时会自动随机使用一个主题色.
 
 ![theme colors](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/theme-color.png?raw=true)
 
@@ -248,7 +248,7 @@ theme_color: random
 
 ### 站内搜索
 
-Hiker use `Insight Search` to help you search anything inside your site without any third-party plugin.
+Hiker 使用 `Insight Search` 实现了站内搜索，在_config.yml文件中启用如下.
 
 ```yml
 # Search
@@ -258,7 +258,7 @@ search:
     baidu: false # you need to disable other search engines to use Baidu search, options: true, false
 ```
 
-> 注意: 在使用搜索功能前必须先安装 `hexo-generator-json-content` 插件.
+> **！注意**: 在使用搜索功能前必须在Hexo目录下使用以下命令安装 `hexo-generator-json-content` 插件.
 
 ```bash
 $ npm install -S hexo-generator-json-content
@@ -276,8 +276,9 @@ Hiker uses [Fancybox] to showcase your photos. You can use Markdown syntax or fa
 
 ### 侧边栏
 
-You can put your sidebar in left side, right side or bottom of your site by editing `sidebar` setting.
-Hiker provides 5 built-in widgets:
+`sidebar`（侧边栏位置）可以设置为 `left` , `right`, `bottom`.
+
+Hiker 有以下5种侧边栏插件:
 
 - category
 - tag
@@ -306,9 +307,6 @@ disqus_shortname:
 
 欢迎大家有各种问题和改进建议的，直接提issue或者评论，或者pull request都行。我会尽量抽时间和大家交流。刚接触Hexo不久，疏忽不足之处，还望大家海涵！
 
-All kinds of contributions (enhancements, new features, documentation & code improvements, issues & bugs reporting) are welcome.
-
-Looking forward to your pull request.
 
 [Hexo]: https://hexo.io/
 [Fancybox]: http://fancyapps.com/fancybox/
