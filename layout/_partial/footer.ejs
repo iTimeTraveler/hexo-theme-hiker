@@ -18,7 +18,12 @@
 <script>
     var wrapdiv = document.getElementById("wrap");
     var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
 
     wrapdiv.style.minHeight = document.body.offsetHeight + "px";
-    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
 </script>
