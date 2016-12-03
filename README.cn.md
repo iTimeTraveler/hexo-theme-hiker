@@ -183,7 +183,7 @@ cnzz_siteid:
 
 ### 自定义首页背景
 
-You could place the image file in `YOUR_HEXO_SITE\themes\hiker\source\css\images` directory. and modify `home_background_image` in hiker/_config.yml. 
+您可以将选择的大图放到 `YOUR_HEXO_SITE\themes\hiker\source\css\images` 文件夹下. 然后更改 hiker/_config.yml文件里的`home_background_image`字段. 
 
 ```yml
 # Homepage
@@ -200,11 +200,11 @@ home_background_image:
 
 ### Code 色彩主题
 
-Hiker use [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) for your code block. We have six options in total: `default`, `normal`, `night`, `night blue`, `night bright`, `night eighties`
+Hiker 使用[Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) 作为代码高亮的配色. 总共有六种选择: `default`, `normal`, `night`, `night blue`, `night bright`, `night eighties`
 
 ![code `default` theme Preview](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/code-theme-default.png)
 
-Above preview picture is default theme. the image below show other five Highlight themes.
+默认高亮配色如上图。 另外的五种配色如下.
 
 ![code themes](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/code-theme.jpg?raw=true)
 
