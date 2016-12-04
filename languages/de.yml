@@ -1,3 +1,6 @@
+home: Startseite
+archives: Archive
+about: About
 categories: Kategorien
 search: Suche
 tags: Tags
@@ -17,3 +20,15 @@ powered_by: Powered by
 rss_feed: RSS Feed
 category: Kategorie
 tag: Tag
+post_total_count: Es gibt insgesamt %d Beiträge bis jetzt.
+right_reserved: "%s hält Urheberrechtsansprüche."
+read_more: weiter lesen
+contents: Inhalt
+none: Nichts
+insight:
+    hint: 'Schreib etwas...'
+    posts: 'Beiträge'
+    pages: 'Seiten'
+    categories: 'Kategorien'
+    tags: 'Tags'
+    untitled: '(Unbenannt)'
