@@ -71,10 +71,10 @@ avatar:
 
 
 # Homepage
-# eg. home_background_image: css/images/home-bg.jpg
+# eg. home_background_image: [css/images/home-bg.jpg, http://t.cn/RMbvEza]
 home_background_image:
   enable: true
-  url: [css/images/home-bg.jpg]
+  url: [css/images/home-bg.jpg, css/images/sample.jpg, http://t.cn/RMbvEza]
 
 home_logo_image:
   enable: false
@@ -187,10 +187,10 @@ cnzz_siteid:
 
 ```yml
 # Homepage
-# eg. home_background_image: [css/images/home-bg.jpg, css/images/sample.jpg]
+# eg. home_background_image: [css/images/home-bg.jpg, http://t.cn/RMbvEza]
 home_background_image:
   enable: true
-  url: [css/images/home-bg.jpg, css/images/sample.jpg, css/images/pose.jpg]
+  url: [css/images/home-bg.jpg, css/images/sample.jpg, http://t.cn/RMbvEza]
 ```
 
 如果`url`为空（`enable`仍然保持true）, 主题会自动使用下面这种**`漂亮的随机线条` **填充：

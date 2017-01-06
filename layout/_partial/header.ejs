@@ -3,9 +3,13 @@
   <% if (theme.home_background_image.url){ %>
     <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(); background-size: auto 100%;">
     <script>
-        var imgs = "<%- theme.home_background_image.url %>".split(",");
-        var random = Math.floor((Math.random() * imgs.length ));
-        document.getElementById("intrologo").style.backgroundImage='url(' + imgs[random] + ')';
+        var imgUrls = "<%- theme.home_background_image.url %>".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("intrologo").style.backgroundImage='url(' + imgUrls[random] + ')';
+        } else {
+          document.getElementById("intrologo").style.backgroundImage='url(<%= config.root %>' + imgUrls[random] + ')';
+        }
     </script>
   <% } else {%>
     <div id="intrologo" class="intro-logo">
@@ -69,9 +73,9 @@
 
         <% if (theme.home_logo_image.enable){ %>
           <% if (theme.home_logo_image.border){ %>
-            <img id="homelogoimg" src="<%- theme.home_logo_image.url %>" style="border-style: solid; border-color: rgba(24,24,21,0.1); border-width: 8px;">
+            <img id="homelogoimg" src="<%- partial('post/urlconvert', {tempUrl: theme.home_logo_image.url}) %>" style="border-style: solid; border-color: rgba(24,24,21,0.1); border-width: 8px;">
           <% } else {%>
-            <img id="homelogoimg" src="<%- theme.home_logo_image.url %>" >
+            <img id="homelogoimg" src="<%- partial('post/urlconvert', {tempUrl: theme.home_logo_image.url}) %>" >
           <% } %>
         <% } else {%>
           <div class="homelogoback" <% if (theme.home_background_image.url && !theme.home_logo_image.enable){ %> style="border: 1px solid #404040;" <% } %>>

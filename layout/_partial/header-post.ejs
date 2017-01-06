@@ -15,7 +15,7 @@
               <a class="brand" style="
                 <% if (!theme.avatar.border){ %> border-width: 0px; <% } %> margin-top: <%= theme.avatar.top %>px;"  
                 <% if (is_post()){ %>href="#" data-toggle="modal" data-target="#myModal"<% } %> >
-                  <img width="<%= theme.avatar.width %>px" height="<%= theme.avatar.height %>px" alt="Hike News" src="<%= config.root %><%- theme.avatar.url %>">
+                  <img width="<%= theme.avatar.width %>px" height="<%= theme.avatar.height %>px" alt="Hike News" src="<%- partial('post/urlconvert', {tempUrl: theme.avatar.url}) %>">
               </a>
             <% } else { %>
               <a class="brand" style="border-width: 0;">
@@ -41,8 +41,7 @@
   <div style="background:#fff;width: 100%;">
 
       <div style="max-height:600px; overflow: hidden;">
-        <img width="100%" alt="Hike News" src="<%- config.root %><%- theme.about_big_image %>">
+        <img width="100%" alt="Hike News" src="<%- partial('post/urlconvert', {tempUrl: theme.about_big_image}) %>">
       </div>
-
   </div>
 <% } %>
