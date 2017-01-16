@@ -6,19 +6,19 @@
 <% if (theme.archive_pagination == true){ %>
 	<% var last; %>
 	<% page.posts.each(function(post, i){ %>
-	<% var year = post.date.year(); %>
-	<% if (last != year){ %>
-	  <% if (last != null){ %>
-	    </div></section>
-	  <% } %>
-	  <% last = year; %>
-	  <section class="archives-wrap">
-	    <div class="archive-year-wrap">
-	      <h1><a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a></h1>
-	    </div>
-	    <div class="archives">
-	<% } %>
-	<%- partial('_partial/archive-post', {post: post, even: i % 2 == 0, index: true}) %>
+		<% var year = post.date.year(); %>
+		<% if (last != year){ %>
+		  <% if (last != null){ %>
+		    </div></section>
+		  <% } %>
+		  <% last = year; %>
+		  <section class="archives-wrap">
+		    <div class="archive-year-wrap">
+		      <h1><a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a></h1>
+		    </div>
+		    <div class="archives">
+		<% } %>
+		<%- partial('_partial/archive-post', {post: post, even: i % 2 == 0, index: true}) %>
 	<% }) %>
 	<% if (page.posts.length){ %>
 		</div></section>
@@ -39,22 +39,22 @@
 	<!-- 完全显示 -->
 	<% var last; %>
 	<% site.posts.sort('-date').map(function(post, i){ %>
-	<% var year = post.date.year(); %>
-	<% if (last != year){ %>
-	  <% if (last != null){ %>
-	    </div></section>
-	  <% } %>
-	  <% last = year; %>
-	  <section class="archives-wrap">
-	    <div class="archive-year-wrap">
-	      <h1><a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a></h1>
-	    </div>
-	    <div class="archives">
-	<% } %>
-	<%- partial('_partial/archive-post', {post: post, even: i % 2 == 0, index: true}) %>
+		<% var year = post.date.year(); %>
+		<% if (last != year){ %>
+		  <% if (last != null){ %>
+		    </div></section>
+		  <% } %>
+		  <% last = year; %>
+		  <section class="archives-wrap">
+		    <div class="archive-year-wrap">
+		      <h1><a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a></h1>
+		    </div>
+		    <div class="archives">
+		<% } %>
+		<%- partial('_partial/archive-post', {post: post, even: i % 2 == 0, index: true}) %>
 	<% }) %>
 	<% if (site.posts.length){ %>
-	</div></section>
+		</div></section>
 	<% } %>
 <% } %>
 
