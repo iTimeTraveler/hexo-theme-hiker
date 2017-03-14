@@ -126,4 +126,4 @@ cnzz_siteid: 1260716016
 
 # busuanzi count
 # http://busuanzi.ibruce.info/
-show_busuanzi_view_counts: false
+show_busuanzi_view_counts: true
