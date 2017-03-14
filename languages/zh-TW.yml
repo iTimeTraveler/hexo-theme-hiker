@@ -22,6 +22,8 @@ category: Category
 tag: Tag
 post_total_count: 嗯，目前共計%d篇文章
 right_reserved: "%s 保留所有權利"
+site_uv: '訪客數'
+site_pv: '訪問量'
 read_more: '閱讀全文'
 contents: 文章目錄
 none: 無
