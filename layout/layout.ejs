@@ -1,5 +1,11 @@
 <%- partial('_partial/head') %>
-<body>
+
+<% if (is_post()){ %>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+<% } else {%>
+  <body>
+<% } %>
+
   <% if (is_home() && theme.home_background_image.enable){ %>
     <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
   <% } %>
