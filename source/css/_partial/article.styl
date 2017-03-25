@@ -18,7 +18,7 @@
 
 .article-inner
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
-    font-family: "futura-pt", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", Microsoft JhengHei, WenQuanYi Micro Hei, "Microsoft YaHei", sans-serif
+    font-family: font-article-header
 
 .article-meta
   clearfix()
@@ -65,7 +65,7 @@
 .article-header
   h1
     font-weight: bold
-    font-family: "futura-pt",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3",Microsoft JhengHei,WenQuanYi Micro Hei,"Microsoft YaHei",sans-serif
+    font-family: font-article-header
 
 .article-header .thumb
     margin-top: 20px;
@@ -86,6 +86,8 @@
   clearfix()
   color: color-default
   padding: 0 article-padding
+  @media mq-mobile
+    padding: 0
   p, table
     line-height: line-height
     margin: line-height 0
@@ -451,18 +453,23 @@ $article-gallery-ctrl
   overflow: hidden;
   z-index: 1;
 
-.toc
+.nav
   padding 0
   margin 1em
   line-height 1.8em
   li
   list-style-type none
+    a:hover
+      background-color: transparent !important
+  .active > a
+    color: color-theme
 
-.toc-link
-  font-family: "futura-pt", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", Microsoft JhengHei, WenQuanYi Micro Hei, "Microsoft YaHei", sans-serif;
+.nav-link
+  font-family: font-futura-pt
   color: color-link
+  padding 1px !important
   &:hover
     color: color-theme
 
-.toc-child 
+.nav-child 
   margin-left 1.0em

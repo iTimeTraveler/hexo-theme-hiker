@@ -1,4 +1,4 @@
-.nav {
+.hnav {
 	position: relative;
 	left: 0;
 	display: block;
@@ -17,6 +17,9 @@
 }
 .navbar-default .navbar-nav > li > a {
     color: #555;
+    position: relative;
+    display: block;
+    padding: 15px 15px;
 }
 .navbar-toggle {
 	margin-top: 28px;
@@ -48,7 +51,7 @@
 		text-align: center;
 		font-weight: lighter;
 	}
-	.nav {
+	.hnav {
 		float: none;
 		margin: 80px 0 40px 0;
 		padding: 0 20%;
