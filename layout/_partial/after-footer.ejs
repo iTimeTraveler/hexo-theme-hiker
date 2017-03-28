@@ -13,7 +13,10 @@
   })();
 </script>
 <% } %>
-<%- partial('_partial/cnzz-analytics') %>
+
+<% if (theme.show_busuanzi_view_counts){ %>
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<% } %>
 
 <% if (theme.show_busuanzi_view_counts){ %>
   <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
