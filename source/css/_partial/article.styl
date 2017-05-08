@@ -424,6 +424,12 @@ $article-gallery-ctrl
 
 
 /*toc*/
+#toc-sidebar
+  @media mq-normal
+    column(sidebar-column)
+  @media mq-mobile
+    display: none
+
 .toc-article
   position: absolute
   border-left: rgba(88,88,88,0.1) 3px solid
