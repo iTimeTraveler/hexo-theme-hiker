@@ -112,6 +112,7 @@ search:
 
 
 # comment ShortName, you can choose only ONE to display.
+gentie_productKey: #your-gentie-product-key
 duoshuo_shortname: iTimeTraveler
 disqus_shortname:
 
@@ -290,13 +291,23 @@ All of them are enabled by default. You can edit them in `widget` setting.
 
 ### 评论
 
-已完全支持原生 DuoShuo 和 Disqus. Modify the following snippets to hiker `hiker/_config.yml`:
+已完全支持原生网易云跟帖、 DuoShuo 和 Disqus. 在文件 `hiker/_config.yml` 中修改以下代码片段:
 
 ```yml
 # comment ShortName, you can choose only ONE to display.
+gentie_productKey: #网易云跟帖your-gentie-product-key
 duoshuo_shortname: iTimeTraveler
 disqus_shortname: 
 ```
+
+- #### 网易云跟帖说明
+
+登陆 [网易云跟帖](https://gentie.163.com/) 获取你的 Product Key。请注意，您在**`云跟帖管理后台设置的域名必须跟您站点的域名一致`**。在本地测试时，需要做两步骤前置设定：
+
+1. 修改 hosts 文件，将您域名的请求指向本地。例如：127.0.0.1 yoursite.com
+2. 修改 Hexo 监听的端口为 80：`hexo s --debug -p 80`
+
+测试完成后请将 hosts 文件中的域名映射删除即可。
 
 ## 支持的浏览器
 
