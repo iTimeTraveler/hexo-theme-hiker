@@ -68,6 +68,7 @@ search:
 
 
 # comment ShortName, you can choose only ONE to display.
+gentie_productKey: #your-gentie-product-key
 duoshuo_shortname: iTimeTraveler
 disqus_shortname:
 
