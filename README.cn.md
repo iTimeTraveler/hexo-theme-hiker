@@ -291,7 +291,7 @@ All of them are enabled by default. You can edit them in `widget` setting.
 
 ### 评论
 
-已完全支持原生网易云跟帖、 DuoShuo 和 Disqus. 在文件 `hiker/_config.yml` 中修改以下代码片段:
+已完全支持原生网易云跟帖、 多说 和 Disqus评论. 在文件 `hiker/_config.yml` 中修改以下代码片段:
 
 ```yml
 # comment ShortName, you can choose only ONE to display.
