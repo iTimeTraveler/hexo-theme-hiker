@@ -27,6 +27,8 @@ site_pv: 'PV'
 read_more: Read More
 contents: Contents
 none: None
+donation:
+    button_text: 'Donate'
 insight:
     hint: 'Type something...'
     posts: 'Posts'

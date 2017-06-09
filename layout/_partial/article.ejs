@@ -22,6 +22,9 @@
       <% } %>
     </div>
     <footer class="article-footer">
+      <% if (!index && theme.donate.enable){ %>
+        <%- partial('donate') %>
+      <% } %>
       <% if (!index && post.comments && (theme.duoshuo_shortname || theme.disqus_shortname)){ %>
         <%- partial('comment') %>
       <% } %>

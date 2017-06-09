@@ -27,6 +27,8 @@ site_pv: '访问量'
 read_more: '阅读全文'
 contents: 文章目录
 none: 无
+donation:
+    button_text: '打赏支持'
 insight:
     hint: '请输入关键词...'
     posts: '文章'

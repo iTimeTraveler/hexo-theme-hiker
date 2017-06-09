@@ -1,0 +1,12 @@
+<div id="donation_div"></div>
+
+<%- js('js/vdonate') %>
+<script>
+var a = new Donate({
+  title: '<%- theme.donate.message %>', // 可选参数，打赏标题
+  btnText: '<%= __('donation.button_text') %>', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: '<%- theme.donate.wechatImage %>',
+  alipayImage: '<%- theme.donate.alipayImage %>'
+});
+</script>

@@ -74,5 +74,9 @@
   <% if (!is_post() && !is_home()){ %>
     <link rel="stylesheet" href="<%- config.root %>css/archive.css" >
   <% } %>
+  
+  <% if (theme.donate.enable){ %>
+    <link rel="stylesheet" href="<%- config.root %>css/vdonate.css" >
+  <% } %>
 
 </head>
