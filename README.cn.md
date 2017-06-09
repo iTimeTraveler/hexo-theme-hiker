@@ -18,9 +18,9 @@ An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews".
 
  1. 从GitHub上获取代码
 
- ```shell
+```shell
  $ git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker
- ```
+```
  2. 启用
 
  把Hexo主目录下的 `_config.yml` 文件中的字段 `theme` 修改为 `hiker`.
@@ -32,10 +32,10 @@ An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews".
  ```
  3. 更新
 
- ```shell
+```shell
  $ cd themes/Hiker
  $ git pull
- ```
+```
 
 ## 配置
 
@@ -288,6 +288,26 @@ Hiker 有以下5种侧边栏插件:
 - recent_posts
 
 All of them are enabled by default. You can edit them in `widget` setting.
+
+
+
+### 打赏捐赠按钮
+
+![](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/donation-btn.png)
+
+每篇文章最后显示打赏按钮，目前仅支持微信支付和支付宝两种打赏方式。您可以在文件 `hiker/_config.yml` 中配置您的微信、支付宝付款二维码图片的URL:
+
+
+```yml
+# donation button
+donate:
+    enable: true
+    message: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!'
+    wechatImage: https://your_WECHAT_PAY_ImageUrl
+    alipayImage: https://your_ALIPAY_ImageUrl
+```
+
+
 
 ### 评论
 
