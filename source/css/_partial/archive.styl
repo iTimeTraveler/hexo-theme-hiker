@@ -4,6 +4,8 @@
 .archives
   clearfix()
   margin-left: 2em
+  @media mq-mobile
+    margin-left: 0.5em
 
 .archive-year-wrap
   margin-bottom: 1em
@@ -93,6 +95,13 @@
 .archive-article
   avoid-column-break()
 
+.archive-article-header
+  @media mq-mobile
+    display: grid;
+  h1
+    @media mq-mobile
+      font-size: 14px;
+
 .archive-article-inner
   padding: 0px
   margin-bottom: 0px
@@ -104,6 +113,8 @@
   line-height: line-height
   border-left: 1px solid color-theme;
   padding-left: 15px;
+  @media mq-mobile
+    padding-left: 8px;
   &:hover
     color: color-link-hover
 
