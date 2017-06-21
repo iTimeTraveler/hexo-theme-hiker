@@ -14,14 +14,6 @@
 </script>
 <% } %>
 
-<% if (theme.show_busuanzi_view_counts){ %>
-  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<% } %>
-
-<% if (theme.show_busuanzi_view_counts){ %>
-  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<% } %>
-
 <%- partial('post/mathjax.ejs') %>
 
 <% if (theme.fancybox){ %>
@@ -29,7 +21,7 @@
   <%- js('fancybox/jquery.fancybox.pack') %>
 <% } %>
 
-<%- js('js/script') %>
+<%- js('js/scripts') %>
 <%- js('js/bootstrap') %>
 
 <% if (is_home() || !theme.home_background_image.enable){ %>
@@ -42,3 +34,7 @@
 
 <%- partial('google-analytics') %>
 <%- partial('gauges-analytics') %>
+<%- partial('cnzz-analytics') %>
+<%- partial('busuanzi-analytics') %>
+<%- partial('baidu-analytics') %>
+<%- partial('tencent-analytics') %>
