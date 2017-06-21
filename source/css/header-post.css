@@ -38,6 +38,7 @@
 		width: auto;
 	}
   	.navbar-collapse {
+  		max-height: inherit;
 		background: rgba(48,51,58,0.98);
 		color: #fff;
 		width: 100%;
