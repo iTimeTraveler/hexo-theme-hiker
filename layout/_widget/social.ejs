@@ -1,0 +1,29 @@
+<% if (theme.social){ %>
+  <div class="widget-wrap">
+    <h3 class="widget-title"><%= __('connect') %></h3>
+    <div class="widget widget_athemes_social_icons">
+
+    	<ul class="clearfix widget-social-icons">   
+    	<% Object.keys(theme.social).forEach(function(key) { %>
+          <% if (key == 'email'){ %>
+            <li><a href="mailto:<%= theme.social[key] %>?subject=请联系我&body=我能帮你什么" title="<%=key.trim()%>"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> 
+          <% } else {%>
+     			  <li><a href="<%= theme.social[key] %>" title="<%=key.trim()%>"><i class="fa fa-<%= key.toLowerCase() %>" aria-hidden="true"></i></a></li> 
+          <% }%>
+   		<% }) %>
+   		</ul>
+
+
+   		<!--
+   		<ul class="clearfix widget-social-icons">   		
+   		<li class="widget-si-twitter"><a href="http://twitter.com" title="Twitter"><i class="ico-twitter"></i></a></li> 
+		<li class="widget-si-facebook"><a href="http://facebook.com" title="Facebook"><i class="ico-facebook"></i></a></li>
+			<li class="widget-si-gplus"><a href="http://plus.google.com" title="Google+"><i class="ico-gplus"></i></a></li>
+			<li class="widget-si-pinterest"><a href="http://pinterest.com" title="Pinterest"><i class="ico-pinterest"></i></a></li>
+			<li class="widget-si-flickr"><a href="http://flickr.com" title="Flickr"><i class="ico-flickr"></i></a></li>
+			<li class="widget-si-instagram"><a href="http://instagram.com" title="Instagram"><i class="ico-instagram"></i></a></li>
+		</ul> -->
+
+    </div>
+  </div>
+<% } %>

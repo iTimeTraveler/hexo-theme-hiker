@@ -20,6 +20,7 @@ powered_by: Powered by
 rss_feed: RSS Feed
 category: Category
 tag: Tag
+connect: 'Connect'
 post_total_count: There are %d posts in total till now.
 right_reserved: "%s hold copyright"
 site_uv: 'UV'

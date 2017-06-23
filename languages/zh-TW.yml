@@ -20,6 +20,7 @@ powered_by: Powered by
 rss_feed: RSS Feed
 category: Category
 tag: Tag
+connect: '關註我'
 post_total_count: 嗯，目前共計%d篇文章
 right_reserved: "%s 保留所有權利"
 site_uv: '訪客數'

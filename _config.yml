@@ -53,11 +53,27 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
+- social
 - category
 - tag
 - tagcloud
 - archive
 - recent_posts
+
+
+# Social Links
+# Key is the name of FontAwsome icon.
+# Value is the target link (E.g. GitHub: https://github.com/iTimeTraveler)
+social:
+  Github: https://github.com/iTimeTraveler
+  Weibo: http://www.yoursite.com
+  Twitter: 
+  Facebook: 
+  Google-plus: 
+  Instagram: 
+  Pinterest: 
+  Flickr: 
+  email:
 
 
 # Search

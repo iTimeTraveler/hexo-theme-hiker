@@ -20,6 +20,7 @@ powered_by: Powered by
 rss_feed: RSS Feed
 category: Category
 tag: Tag
+connect: '关注我'
 post_total_count: 嗯，目前共计%d篇文章
 right_reserved: '%s 保留所有权利'
 site_uv: '访客数'
