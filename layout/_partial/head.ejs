@@ -41,7 +41,15 @@
   <% if (theme.rss){ %>
     <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
-  <link rel="icon" href="<%= config.root %><% if (theme.avatar.url){ %><%- theme.avatar.url %><% } else {%>css/images/avatar.jpg<% } %>">
+
+  <% 
+  var avatarurl = "css/images/avatar.jpg"
+  if (theme.avatar.url){
+    avatarurl = theme.avatar.url;
+  } 
+  %>
+
+  <link rel="icon" href="<%- partial('post/urlconvert', {tempUrl: avatarurl}) %>">
   <link rel="apple-touch-icon" href="<%= config.root %><% if (theme.avatar.url){ %><%- theme.avatar.url %><% } else {%>css/images/avatar.jpg<% } %>">
   <% if (config.highlight.enable){ %>
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
