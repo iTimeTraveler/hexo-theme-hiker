@@ -48,7 +48,7 @@ archive_pagination: true
 
 # Post Article's Content
 post_catalog:
-  enable: false
+  enable: true
 
 
 # Content
