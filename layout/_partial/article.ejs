@@ -1,4 +1,4 @@
-<article id="<%= post.layout %>-<%= post.slug %>" <% if (!index && is_post()){ %>style="width: 75%; float:left;"<% } %> class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost" >
+<article id="<%= post.layout %>-<%= post.slug %>" <% if (!index && is_post() && theme.post_catalog.enable){ %>style="width: 75%; float:left;"<% } %> class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     <%- partial('post/gallery') %>
     <% if (post.link || post.title){ %>
@@ -37,7 +37,7 @@
 </article>
 
 <!-- Table of Contents -->
-<% if (!index && is_post()){ %>
+<% if (!index && is_post() && theme.post_catalog.enable){ %>
   <aside id="toc-sidebar">
     <div id="toc" class="toc-article">
     <strong class="toc-title"><%= __('contents') %></strong>

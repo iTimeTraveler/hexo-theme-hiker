@@ -46,6 +46,11 @@ about_big_image: css/images/pose.jpg
 archive_pagination: true
 
 
+# Post Article's Content
+post_catalog:
+  enable: false
+
+
 # Content
 fancybox: true
 
