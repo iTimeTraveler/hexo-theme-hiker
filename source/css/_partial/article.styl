@@ -1,6 +1,14 @@
 .article
   color: #555
   margin: block-margin 0
+  transition:width .1s;
+  -moz-transition:width .1s; /* Firefox 4 */
+  -webkit-transition:width .1s; /* Safari and Chrome */
+  -o-transition:width .1s; /* Opera */
+  transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out; /* Firefox 4 */
+  -webkit-transition-timing-function: ease-out; /* Safari 和 Chrome */
+  -o-transition-timing-function: ease-out; /* Opera */
   @media mq-mobile
     width: 100% !important
   @media mq-tablet
@@ -427,6 +435,16 @@ $article-gallery-ctrl
 #toc-sidebar
   @media mq-normal
     column(sidebar-column)
+    transition:all .2s;
+    -moz-transition:all .2s; /* Firefox 4 */
+    -webkit-transition:all .2s; /* Safari and Chrome */
+    -o-transition:all .2s; /* Opera */
+    transition-timing-function: linear;
+    -moz-transition-timing-function: linear; /* Firefox 4 */
+    -webkit-transition-timing-function: linear; /* Safari 和 Chrome */
+    -o-transition-timing-function: linear; /* Opera */
+    visibility: visible
+    opacity: 1
   @media mq-mobile
     display: none
 
@@ -471,8 +489,8 @@ $article-gallery-ctrl
     color: color-theme
 
 .nav-link
-  font-family: font-futura-pt
-  color: color-link
+  font-family: font-apple-pingfang
+  color: color-sidebar-text
   padding 1px !important
   &:hover
     color: color-theme

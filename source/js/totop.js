@@ -18,3 +18,19 @@ $("#homelogo").click(function() {
     }, 1000, null);
     return false;
 });
+
+var articleW = $('#main>article').css("width");
+
+$("#menu-switch").click(function() {
+    if($("#toc-sidebar").hasClass("toc-hide")){
+        setTimeout(function () { 
+            $("#toc-sidebar").removeClass("toc-hide");
+        }, 200);
+        $('#main>article').css("width", articleW);
+    }else{
+        $("#toc-sidebar").addClass("toc-hide");
+        setTimeout(function () { 
+            $('#main>article').css("width", "100%");
+        }, 200);
+    }
+});

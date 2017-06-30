@@ -42,7 +42,7 @@ body
 #rocket
     position: fixed;
     right: 50px;
-    bottom: 50px;
+    bottom: 60px;
     display: block;
     visibility: hidden;
     width: 26px;
@@ -53,6 +53,9 @@ body
     -moz-transition: visibility 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -moz-transform 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
     transition: visibility 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), transform 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
     @media mq-mobile
+      right: 12px;
+      bottom: 20px;
+    @media mq-tablet
       right: 12px;
       bottom: 20px;
     #rocket i {
@@ -90,6 +93,29 @@ body
       -webkit-transform: scale(1.4, 3.2);
       -moz-transform: scale(1.4, 3.2);
       transform: scale(1.4, 3.2); } 
+
+#menu-switch
+    display: block;
+    position: fixed;
+    right: 49px;
+    bottom: 20px;
+    padding: 0.2em 0 0.2em 0.2em;
+    border: 1px solid #DDD;
+    border-radius: 3px
+    color: color-grey
+    opacity: .6;
+    @media mq-mobile
+      display: none
+    @media mq-tablet
+      display: none
+    &:hover
+      background: #F3F3F3
+      opacity: 1;
+
+
+.toc-hide
+  visibility: hidden !important
+  opacity: 0 !important
 
 .outer
   clearfix()
