@@ -7,3 +7,91 @@
 .hr{
 	background: color-theme
 }
+
+
+/* for carousel */
+.carousel-fade .carousel-inner .item {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  left:0;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: .6s;
+  transition-timing-function:ease-in;
+}
+
+.carousel-fade .carousel-inner .item > img{
+  left: 0;
+  position: relative;
+	max-width: 1000000000%;
+}
+
+.carousel-fade .carousel-inner .active {
+  left:0;
+  opacity: 1;
+  transition-property: all;
+  transition-duration: .6s;
+  transition-timing-function:ease-out;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left:0;
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  left:0;
+  opacity: 1;
+}
+
+.carousel {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.glyphicon-chevron-left:before {
+    content: "" !important;
+}
+.glyphicon-chevron-right:before {
+    content: "" !important;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      left:0;
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      left:0;
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      left:0;
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
