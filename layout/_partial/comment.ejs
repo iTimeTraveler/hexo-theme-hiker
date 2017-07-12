@@ -58,4 +58,51 @@
 	}());
 	</script>
 
+<% } else if (theme.uyan_uid) {%>
+	<section id="comments" class="comment">
+		<!-- UY BEGIN -->
+		<div id="uyan_frame"></div>
+		<script type="text/javascript">
+			(function(){
+			  var dsq = document.createElement('script');
+			  dsq.type = 'text/javascript';
+			  dsq.async = true;
+			  dsq.src = "http://v2.uyan.cc/code/uyan.js?uid=<%- theme.uyan_uid %>";
+			  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			}());
+		</script>
+		<!-- UY END -->
+	</section>
+<% } else if (theme.wumii) {%>
+	<div id="comment">
+		<script type="text/javascript" id="wumiiComments">
+		    var wumiiPermaLink = "<%- post.permalink %>"; //请用代码生成文章永久的链接
+		    var wumiiTitle = "<%- post.title %>"; //请用代码生成文章标题
+		    var wumiiSitePrefix = "<%- theme.url %>"; //安装无觅评论插件的网站的域名，如果是放在子域名上，请提供子域名，如"http://blog.wumii.com"。如果这里填写的域名不对，请自行改正。
+		    var wumiiCommentParams = "&pf=JAVASCRIPT";
+	   	</script>
+		<script type="text/javascript" src="http://widget.wumii.cn/ext/cw/widget"></script>
+	</div>
+<% } else if (theme.livere_shortname) {%>
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="<%- theme.livere_shortname %>">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
 <% } %>
