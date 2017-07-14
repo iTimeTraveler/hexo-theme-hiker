@@ -25,6 +25,7 @@ post_total_count: 嗯，目前共计%d篇文章
 right_reserved: '%s 保留所有权利'
 site_uv: '访客数'
 site_pv: '访问量'
+article_pv: '阅读量'
 read_more: '阅读全文'
 contents: 文章目录
 none: 无

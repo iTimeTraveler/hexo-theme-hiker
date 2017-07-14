@@ -25,6 +25,7 @@ post_total_count: There are %d posts in total till now.
 right_reserved: "%s hold copyright"
 site_uv: 'UV'
 site_pv: 'PV'
+article_pv: 'PV:'
 read_more: Read More
 contents: Contents
 none: None
