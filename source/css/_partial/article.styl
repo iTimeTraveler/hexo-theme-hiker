@@ -32,7 +32,7 @@
   clearfix()
   text-align: center
   font-size: .9em
-  margin: 1.5em 0 1em 0
+  margin: 1.5em 0 0em 0
   @media mq-mobile
     font-size: 12px;
 
@@ -120,6 +120,9 @@
     margin-bottom: 20px;
     @media mq-mobile
     	color: #333
+    	font-size: 20px;
+    	margin-top: 0px;
+    	margin-bottom: 15px;
 
 .article-title
   text-decoration: none
@@ -178,6 +181,7 @@
     padding: 0.1px 20px;
     font-family: font-normal
     font-size: 1.1em
+    color: rgba(44, 44, 44, .6)
     margin: 1.4em 0px
     border-left: 2px solid color-theme
     background: rgba(208,211,248,0.15)
@@ -201,6 +205,8 @@
     text-align: left;
     width: 45%
     margin: 0
+    @media mq-mobile
+   	  width: 100%
     p
       font-family: Georgia,Microsoft JhengHei,"sans serif"
       font-size: 1.2em
@@ -267,7 +273,7 @@
   padding-top: line-height
   margin: 0 article-padding article-padding
   @media mq-mobile
-    margin: 0 0 20px
+    margin: 0 0
   a
     color: color-grey
     text-decoration: none
