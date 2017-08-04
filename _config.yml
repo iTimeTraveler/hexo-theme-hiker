@@ -100,7 +100,7 @@ wumii:
 
 # Code Highlight theme
 # Available value:
-#    default | normal | night | night eighties | night blue | night bright
+#    default | gray | normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
 highlight_theme: default
 
