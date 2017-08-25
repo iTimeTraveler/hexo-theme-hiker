@@ -43,7 +43,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title"><%= __('contents') %></strong>
     <% if (toc(post.content) != ""){ %>
-        <%- toc(post.content, { "class": "nav" }) %>
+        <%- toc(post.content, { class: "nav", list_number: true }) %>
     <% } else { %>
         <ol class="nav"><%= __('none') %></ol>
     <% } %>

@@ -1,6 +1,17 @@
 <header id="header">
 
-    <% if (theme.home_background_image.url){ %>
+	<!-- 背景图模式 -->
+	<% 	var backgroundTheme;
+		if (theme.home_background_image.mode == "image" && theme.home_background_image.url){ 
+			backgroundTheme = "IMAGE";
+		} else if (theme.home_background_image.mode == "trianglify") {
+			backgroundTheme = "TRIANGLIFY";
+		} else {
+			backgroundTheme = "POLYLINE"
+		}
+	%>
+
+    <% if (theme.home_background_image.url && theme.home_background_image.mode == "image"){ %>
       <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(); background-size: auto 100%;">
 
       <!-- Support rolling -->  
@@ -95,7 +106,8 @@
       x.scale(pr, pr)
       x.globalAlpha = 0.6
 
-      <% if (!theme.home_background_image.url){ %>
+      <!-- 折线Polyline背景 -->
+      <% if (!theme.home_background_image.url || theme.home_background_image.mode == "polyline"){ %>
         function i(){
             x.clearRect(0,0,w,h)
             q=[{x:0,y:h*.7+f},{x:0,y:h*.7-f}]
@@ -122,13 +134,26 @@
         document.getElementById("intrologo").onclick = i
         document.getElementById("intrologo").ontouchstart = i
         i()
+
+      <!-- 多边形trianglify背景 -->
+      <% } else if (theme.home_background_image.mode == "trianglify") { %>
+		 function redraw(){
+		 	var pattern = Trianglify({
+				width: window.innerWidth,
+				height: window.innerHeight
+			});
+            pattern.canvas(c)
+        }
+        document.getElementById("intrologo").onclick = redraw
+        document.getElementById("intrologo").ontouchstart = redraw
+		redraw()
       <% } %>
     </script>
     
 
-    <% if (theme.home_background_image.url && !theme.home_logo_image.enable){ %>
+    <% if (!theme.home_logo_image.enable && theme.home_background_image.url && theme.home_background_image.mode != "polyline"){ %>
       <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
-    <% } else {%>
+    <% } else { %>
       <div id="homelogo" class="homelogo"> 
     <% } %>
 
@@ -139,7 +164,7 @@
             <img id="homelogoimg" src="<%- partial('post/urlconvert', {tempUrl: theme.home_logo_image.url}) %>" >
           <% } %>
         <% } else {%>
-          <div class="homelogoback" <% if (theme.home_background_image.url && !theme.home_logo_image.enable){ %> style="border: 1px solid #404040;" <% } %>>
+          <div class="homelogoback" <% if (theme.home_background_image.url && !theme.home_logo_image.enable && theme.home_background_image.mode != "polyline"){ %> style="border: 1px solid #404040;" <% } %>>
             <h1><a href="#content" id="logo"><%= config.title %></a></h1>
             <h3><%= config.description%></h3>
             <h5><%= config.author %></h5>

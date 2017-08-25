@@ -28,8 +28,10 @@ avatar:
 
 # Homepage
 # eg. home_background_image: [css/images/home-bg.jpg, http://t.cn/RMbvEza]
+# eg. mode: image | polyline | trianglify
 home_background_image:
   enable: true
+  mode: image
   rolling: true
   url: [css/images/home-bg.jpg, css/images/sample.jpg, https://source.unsplash.com/collection/954550/1920x1080]
 
