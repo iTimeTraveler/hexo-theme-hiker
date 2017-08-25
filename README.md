@@ -18,9 +18,9 @@ An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews".
 
  1. Get it from GitHub
 
- ```shell
+```shell
  $ git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker
- ```
+```
  2. Enable
 
  Modify `theme` setting in `_config.yml` to `hiker`.
@@ -32,7 +32,7 @@ An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews".
  ```
  3. Update
 
- ```shell
+```shell
  $ cd themes/Hiker
  $ git pull
 ```
@@ -47,14 +47,29 @@ You could place the image file in `YOUR_HEXO_SITE\themes\hiker\source\css\images
 ```yml
 # Homepage
 # eg. home_background_image: [css/images/home-bg.jpg, http://t.cn/RMbvEza]
+# eg. mode: image | polyline | trianglify
 home_background_image:
   enable: true
-  url: [css/images/home-bg.jpg, css/images/sample.jpg, http://t.cn/RMbvEza]
+  mode: image
+  rolling: true
+  url: [css/images/home-bg.jpg, css/images/sample.jpg, https://source.unsplash.com/collection/954550/1920x1080]
 ```
 
-If you DON'T want any image as your homepage background, keep `enable` true, then set `url` of `home_background_image` empty in hiker/_config.yml, you will have an default homepage with **random decorative pattern**.
+There are 3 modes to select: 
+
+- `image`
+- `polyline`
+- `trianglify`
+
+`image` mode is default, `trianglify` mode is from [Trianglify](https://github.com/qrohlf/trianglify), looks like below.
+
+![](https://cloud.githubusercontent.com/assets/347189/6771063/f8b0af46-d090-11e4-8d4c-6c7ef5bd9d37.png)
+
+`polyline` mode: if you DON'T want any image as your homepage background, you can use this mode. Or you can keep `enable` true, then set `url` of `home_background_image` empty in hiker/_config.yml, you will have an default homepage with **random decorative pattern**.
 
 ![](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/home-no-background1.png)
+
+
 
 
 ### Code Highlight Theme

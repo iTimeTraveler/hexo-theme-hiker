@@ -47,12 +47,27 @@ An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews".
 ```yml
 # Homepage
 # eg. home_background_image: [css/images/home-bg.jpg, http://t.cn/RMbvEza]
+# eg. mode: image | polyline | trianglify
 home_background_image:
   enable: true
-  url: [css/images/home-bg.jpg, css/images/sample.jpg, http://t.cn/RMbvEza]
+  mode: image
+  rolling: true
+  url: [css/images/home-bg.jpg, css/images/sample.jpg, https://source.unsplash.com/collection/954550/1920x1080]
 ```
 
-如果`url`为空（`enable`仍然保持true）, 主题会自动使用下面这种**`漂亮的随机线条` **填充：
+首页背景填充方式有三种可选mode：
+
+- `image`: 大图模式
+- `trianglify`: 多边形渐变背景
+- `polyline`: 随机彩色折线
+
+默认配置为`image`模式，也就是大图模式。多边形渐变背景`polyline`模式来自[Trianglify](https://github.com/qrohlf/trianglify)大致如下图：
+
+![](https://cloud.githubusercontent.com/assets/347189/6771063/f8b0af46-d090-11e4-8d4c-6c7ef5bd9d37.png)
+
+如果你不中意以上两种背景填充方式，可以选择随机彩色折线`polyline`模式，长相参考下图。
+
+> ！！注意：如果在使用`image`模式时`url`为空（`enable`仍然保持true）, 主题也会自动使用下面这种**`漂亮的随机线条` **填充（也就是会自动退化为`polyline`模式）：
 
 ![](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/home-no-background1.png)
 
