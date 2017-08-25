@@ -2,16 +2,16 @@
 
 	<!-- 背景图模式 -->
 	<% 	var backgroundTheme;
-		if (theme.home_background_image.mode == "image" && theme.home_background_image.url){ 
+		if (theme.home_background_image.mode == "image" && theme.home_background_image.url && theme.home_background_image.url.length > 0){ 
 			backgroundTheme = "IMAGE";
 		} else if (theme.home_background_image.mode == "trianglify") {
 			backgroundTheme = "TRIANGLIFY";
 		} else {
-			backgroundTheme = "POLYLINE"
+			backgroundTheme = "POLYLINE";
 		}
 	%>
 
-    <% if (theme.home_background_image.url && theme.home_background_image.mode == "image"){ %>
+    <% if (backgroundTheme == "IMAGE"){ %>
       <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(); background-size: auto 100%;">
 
       <!-- Support rolling -->  
@@ -107,7 +107,7 @@
       x.globalAlpha = 0.6
 
       <!-- 折线Polyline背景 -->
-      <% if (!theme.home_background_image.url || theme.home_background_image.mode == "polyline"){ %>
+      <% if (backgroundTheme == "POLYLINE"){ %>
         function i(){
             x.clearRect(0,0,w,h)
             q=[{x:0,y:h*.7+f},{x:0,y:h*.7-f}]
@@ -136,7 +136,7 @@
         i()
 
       <!-- 多边形trianglify背景 -->
-      <% } else if (theme.home_background_image.mode == "trianglify") { %>
+      <% } else if (backgroundTheme = "TRIANGLIFY") { %>
 		 function redraw(){
 		 	var pattern = Trianglify({
 				width: window.innerWidth,
@@ -151,7 +151,7 @@
     </script>
     
 
-    <% if (!theme.home_logo_image.enable && theme.home_background_image.url && theme.home_background_image.mode != "polyline"){ %>
+    <% if (!theme.home_logo_image.enable && backgroundTheme != "POLYLINE"){ %>
       <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
     <% } else { %>
       <div id="homelogo" class="homelogo"> 
@@ -164,7 +164,7 @@
             <img id="homelogoimg" src="<%- partial('post/urlconvert', {tempUrl: theme.home_logo_image.url}) %>" >
           <% } %>
         <% } else {%>
-          <div class="homelogoback" <% if (theme.home_background_image.url && !theme.home_logo_image.enable && theme.home_background_image.mode != "polyline"){ %> style="border: 1px solid #404040;" <% } %>>
+          <div class="homelogoback" <% if (backgroundTheme != "POLYLINE"){ %> style="border: 1px solid #404040;" <% } %>>
             <h1><a href="#content" id="logo"><%= config.title %></a></h1>
             <h3><%= config.description%></h3>
             <h5><%= config.author %></h5>
@@ -176,7 +176,7 @@
   </div>
 
   <!-- 自适应主页背景大图 -->
-  <% if (theme.home_background_image.enable && theme.home_background_image.url && !theme.home_background_image.rolling){ %>
+  <% if (backgroundTheme == "IMAGE" && !theme.home_background_image.rolling){ %>
     <script>
         var img = new Image();
         var intrologodiv = document.getElementById("intrologo");
