@@ -2,7 +2,7 @@
 
 	<!-- 背景图模式 -->
 	<% 	var backgroundTheme;
-		if (theme.home_background_image.mode == "image" && theme.home_background_image.url && theme.home_background_image.url.length > 0){ 
+		if ((theme.home_background_image.mode == "image" || !theme.home_background_image.mode) && theme.home_background_image.url && theme.home_background_image.url.length > 0){ 
 			backgroundTheme = "IMAGE";
 		} else if (theme.home_background_image.mode == "trianglify") {
 			backgroundTheme = "TRIANGLIFY";
