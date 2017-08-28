@@ -142,7 +142,7 @@ $ npm install -S hexo-generator-json-content
 
 ### Fancybox
 
-Hiker使用[Fancybox]来浏览展示您文章中的图片，支持一下方式在文章中添加图片：
+Hiker使用[Fancybox]来浏览展示您文章中的图片，支持以下方式在文章中添加图片：
 
 ```
 ![img caption](img url)
