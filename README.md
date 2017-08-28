@@ -167,8 +167,12 @@ Hiker has native support for DuoShuo & Disqus comment systems. Modify the follow
 
 ```yml
 # comment ShortName, you can choose only ONE to display.
-duoshuo_shortname: iTimeTraveler
+gentie_productKey: #your-gentie-product-key
+duoshuo_shortname: 
 disqus_shortname: 
+livere_shortname: MTAyMC8yOTQ4MS82MDQ5
+uyan_uid: 
+wumii: 
 ```
 
 ## Browser support

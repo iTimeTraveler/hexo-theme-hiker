@@ -14,6 +14,8 @@ An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews".
 
 <!--more-->
 
+以上Demo站点的源文件在这里，大家有需要的可以参考：https://github.com/iTimeTraveler/hexo-theme-hiero/tree/site-source
+
 ## 安装步骤
 
  1. 从GitHub上获取代码
@@ -140,7 +142,7 @@ $ npm install -S hexo-generator-json-content
 
 ### Fancybox
 
-Hiker uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
+Hiker使用[Fancybox]来浏览展示您文章中的图片，支持一下方式在文章中添加图片：
 
 ```
 ![img caption](img url)
@@ -184,16 +186,19 @@ donate:
 
 ### 评论
 
-已完全支持原生网易云跟帖、 多说 和 Disqus评论. 在文件 `hiker/_config.yml` 中修改以下代码片段:
+已完全支持原生Disqus、livere（来必力）、wumii（无觅）评论系统。因多说、网易云跟帖均已停止服务，在国内建议大家使用相对稳定的来必力评论系统。在文件 `hiker/_config.yml` 中修改以下代码片段:
 
 ```yml
 # comment ShortName, you can choose only ONE to display.
 gentie_productKey: #网易云跟帖your-gentie-product-key
-duoshuo_shortname: iTimeTraveler
+duoshuo_shortname: 
 disqus_shortname: 
+livere_shortname: MTAyMC8yOTQ4MS82MDQ5
+uyan_uid: 
+wumii: 
 ```
 
-- #### 网易云跟帖说明
+- #### 网易云跟帖说明（已停止服务）
 
 登陆 [网易云跟帖](https://gentie.163.com/) 获取你的 Product Key。请注意，您在**`云跟帖管理后台设置的域名必须跟您站点的域名一致`**。在本地测试时，需要做两步骤前置设定：
 
