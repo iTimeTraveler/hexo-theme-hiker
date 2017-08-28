@@ -38,10 +38,58 @@
 </header>
 
 <% if (is_current("about", false) && theme.about_big_image){ %>
-  <div style="background:#fff;width: 100%;">
 
+  <% if (typeof(theme.about_big_image) == "string") { %>
+    <div style="background:#fff;width: 100%;">
       <div style="max-height:600px; overflow: hidden;">
-        <img width="100%" alt="Hike News" src="<%- partial('post/urlconvert', {tempUrl: theme.about_big_image}) %>">
+        <img width="100%" src="<%- partial('post/urlconvert', {tempUrl: theme.about_big_image.toString()}) %>">
       </div>
-  </div>
+    </div>
+  <% } else { %>
+    <section class="awSlider">
+      <div class="carousel slide carousel-fade " data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+           <% for(var i=0; i< theme.about_big_image.length; i++){%>
+              <% if(i == 0){ %>
+                <div class="item active" style="max-height:600px; overflow: hidden;">
+              <% } else {%>
+                <div class="item" style="max-height:600px; overflow: hidden;">
+              <% } %>
+                <img id="carousel-img<%= i %>" src="<%- partial('post/urlconvert', {tempUrl: theme.about_big_image[i]}) %>">
+              </div>
+
+              <!-- 自适应大图 -->
+              <script>
+                  var h = 600;
+                  var img<%= i %> = new Image();
+                  var imageTag<%= i %> = document.getElementById("carousel-img<%= i %>");
+                  img<%= i %>.src = imageTag<%= i %>.src;
+                  img<%= i %>.onload=function(){
+                    if (img<%= i %>.width / img<%= i %>.height <= document.body.clientWidth / h) {
+                      imageTag<%= i %>.style.width = document.body.clientWidth + "px";
+                    } else {
+                      imageTag<%= i %>.style.height = h + "px";
+                      imageTag<%= i %>.style.marginLeft = -(h * img<%= i %>.width / img<%= i %>.height - document.body.clientWidth) / 2 + "px";
+                    }
+                  };
+              </script>
+            <% } %>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Geri</span>
+        </a>
+        <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">İleri</span>
+        </a>
+      </div>
+    </section>
+    
+  <% } %>
+
 <% } %>

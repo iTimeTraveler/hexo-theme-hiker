@@ -42,7 +42,7 @@ home_logo_image:
 
 
 # AboutPage background
-about_big_image: css/images/pose.jpg
+about_big_image: [css/images/pose.jpg, css/images/sample.jpg, https://source.unsplash.com/collection/954550/1920x1080]
 
 
 # Archive pagination

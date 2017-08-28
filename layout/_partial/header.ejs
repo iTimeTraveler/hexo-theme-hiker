@@ -24,7 +24,7 @@
                <% for(var i=0;i< theme.home_background_image.url.length;i++){%>
                   <% if(i == 0){ %>
                     <div class="item active">
-                  <% } else {%>
+                  <% } else { %>
                     <div class="item">
                   <% } %>
                     <img id="carousel-img<%= i %>" src="<%- partial('post/urlconvert', {tempUrl: theme.home_background_image.url[i]}) %>">
