@@ -62,18 +62,21 @@
 
               <!-- 自适应大图 -->
               <script>
-                  var h = 600;
-                  var img<%= i %> = new Image();
-                  var imageTag<%= i %> = document.getElementById("carousel-img<%= i %>");
-                  img<%= i %>.src = imageTag<%= i %>.src;
-                  img<%= i %>.onload=function(){
-                    if (img<%= i %>.width / img<%= i %>.height <= document.body.clientWidth / h) {
-                      imageTag<%= i %>.style.width = document.body.clientWidth + "px";
-                    } else {
-                      imageTag<%= i %>.style.height = h + "px";
-                      imageTag<%= i %>.style.marginLeft = -(h * img<%= i %>.width / img<%= i %>.height - document.body.clientWidth) / 2 + "px";
-                    }
-                  };
+              	  var carouselResize = function() {
+              	  	  var h = document.body.clientHeight / 3;
+	                  var img<%= i %> = new Image();
+	                  var imageTag<%= i %> = document.getElementById("carousel-img<%= i %>");
+	                  img<%= i %>.src = imageTag<%= i %>.src;
+	                  img<%= i %>.onload=function(){
+	                    if (img<%= i %>.width / img<%= i %>.height <= document.body.clientWidth / h) {
+	                      imageTag<%= i %>.style.width = document.body.clientWidth + "px";
+	                    } else {
+	                      imageTag<%= i %>.style.height = h + "px";
+	                      imageTag<%= i %>.style.marginLeft = -(h * img<%= i %>.width / img<%= i %>.height - document.body.clientWidth) / 2 + "px";
+	                    }
+	                  };
+              	  };
+                  carouselResize();
               </script>
             <% } %>
         </div>
