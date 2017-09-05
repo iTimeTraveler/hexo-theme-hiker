@@ -1,0 +1,157 @@
+#donation_div{
+	text-align: center;
+}
+
+#donation_div a {
+	color: #fff;
+	font-size: 1.2em;
+    text-decoration: none;
+}
+
+#donate-modal-container {
+	display: none;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	transform: scale(0)
+}
+
+#donate-modal-container.active {
+	display: table;
+	transform: scale(1)
+}
+
+#donate-modal-container.active .donate-modal-background {
+	background: rgba(0,0,0,.05)
+}
+
+#donate-modal-container.active .donate-modal-background .donate-modal {
+	animation: blowUpModal .5s cubic-bezier(.165,.84,.44,1) forwards
+}
+
+#donate-modal-container .donate-quote {
+	padding: 0;
+	margin: 0
+}
+
+#donate-modal-container .donate-quote-left {
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 32px;
+	height: 32px;
+	background: url("https://ooo.0o0.ooo/2017/03/09/58c158afac35c.png")
+}
+
+#donate-modal-container .donate-quote-word {
+	font-size: 1.2em;
+    color: #bbb;
+}
+
+#donate-modal-container .donate-quote-right {
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 32px;
+	height: 32px;
+	background: url("https://ooo.0o0.ooo/2017/03/09/58c1584d5fd9d.png")
+}
+
+#donate-modal-container .donate-tab {
+	margin-top: 20px;
+	font-size: 0
+}
+
+#donate-modal-container .donate-tab a {
+	display: inline-block;
+	padding: 10px 0;
+	width: 120px;
+	font-size: 16px;
+	text-decoration: none;
+	color: #333;
+	background-color: #eee;
+	transition: all .3s
+}
+
+#donate-modal-container .donate-tab .donate-wechat.active {
+	background-color: #44b549;
+	color: #fff
+}
+
+#donate-modal-container .donate-tab .donate-alipay.active {
+	background-color: #059AE3;
+	color: #fff
+}
+
+#donate-modal-container .donate-image {
+	display: none;
+	max-width: 300px;
+	margin: 20px auto
+}
+
+#donate-modal-container .donate-image.active {
+	display: block
+}
+
+#donate-modal-container .donate-modal-background {
+	display: table-cell;
+	background: transparent;
+	text-align: center;
+	vertical-align: middle
+}
+
+#donate-modal-container .donate-modal-background .donate-modal {
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	background: #fff;
+	width: 100%;
+	padding: 50px;
+	border-radius: 3px;
+	font-weight: 300
+}
+
+.donate-btn {
+	display: inline-block;
+	padding: 8px 16px;
+	border-radius: 5px;
+	background-color: #44b549;
+	color: #fff;
+	text-decoration: none;
+	margin: 20px 0;
+	transition: all .3s
+}
+
+.donate-btn:hover {
+	opacity: .8
+}
+
+.donate-btn .donate-qrcode {
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: -0.2em;
+	width: 16px;
+	height: 16px;
+	background: url("https://ooo.0o0.ooo/2017/03/09/58c16b1f3eaa4.png") no-repeat
+}
+
+@keyframes blowUpModal {
+	0% {
+		transform: scale(0)
+	}
+
+	100% {
+		transform: scale(1)
+	}
+}
+
+@media (max-width:768px) {
+	#donate-modal-container .donate-modal-background .donate-modal {
+		padding: 20px;
+		width: 100%
+	}
+
+	#donate-modal-container .donate-modal-background .donate-image {
+		width: 100%
+	}
+}

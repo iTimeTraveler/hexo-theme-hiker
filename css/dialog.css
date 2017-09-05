@@ -1,0 +1,58 @@
+
+.modal-content {
+	background-color: #ffffff;
+	border: 1px solid #999999;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 0px;
+}
+.modal-body {
+	text-align: center;
+	position: relative;
+	margin: 0;
+}
+.modal-title {
+	color: #000;
+    font-family: "黑体",Sans-Serif;
+    text-align: center;
+    font-weight: bold;
+}
+.modal-body>div>a{
+	text-decoration:none;
+	padding: 20px;
+	line-height:300%;
+	font-size: 20px;
+	color: #000;
+}
+.modal-body>div>a:hover,.modal-body>div>a:focus{
+	border-bottom: 0px;
+	background-color: #333;
+	color:#fff;
+}
+	.modal-header {
+		padding: 20px;
+		border-bottom: 0px;
+}
+.modal-footer {
+	padding: 10px 20px 10px;
+	margin-top: 0px;
+	text-align: center;
+		border-top: 0px;
+}
+.close {
+	float:inherit;
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 1;
+	color: #555;
+	text-shadow: 0 1px 0 #ffffff;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+.modal-dialog {
+	padding-top: 150px;
+	padding-bottom: 80px;
+}
+.panel-body {
+	font-family: "楷体", "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  	color:#333;
+}

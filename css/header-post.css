@@ -1,0 +1,72 @@
+.hnav {
+	position: relative;
+	left: 0;
+	display: block;
+	float: right;
+	margin: 20px 0 0 0;
+	font-family: Microsoft JhengHei,Roboto,Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	letter-spacing: .1px;
+}
+
+#allheader {
+	background: linear-gradient(120deg, #155799, #159957);
+	background: transparent;
+	z-index: 2;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #555;
+    position: relative;
+    display: block;
+    padding: 15px 15px;
+}
+.navbar-toggle {
+	margin-top: 28px;
+	margin-bottom: 28px;
+	margin-right: 0px;
+	background-color: transparent;
+	border: 1px solid transparent;
+}
+
+@media (max-width: 767px) {
+    .container{
+    	padding-top: 0px;
+  	}
+  	.navbar .container {
+		text-align: center;
+		width: auto;
+	}
+  	.navbar-collapse {
+  		max-height: inherit;
+		background: rgba(48,51,58,0.98);
+		color: #fff;
+		width: 100%;
+		top: 91px;
+		left: 20px;
+		right: 0;
+		margin: 0 0 0 -20px;
+		padding: 0;
+		float: none;
+		position: absolute;
+		text-align: center;
+		font-weight: lighter;
+	}
+	.hnav {
+		float: none;
+		margin: 80px 0 40px 0;
+		padding: 0 20%;
+	}
+	.container > .navbar-collapse {
+		margin-right: 0px;
+		margin-left: -20px;
+		border: 0px;
+	}
+	.navbar-default .navbar-nav>li>a {
+		color: #fff;
+	}
+	.navbar-default .navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
+		border-bottom: 0px;
+		background-color: #fff;
+	}
+ }
