@@ -12,6 +12,8 @@ An attractive, exquisite theme for [Hexo]. named "Hiker", short for "HikerNews".
 ![Post Preview](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/article-chrome.png)
 ![Mobile Preview](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/preview-mobile.png?raw=true)
 
+
+> This is DEMO source which you can refer to: https://github.com/iTimeTraveler/hexo-theme-hiero/tree/site-source
 <!--more-->
 
 ## Installation
