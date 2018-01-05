@@ -23,9 +23,9 @@ tag: Mot-clé
 connect: 'Connexion'
 post_total_count: Il y a actuellement %d articles.
 right_reserved: "Droits réservés %s"
-site_uv: 
-site_pv: 
-article_pv: 
+site_uv: 'UV'
+site_pv: 'PV'
+article_pv: 'PV:'
 read_more: Lire la suite
 contents: Contenu
 none: Aucun
