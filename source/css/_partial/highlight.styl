@@ -159,15 +159,20 @@ figure.highlight::-webkit-scrollbar-track { /*滚动条里面轨道*/
       margin-bottom: 1em
       a
         float: right
+    .gutter
+      // 不会选中 line number
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     .gutter pre
       @extend $line-numbers
       color: #aaaaaa;
       text-align: right
-      padding-right: 20px
+      padding-right: 15px
     .line
       height: 1.7em
       line-height: 1.7em
-      display: inline-block
     .line.marked
       background: $highlight-selection
   .gist
@@ -372,6 +377,10 @@ if $highlight_theme == "gray" {
         .gutter {
             border-right: 1px solid rgba(0,0,0, 0.04);
             padding:      0.3em 15px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
 
             .line {
                 color: #aaaaaa;
@@ -390,7 +399,8 @@ if $highlight_theme == "gray" {
         }
         // All lines in gutter and code container
         .line {
-            height:    1.3em !important;
+            height:    1.5em !important;
+            line-height: 1.5em !important;
             font-size: 13px;
         }
     }
