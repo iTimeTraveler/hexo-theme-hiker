@@ -172,6 +172,16 @@ All of them are enabled by default. You can edit them in `widget` setting.
 
 每篇文章最后显示打赏按钮，目前仅支持微信支付和支付宝两种打赏方式。您可以在文件 `hiker/_config.yml` 中配置您的微信、支付宝付款二维码图片的URL:
 
+### 主页文章摘要
+![](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/preview-abstract.png)   
+
+主页文章默认开启摘要模式
+```yml
+# 开启主页摘要
+post_excerpt: true
+
+```
+
 
 ```yml
 # donation button
