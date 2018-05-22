@@ -163,6 +163,15 @@ Hiker provides 5 built-in widgets:
 
 All of them are enabled by default. You can edit them in `widget` setting.
 
+### Abstract
+![](https://github.com/iTimeTraveler/hexo-theme-hiker/blob/master/source/preview/preview-abstract.png)   
+
+Home Articles Default Open summary mode
+```yml
+post_excerpt: true
+
+```
+
 ### Comment support
 
 Hiker has native support for DuoShuo & Disqus comment systems. Modify the following snippets to hiker `hiker/_config.yml`:

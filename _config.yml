@@ -52,6 +52,8 @@ archive_pagination: true
 # Post Article's Content
 post_catalog:
   enable: true
+# 开启主页摘要
+post_excerpt: true
 
 
 # Content
