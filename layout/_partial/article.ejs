@@ -27,6 +27,9 @@
       <% if (!index && theme.donate.enable){ %>
         <%- partial('donate') %>
       <% } %>
+      <% if (!index && theme.copyright.enable){ %>
+      <%- partial('copyright') %>
+      <% } %>
       <% if (!index && post.comments && (theme.gentie_productKey || theme.duoshuo_shortname || theme.disqus_shortname || theme.uyan_uid || theme.wumii || theme.livere_shortname)){ %>
         <%- partial('comment') %>
       <% } %>
