@@ -19,7 +19,9 @@
         <p class="article-more-link">
           <a href="<%- url_for(post.path) %>#more"><%= __('read_more') %></a>
         </p>
-      <% } else { %>
+      <% } else if (post.excerpt && index){ %>
+		<%- post.excerpt %>
+	  <% } else { %>
         <%- post.content %>
       <% } %>
     </div>
