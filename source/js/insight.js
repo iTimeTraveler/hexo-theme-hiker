@@ -217,7 +217,7 @@
     });
 
 
-    $(document).on('click focus', '.search-form-submit', function () {
+    $(document).on('click focus', '.search-form-submit', function (event) {
         event.preventDefault();
         $main.addClass('show');
         $main.find('.ins-search-input').focus();
