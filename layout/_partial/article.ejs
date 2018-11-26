@@ -20,8 +20,8 @@
           <a href="<%- url_for(post.path) %>#more"><%= __('read_more') %></a>
         </p>
       <% } else if (post.excerpt && index){ %>
-		<%- post.excerpt %>
-	  <% } else { %>
+	<%- post.excerpt %>
+      <% } else { %>
         <%- post.content %>
       <% } %>
     </div>
