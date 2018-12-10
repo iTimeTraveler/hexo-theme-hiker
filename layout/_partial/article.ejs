@@ -10,6 +10,7 @@
       <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
       <%- partial('post/category') %>
       <%- partial('post/busuanzi-analytics',{index: index, class_name: 'article-views'}) %>
+      <%- partial('post/edit', {index: index, class_name: 'article-edit'}) %>
     </div>
     <div class="article-entry" itemprop="articleBody">
       <% if (theme.post_excerpt && index){ %>

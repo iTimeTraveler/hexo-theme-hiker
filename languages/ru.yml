@@ -6,6 +6,7 @@ tweets: Твиты
 prev: Назад
 next: Вперед
 comment: Комментарии
+edit: Редактировать
 archive_a: Архив
 archive_b: "Архив: %s"
 page: Страница %d

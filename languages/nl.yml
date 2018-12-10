@@ -7,6 +7,7 @@ tweets: Tweets
 prev: Vorige
 next: Volgende
 comment: Commentaren
+edit: Bewerk
 archive_a: Archieven
 archive_b: "Archieven: %s"
 page: Pagina %d

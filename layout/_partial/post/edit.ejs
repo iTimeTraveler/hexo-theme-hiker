@@ -1,0 +1,6 @@
+<% if (!index && is_post() && theme.post_edit_url){ %>
+	<a class="<%= class_name %>" target="_blank" rel="noopener" href="<%= theme.post_edit_url %><%= page.source.slice(7) %>">
+	<span id="edit"><%= __('edit') %></span>
+	</span>
+	</a>
+<% } %>

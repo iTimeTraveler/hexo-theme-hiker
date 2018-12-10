@@ -6,6 +6,7 @@ tweets: Tweets
 prev: Forrige
 next: Neste
 comment: Kommentarer
+edit: Redigere
 archive_a: Arkiv
 archive_b: "Arkiv: %s"
 page: Side %d

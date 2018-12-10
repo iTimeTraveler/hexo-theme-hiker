@@ -9,6 +9,7 @@ tweets: Tweets
 prev: zurück
 next: weiter
 comment: Kommentare
+edit: Bearbeiten
 archive_a: Archiv
 archive_b: "Archive: %s"
 page: Seite %d
