@@ -6,6 +6,7 @@ tweets: Tweets
 prev: Anterior
 next: Próximo
 comment: Comentários
+edit: Editar
 archive_a: Arquivos
 archive_b: "Arquivos: %s"
 page: Página %d

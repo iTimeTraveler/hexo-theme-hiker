@@ -9,6 +9,7 @@ tweets: 推文
 prev: 上一页
 next: 下一页
 comment: 留言
+edit: 编辑
 archive_a: 归档
 archive_b: 归档：%s
 page: 第 %d 页

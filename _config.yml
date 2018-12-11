@@ -169,3 +169,8 @@ donate:
 # post copyright
 copyright:
     enable: true
+
+# post edit url, modify your post online for convenience
+# If you put your blog on GitHub, it should look like:
+# https://github.com/username/blog/edit/master/source/_posts/
+post_edit_url: 

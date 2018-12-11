@@ -89,9 +89,24 @@
 .article-views:hover
   color: color-theme
 
+.article-edit
+  @extend $block-caption
+  text-align: center
+  font-weight: normal
+
+.article-edit:before
+  font-family: "FontAwesome";
+  content: "\f044";
+  @media mq-mobile
+    display: none
+
+.article-edit:hover
+  color: color-theme
+
 .article-date,
 .article-category-link,
 .article-views,
+.article-edit
 .archive-year,
 .archive-tag,
 .archive-category,
