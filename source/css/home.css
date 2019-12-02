@@ -47,10 +47,12 @@ html{
 	position: absolute;
 	bottom: 0px;
 	padding-top: 10px;
-    padding-bottom: 10px;
+	padding-bottom: 10px;
 	text-align: center;
 	border-bottom: 1px solid #eef1f8;
 	background: rgba(255,255,255,.9);
+	backdrop-filter: saturate(180%) blur(20px);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
 	-moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -129,6 +131,8 @@ html{
 	top: 50%;
 	left: 50%;
 	margin-top: -100px;
+	backdrop-filter: saturate(180%) blur(20px);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
